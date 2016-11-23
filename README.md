@@ -3,6 +3,9 @@ dietical
 
 A meal planner built on React, Node.js, MongoDB and Socket.IO.
 
+Credit to [mixxen](https://github.com/mixxen/react-webpack-express) for a great boilerplate.
+Credit to [danielberkompas](https://github.com/danielberkompas/meal-planner) for the idea.
+
 
 Usage
 =====
