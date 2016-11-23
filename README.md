@@ -1,15 +1,15 @@
-react-webpack-express
+dietical
 =====================
 
-Boilerplate to start developing npm react components with webpack. Includes flux as npm module.
+A meal planner built on React, Node.js, MongoDB and Socket.IO.
 
 
 Usage
 =====
 
 ```
-git clone https://github.com/mixxen/react-webpack-express.git myapp
-cd myapp
+git clone https://github.com/philspins/dietical.git
+cd dietical
 npm install
 npm run build
 npm run server
