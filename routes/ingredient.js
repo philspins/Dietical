@@ -1,6 +1,6 @@
 /*
  * Ingredient Routing
- * Defines routing for Mongoose Ingredient "class".
+ * Defines routing for Mongoose Ingredient class.
  */
 
 var Ingredient = require("../models/ingredient");

@@ -1,6 +1,6 @@
 /*
  * Recipe Routing
- * Defines routing for Mongoose Recipe "class".
+ * Defines routing for Mongoose Recipe class.
  */
 
 var Recipe = require("../models/recipe");

@@ -1,6 +1,6 @@
 /*
  * Recipe Model
- * Defines Mongoose schema, returns Recipe "class".
+ * Defines Mongoose schema, returns Recipe class.
  */
 
 var mongoose = require('mongoose'),

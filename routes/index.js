@@ -1,13 +1,15 @@
-var express = require('express');
-var router = express.Router();
+const routes = require('express').Router();
+var Recipe = require('../models/recipe');
+var Ingredient = require('../models/ingredient');
+
 
 /* GET home page. */
-router.get('/', function(req, res) {
+routes.get('/', function(req, res) {
   res.render('index', { title: 'Main' });
 });
-router.get('/other', function(req, res) {
+routes.get('/other', function(req, res) {
   res.render('other', { title: 'Other' });
 });
 
 
-module.exports = router;
+module.exports = routes;

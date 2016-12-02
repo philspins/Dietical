@@ -1,4 +1,4 @@
-dietical
+NourishMe
 =====================
 
 A meal planner built on React, Node.js, MongoDB and Socket.IO.
@@ -10,8 +10,8 @@ Usage
 =====
 
 ```
-git clone https://github.com/philspins/dietical.git
-cd dietical
+git clone https://github.com/philspins/NourishMe.git
+cd NourishMe
 npm install
 npm run build
 npm run server
