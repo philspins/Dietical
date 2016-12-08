@@ -16,14 +16,13 @@ db.once('open', function() {
 });
 */
 var ingredientSchema = new Schema({
-	_id:		Number,
-	item:		String,
-	uom:		String,
+	_id:			Number,
+	item:			String,
+	uom:			String,
 	weight:		Number,
-	calories:	Number,
-	protein:	Number,
-	carbs:		Number,
-	fat:		Number,
+	protein:	Number, 	//grams
+	carbs:		Number, 	//grams
+	fat:			Number, 	//grams
 	fibre:		Number,
 });
 

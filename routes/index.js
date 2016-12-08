@@ -1,15 +1,9 @@
 const routes = require('express').Router();
-var Recipe = require('../models/recipe');
-var Ingredient = require('../models/ingredient');
+var async = require('async');
+var request = require('request');
+var xml2js = require('xml2js');
+var _ = require('underscore');
 
-
-/* GET home page. */
-routes.get('/', function(req, res) {
-  res.render('index', { title: 'Main' });
-});
-routes.get('/other', function(req, res) {
-  res.render('other', { title: 'Other' });
-});
 
 
 module.exports = routes;
