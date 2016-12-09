@@ -1,5 +1,4 @@
-NourishMe
-=====================
+#NourishMe
 A meal planner built on React and MongoDB.
 
 
@@ -11,8 +10,8 @@ cd NourishMe
 npm install
 npm run build
 npm start
-open http://localhost:3000
 ```
+open http://localhost:3000
 
 
 License
