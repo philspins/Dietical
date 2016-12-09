@@ -8,7 +8,8 @@ import {Navbar,
         Nav,
         NavItem,
         NavDropdown,
-        MenuItem} from 'react-bootstrap';
+        MenuItem,
+				Image} from 'react-bootstrap';
 
 
 class MyNavbar extends React.Component {
@@ -33,23 +34,32 @@ class MyNavbar extends React.Component {
   render() {
     return (
         <Navbar>
-            <Navbar.Header>
-                <Navbar.Brand>
-                    <a href="#">React-Broiler</a>
-                </Navbar.Brand>
-            </Navbar.Header>
-            <Nav>
-              <NavItem eventKey={1} href="#">Link</NavItem>
-              <NavItem eventKey={2} href="#">Link</NavItem>
-              <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-                <MenuItem eventKey={3.1}>Action</MenuItem>
-                <MenuItem eventKey={3.2}>Another action</MenuItem>
-                <MenuItem eventKey={3.3}>Something else here</MenuItem>
-                <MenuItem divider />
-                <MenuItem eventKey={3.3}>Separated link</MenuItem>
-              </NavDropdown>
-            </Nav>
-          </Navbar>
+					<Navbar.Header>
+						<Navbar.Brand>
+							<LinkContainer to={{pathname: '/'}}>
+								<span><Image src="favicon.png" />&nbsp;&nbsp;Nourish Me!</span>
+							</LinkContainer>
+						</Navbar.Brand>
+					</Navbar.Header>
+					<Nav>
+						<NavItem eventKey={1} href="#">Home</NavItem>
+						<NavItem eventKey={2} href="#">Meal Planner</NavItem>
+						<NavDropdown eventKey={3} title="Recipes" id="basic-nav-dropdown">
+							<MenuItem eventKey={3.1}>Cousine</MenuItem>
+							<MenuItem eventKey={3.2}>Main Ingredient</MenuItem>
+							<MenuItem eventKey={3.3}>Meal Type</MenuItem>
+							<MenuItem eventKey={3.4}>All Recipes</MenuItem>
+							<MenuItem divider />
+							<MenuItem eventKey={3.5}>Add a recipe</MenuItem>
+						</NavDropdown>
+						<NavItem eventKey={4} href="#">Food Items</NavItem>
+					</Nav>
+					<Nav pullRight>
+						<Navbar.Text>Welcome, Philip!</Navbar.Text>
+						<NavItem eventKey={1} href="#">My Profile</NavItem>
+						<NavItem eventKey={2} href="#">Sign Out</NavItem>
+					</Nav>
+				</Navbar>
     );
   }
 }
