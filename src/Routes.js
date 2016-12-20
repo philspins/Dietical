@@ -5,11 +5,13 @@ import Home from './components/Home';
 import Recipe from './components/Recipe';
 import RecipeList from './components/RecipeList';
 import AddRecipe from './components/AddRecipe'
+import MealPlanner from './components/MealPlanner'
 
 export default (
 	<Router history={browserHistory}>
 		<Route component={App}>
 			<Route path='/' component={Home} />
+			<Route path='/planner' component={MealPlanner} />
 			<Route path='/recipes/add' component={AddRecipe} />
 			<Route path='/recipes/:id' component={Recipe} />
 			<Route path='/recipes' component={RecipeList} />

@@ -41,31 +41,61 @@ class Header extends React.Component {
 						</Navbar.Brand>
 					</Navbar.Header>
 					<Nav>
-						<NavItem eventKey={1} href="#">Home</NavItem>
-						<NavItem eventKey={2} href="#">Meal Planner</NavItem>
+            <LinkContainer to="/">
+              <NavItem eventKey={1} href="#">Home</NavItem>
+            </LinkContainer>
+						<LinkContainer to="/planner">
+							<NavItem eventKey={2} href="#">Meal Planner</NavItem>
+						</LinkContainer>
 						<NavDropdown eventKey={3} title="Recipes" id="basic-nav-dropdown">
 							<NavDropdown eventKey={3} title="Cousine" noCaret className="dropdown-submenu">
-								<MenuItem eventKey={1.1}>American</MenuItem>
-								<MenuItem eventKey={1.2}>Mexican</MenuItem>
-								<MenuItem eventKey={1.3}>Italian</MenuItem>
-								<MenuItem eventKey={1.4}>French</MenuItem>
+								<LinkContainer to="/recipes/tags/american">
+									<MenuItem eventKey={1.1}>American</MenuItem>
+								</LinkContainer>
+								<LinkContainer to="/recipes/tags/mexican">
+									<MenuItem eventKey={1.2}>Mexican</MenuItem>
+								</LinkContainer>
+								<LinkContainer to="/recipes/tags/italian">
+									<MenuItem eventKey={1.3}>Italian</MenuItem>
+								</LinkContainer>
+								<LinkContainer to="/recipes/tags/french">
+									<MenuItem eventKey={1.4}>French</MenuItem>
+								</LinkContainer>
 							</NavDropdown>
 							<NavDropdown eventKey={3.2} title="Main Ingredient" noCaret className="dropdown-submenu">
-								<MenuItem eventKey={1.1}>Chicken</MenuItem>
-								<MenuItem eventKey={1.2}>Pork</MenuItem>
-								<MenuItem eventKey={1.3}>Beef</MenuItem>
-								<MenuItem eventKey={1.4}>Seafood</MenuItem>
+								<LinkContainer to="/recipes/tags/chicken">
+									<MenuItem eventKey={1.1}>Chicken</MenuItem>
+								</LinkContainer>
+								<LinkContainer to="/recipes/tags/pork">
+									<MenuItem eventKey={1.2}>Pork</MenuItem>
+								</LinkContainer>
+								<LinkContainer to="/recipes/tags/beef">
+									<MenuItem eventKey={1.3}>Beef</MenuItem>
+								</LinkContainer>
+								<LinkContainer to="/recipes/tags/seafood">
+									<MenuItem eventKey={1.4}>Seafood</MenuItem>
+								</LinkContainer>
 							</NavDropdown>
 							<NavDropdown eventKey={3.3} title="Meal Type" noCaret className="dropdown-submenu">
-								<MenuItem eventKey={1.1}>Breakfast</MenuItem>
-								<MenuItem eventKey={1.2}>Lunch</MenuItem>
-								<MenuItem eventKey={1.3}>Dinner</MenuItem>
-								<MenuItem eventKey={1.4}>Snack</MenuItem>
-								<MenuItem eventKey={1.4}>Dessert</MenuItem>
+								<LinkContainer to="/recipes/tags/breakfast">
+									<MenuItem eventKey={1.1}>Breakfast</MenuItem>
+								</LinkContainer>
+								<LinkContainer to="/recipes/tags/lunch">
+									<MenuItem eventKey={1.2}>Lunch</MenuItem>
+								</LinkContainer>
+								<LinkContainer to="/recipes/tags/dinner">
+									<MenuItem eventKey={1.3}>Dinner</MenuItem>
+								</LinkContainer>
+								<LinkContainer to="/recipes/tags/snack">
+									<MenuItem eventKey={1.4}>Snack</MenuItem>
+								</LinkContainer>
+								<LinkContainer to="/recipes/tags/dessert">
+									<MenuItem eventKey={1.4}>Dessert</MenuItem>
+								</LinkContainer>
 							</NavDropdown>
 							<LinkContainer to="/recipes">
 								<MenuItem eventKey={3.4}>
-									All Recipes
+									View All
 								</MenuItem>
 							</LinkContainer>
 							<MenuItem divider />
@@ -73,7 +103,11 @@ class Header extends React.Component {
 								<MenuItem eventKey={3.5}>Add a recipe</MenuItem>
 							</LinkContainer>
 						</NavDropdown>
-						<NavItem eventKey={4} href="#">Food Items</NavItem>
+						<LinkContainer to="/food">
+							<MenuItem eventKey={4}>
+								Food Items
+							</MenuItem>
+						</LinkContainer>
 					</Nav>
 					<Nav pullRight>
 						<Navbar.Text>Welcome, Philip!</Navbar.Text>

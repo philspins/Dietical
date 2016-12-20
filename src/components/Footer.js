@@ -34,8 +34,8 @@ class MyFooter extends React.Component {
 								<span>
 									<h3 className='lead'><strong>Information</strong> and <strong>Copyright</strong></h3>
 									<p>
-										Powered by <strong>Node.js</strong>, <strong>Express.js</strong>, <strong>React</strong>,
-										<strong> React-Bootstrap</strong> and <strong>MongoDB</strong> with Flux architecture
+										Powered by <strong>Node.js</strong>, <strong>React</strong>,
+										<strong> React-Bootstrap</strong> and <strong>MySQL</strong> with Flux architecture
 										via <strong>Alt</strong>.
 									</p>
 									<p>You may view the <a href='https://github.com/philspins/NourishMe'>Source Code</a> behind this project on GitHub.</p>
