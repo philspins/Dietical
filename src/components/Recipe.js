@@ -14,50 +14,49 @@ import {FormGroup,
 				Col} from 'react-bootstrap';
 
 import RecipeStore from '../stores/RecipeStore';
-import RecipeActions from '../actions/RecipeActions'
+import RecipeActions from '../actions/RecipeActions';
 
 
 class Recipe extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = RecipeStore.getState();
-    this.onChange = this.onChange.bind(this);
-  }
+	constructor(props) {
+		super(props);
+		this.state = RecipeStore.getState();
+		this.onChange = this.onChange.bind(this);
+	}
 
-  componentDidMount() {
-    RecipeStore.listen(this.onChange);
-    RecipeActions.getRecipe(this.props.params.id);
+	componentDidMount() {
+		RecipeStore.listen(this.onChange);
+		RecipeActions.getRecipe(this.props.params.id);
 
 		$('.magnific-popup').magnificPopup({
-      type: 'image',
-      mainClass: 'mfp-zoom-in',
-      closeOnContentClick: true,
-      midClick: true,
-      zoom: {
-        enabled: true,
-        duration: 300
-      }
-    });
-  }
+			type: 'image',
+			mainClass: 'mfp-zoom-in',
+			closeOnContentClick: true,
+			midClick: true,
+			zoom: {
+				enabled: true,
+				duration: 300
+			}
+		});
+	}
 
-  componentWillUnmount() {
-    RecipeStore.unlisten(this.onChange);
-    $(document.body).removeClass();
-  }
+	componentWillUnmount() {
+		RecipeStore.unlisten(this.onChange);
+	}
 
-  componentDidUpdate(prevProps) {
+	componentDidUpdate(prevProps) {
     // Fetch new charachter data when URL path changes
-    if (prevProps.params.id !== this.props.params.id) {
+		if (prevProps.params.id !== this.props.params.id) {
       //CharacterActions.getCharacter(this.props.params.id);
-    }
-  }
+		}
+	}
 
-  onChange(state) {
-    this.setState(state);
-  }
+	onChange(state) {
+		this.setState(state);
+	}
 
-  render() {
-    return (
+	render() {
+		return (
       <Grid>
 				<Row>
 					<Col sm={8}>
@@ -75,8 +74,8 @@ class Recipe extends React.Component {
 					</Col>
 				</Row>
 			</Grid>
-    );
-  }
+		);
+	}
 }
 
 export default Recipe;

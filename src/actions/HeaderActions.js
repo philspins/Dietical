@@ -4,11 +4,11 @@
 import alt from '../utils/Dispatcher';
 
 class HeaderActions {
-  constructor() {
-    this.generateActions(
-    	'action'
+	constructor() {
+		this.generateActions(
+			'action'
     );
-  }
+	}
 }
 
 export default alt.createActions(HeaderActions);

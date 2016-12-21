@@ -9,33 +9,33 @@ import RecipeListStore from '../stores/RecipeListStore';
 import RecipeListActions from '../actions/RecipeListActions';
 
 class RecipeList extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = RecipeListStore.getState();
-    this.onChange = this.onChange.bind(this);
-  }
+	constructor(props) {
+		super(props);
+		this.state = RecipeListStore.getState();
+		this.onChange = this.onChange.bind(this);
+	}
 
-  componentDidMount() {
-    RecipeListStore.listen(this.onChange);
-    RecipeListActions.getRecipes(this.props.params);
-  }
+	componentDidMount() {
+		RecipeListStore.listen(this.onChange);
+		RecipeListActions.getRecipes(this.props.params);
+	}
 
-  componentWillUnmount() {
-    RecipeListStore.unlisten(this.onChange);
-  }
+	componentWillUnmount() {
+		RecipeListStore.unlisten(this.onChange);
+	}
 
-  componentDidUpdate(prevProps) {
-    if (!isEqual(prevProps.params, this.props.params)) {
-      RecipeListActions.getRecipes(this.props.params);
-    }
-  }
+	componentDidUpdate(prevProps) {
+		if (!isEqual(prevProps.params, this.props.params)) {
+			RecipeListActions.getRecipes(this.props.params);
+		}
+	}
 
-  onChange(state) {
-    this.setState(state);
-  }
+	onChange(state) {
+		this.setState(state);
+	}
 
-  render() {
-    let recipeList = '';
+	render() {
+		let recipeList = '';
 
 							/*this.state.characters.map((character, index) => {
 							return (
@@ -62,7 +62,7 @@ class RecipeList extends React.Component {
       );
     }); */
 
-    return (
+		return (
       <div className='container'>
         <div className='list-group'>
 					<div key={1} className='list-group-item animated fadeIn'>
@@ -112,8 +112,8 @@ class RecipeList extends React.Component {
 					</div>
         </div>
       </div>
-    );
-  }
+		);
+	}
 }
 
 export default RecipeList;

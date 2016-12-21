@@ -7,18 +7,18 @@ import AuthConstants from '../constants/AuthConstants';
 
 export default {
 
-  logUserIn: (profile, token) => {
-    alt.dispatch({
-      actionType: AuthConstants.LOGIN_USER,
-      profile: profile,
-      token: token
-    });
-  },
+	logUserIn: (profile, token) => {
+		alt.dispatch({
+			actionType: AuthConstants.LOGIN_USER,
+			profile: profile,
+			token: token
+		});
+	},
 
-  logUserOut: () => {
-    alt.dispatch({
-      actionType: AuthConstants.LOGOUT_USER
-    });
-  }
+	logUserOut: () => {
+		alt.dispatch({
+			actionType: AuthConstants.LOGOUT_USER
+		});
+	}
 
-}
+};

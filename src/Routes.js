@@ -8,8 +8,8 @@ import App from './components/App';
 import Home from './components/Home';
 import Recipe from './components/Recipe';
 import RecipeList from './components/RecipeList';
-import AddRecipe from './components/AddRecipe'
-import MealPlanner from './components/MealPlanner'
+import AddRecipe from './components/AddRecipe';
+import MealPlanner from './components/MealPlanner';
 
 export default (
 	<Router history={browserHistory}>
@@ -20,10 +20,10 @@ export default (
 			<Route path='/recipes/:id' component={Recipe} />
 			<Route path='/recipes' component={RecipeList} />
 			<Route path=':cuisine' component={RecipeList}>
-	      <Route path=':mainIngredient' component={RecipeList}>
-	        <Route path=':mealType' component={RecipeList} />
-	      </Route>
-	    </Route>
+				<Route path=':mainIngredient' component={RecipeList}>
+					<Route path=':mealType' component={RecipeList} />
+				</Route>
+			</Route>
 		</Route>
 	</Router>
 );

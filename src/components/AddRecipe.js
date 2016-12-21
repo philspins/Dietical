@@ -15,59 +15,59 @@ import AddRecipeStore from '../stores/AddRecipeStore';
 import AddRecipeActions from '../actions/AddRecipeActions';
 
 class AddRecipe extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = AddRecipeStore.getState();
-    this.onChange = this.onChange.bind(this);
-  }
+	constructor(props) {
+		super(props);
+		this.state = AddRecipeStore.getState();
+		this.onChange = this.onChange.bind(this);
+	}
 
-  componentDidMount() {
-    AddRecipeStore.listen(this.onChange);
-  }
+	componentDidMount() {
+		AddRecipeStore.listen(this.onChange);
+	}
 
-  componentWillUnmount() {
-    AddRecipeStore.unlisten(this.onChange);
-  }
+	componentWillUnmount() {
+		AddRecipeStore.unlisten(this.onChange);
+	}
 
-  onChange(state) {
-    this.setState(state);
-  }
+	onChange(state) {
+		this.setState(state);
+	}
 
-  handleSubmit(event) {
-    event.preventDefault();
+	handleSubmit(event) {
+		event.preventDefault();
 
-    var name = this.state.name.trim();
-    var cuisine = this.state.cuisine;
-    var mainIngredient = this.state.mainIngredient;
-    var mealType = this.state.mealType;
+		var name = this.state.name.trim();
+		var cuisine = this.state.cuisine;
+		var mainIngredient = this.state.mainIngredient;
+		var mealType = this.state.mealType;
 
-    if (!name) {
-      AddRecipeActions.invalidName();
-      this.refs.nameTextField.getDOMNode().focus();
-    }
+		if (!name) {
+			AddRecipeActions.invalidName();
+			this.refs.nameTextField.getDOMNode().focus();
+		}
 
-    if (!cuisine) {
-      AddRecipeActions.invalidCuisine();
-      this.refs.cuisineDropdownField.getDOMNode().focus();
-    }
+		if (!cuisine) {
+			AddRecipeActions.invalidCuisine();
+			this.refs.cuisineDropdownField.getDOMNode().focus();
+		}
 
-    if (!mainIngredient) {
-      AddRecipeActions.invalidMainIngredient();
-      this.refs.mainIngredientDropdownField.getDOMNode().focus();
-    }
+		if (!mainIngredient) {
+			AddRecipeActions.invalidMainIngredient();
+			this.refs.mainIngredientDropdownField.getDOMNode().focus();
+		}
 
-    if (!mealType) {
-      AddRecipeActions.invalidMealType();
-      this.refs.mealTypeDropdownField.getDOMNode().focus();
-    }
+		if (!mealType) {
+			AddRecipeActions.invalidMealType();
+			this.refs.mealTypeDropdownField.getDOMNode().focus();
+		}
 
-    if (name && cuisine && mainIngredient && mealType) {
-      AddRecipeActions.addRecipe(name, cuisine, mainIngredient, mealType);
-    }
-  }
+		if (name && cuisine && mainIngredient && mealType) {
+			AddRecipeActions.addRecipe(name, cuisine, mainIngredient, mealType);
+		}
+	}
 
-  render() {
-    return (
+	render() {
+		return (
 			<form>
 				<Grid>
 					<Row flipInX animated>

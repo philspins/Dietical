@@ -15,26 +15,26 @@ import HeaderActions from '../actions/HeaderActions';
 
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = HeaderStore.getState();
-    this.onChange = this.onChange.bind(this);
-  }
+	constructor(props) {
+		super(props);
+		this.state = HeaderStore.getState();
+		this.onChange = this.onChange.bind(this);
+	}
 
-  componentDidMount() {
-    HeaderStore.listen(this.onChange);
-  }
+	componentDidMount() {
+		HeaderStore.listen(this.onChange);
+	}
 
-  componentWillUnmount() {
-    HeaderStore.unlisten(this.onChange);
-  }
+	componentWillUnmount() {
+		HeaderStore.unlisten(this.onChange);
+	}
 
-  onChange(state) {
-    this.setState(state);
-  }
+	onChange(state) {
+		this.setState(state);
+	}
 
-  render() {
-    return (
+	render() {
+		return (
         <Navbar staticTop>
 					<Navbar.Header>
 						<Navbar.Brand>
@@ -118,8 +118,8 @@ class Header extends React.Component {
 						<NavItem eventKey={2} href="#">Sign Out</NavItem>
 					</Nav>
 				</Navbar>
-    );
-  }
+		);
+	}
 }
 
 export default Header;
