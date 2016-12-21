@@ -1,3 +1,6 @@
+// src/actions/RecipeActions.js
+/*eslint no-console:0 */
+
 import alt from '../utils/Dispatcher';
 import $ from 'jquery';
 

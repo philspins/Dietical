@@ -1,4 +1,5 @@
 // app/utils/AuthService.js
+/*eslint no-console:0 */
 
 import Auth0Lock from 'auth0-lock';
 import {browserHistory} from 'react-router';

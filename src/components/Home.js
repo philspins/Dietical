@@ -1,15 +1,19 @@
+// src/components/Home.js
+/*eslint no-console:0 */
+
 import React from 'react'
 import {Jumbotron} from 'react-bootstrap'
+
 import HomeStore from '../stores/HomeStore'
 import HomeActions from '../actions/HomeActions';
 
 class Home extends React.Component {
 
-  	constructor(props) {
-    	super(props);
-    	this.state = HomeStore.getState();
-    	this.onChange = this.onChange.bind(this);
-  	}
+	constructor(props) {
+  	super(props);
+  	this.state = HomeStore.getState();
+  	this.onChange = this.onChange.bind(this);
+	}
 
 	componentDidMount() {
 		HomeStore.listen(this.onChange);

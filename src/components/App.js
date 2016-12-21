@@ -1,3 +1,6 @@
+// src/components/App.js
+/*eslint no-console:0 */
+
 require('normalize.css/normalize.css');
 require('../styles/App.css');
 

@@ -1,6 +1,10 @@
+// src/components/RecipeList.js
+/*eslint no-console:0 */
+
 import React from 'react';
 import {Link} from 'react-router';
 import {isEqual} from 'underscore';
+
 import RecipeListStore from '../stores/RecipeListStore';
 import RecipeListActions from '../actions/RecipeListActions';
 

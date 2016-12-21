@@ -1,10 +1,15 @@
+// src/components/Footer.js
+/*eslint no-console:0 */
+
 import React from 'react';
-import FooterStore from '../stores/FooterStore'
-import FooterActions from '../actions/FooterActions';
 import {Grid,
 				Row,
 				Col
         } from 'react-bootstrap';
+
+import FooterStore from '../stores/FooterStore'
+import FooterActions from '../actions/FooterActions';
+
 
 class MyFooter extends React.Component {
 	constructor(props) {

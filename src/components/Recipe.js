@@ -1,3 +1,6 @@
+// src/components/Recipe.js
+/*eslint no-console:0 */
+
 import React from 'react';
 import $ from 'jquery';
 import magnific from 'magnific-popup';

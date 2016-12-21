@@ -1,5 +1,9 @@
+// src/Routes.js
+/*eslint no-console:0 */
+
 import React from 'react';
 import {Router, Route, browserHistory} from 'react-router';
+
 import App from './components/App';
 import Home from './components/Home';
 import Recipe from './components/Recipe';

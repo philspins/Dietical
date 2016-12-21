@@ -1,3 +1,6 @@
+// src/components/AddRecipe.js
+/*eslint no-console:0 */
+
 import React from 'react';
 import {FormGroup,
         FormControl,

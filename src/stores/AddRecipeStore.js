@@ -1,3 +1,6 @@
+// src/stores/AddRecipeStore.js
+/*eslint no-console:0 */
+
 import alt from '../utils/Dispatcher';
 import AddRecipeActions from '../actions/AddRecipeActions';
 

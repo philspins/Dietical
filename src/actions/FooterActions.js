@@ -1,3 +1,6 @@
+// src/actions/FooterActions.js
+/*eslint no-console:0 */
+
 import alt from '../utils/Dispatcher';
 
 class FooterActions {
