@@ -48,11 +48,11 @@ class CalendarNav extends React.Component {
 
 	render() {
 		var week = this.state.currentWeek.map((day) => {
+			//key={day.valueOf()}
 			return(
-				<ListGroupItem
-					key={day.valueOf()}
-					componentClass="li"
-					bsClass={moment(day).date() == moment(this.state.currentDate).date() ? "calendar_item active_date" : "calendar_item"}
+				<li
+					className={moment(day).date() == moment(this.state.currentDate).date() ? "calendar_item active_date" : "calendar_item"}
+					onClick={CalendarNavActions.selectDate.bind(this, day)}
 				>
 					<div className="calendar_preview_header">
 						<div className="calendar_preview_title">
@@ -65,7 +65,7 @@ class CalendarNav extends React.Component {
 					<div className="calendar_diet_preview">
 						{"test"}
 					</div>
-				</ListGroupItem>
+				</li>
 			);
 		});
 
@@ -75,7 +75,7 @@ class CalendarNav extends React.Component {
 					<Col md={12}>
 						<ButtonGroup bsClass="calendar_nav_buttons btn-group btn-group-justified">
 							<ButtonGroup>
-								<Button bsClass="btn btn-default previous_date_button" onClick={CalendarNavActions.movePrevDay}>
+								<Button bsClass="btn btn-default previous_date_button" onClick={CalendarNavActions.movePrevDay.bind(this)}>
 									<Glyphicon glyph="chevron-left" />
 								</Button>
 							</ButtonGroup>
@@ -86,7 +86,7 @@ class CalendarNav extends React.Component {
 								</Button>
 							</ButtonGroup>
 							<ButtonGroup>
-								<Button bsClass="btn btn-default next_date_button" onClick={CalendarNavActions.moveNextDay}>
+								<Button bsClass="btn btn-default next_date_button" onClick={CalendarNavActions.moveNextDay.bind(this)}>
 									<Glyphicon glyph="chevron-right" />
 								</Button>
 							</ButtonGroup>

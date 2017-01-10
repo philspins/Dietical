@@ -21,8 +21,6 @@ class CalendarNavActions {
 	selectDate(newDate) {
 		return newDate;
 	}
-
-
 }
 
 export default alt.createActions(CalendarNavActions);
