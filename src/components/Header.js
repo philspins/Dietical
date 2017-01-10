@@ -1,17 +1,17 @@
 // src/components/Header.js
 /*eslint no-console:0 */
 
-import React from 'react';
-import {LinkContainer} from 'react-router-bootstrap';
+import React from "react";
+import {LinkContainer} from "react-router-bootstrap";
 import {Navbar,
         Nav,
         NavItem,
         NavDropdown,
         MenuItem,
-				Image} from 'react-bootstrap';
+				Image} from "react-bootstrap";
 
-import HeaderStore from '../stores/HeaderStore';
-import HeaderActions from '../actions/HeaderActions';
+import HeaderStore from "../stores/HeaderStore";
+import HeaderActions from "../actions/HeaderActions";
 
 
 class Header extends React.Component {
@@ -39,7 +39,7 @@ class Header extends React.Component {
 					<Navbar.Header>
 						<Navbar.Brand>
 							<LinkContainer to="/">
-								<a href="#"><Image src="http://dev.subversivelabs.ca/favicon.png" />&nbsp;&nbsp;Nourish Me!</a>
+								<a href="#"><Image src="/images/favicon.png" />&nbsp;&nbsp;Nourish Me!</a>
 							</LinkContainer>
 						</Navbar.Brand>
 					</Navbar.Header>

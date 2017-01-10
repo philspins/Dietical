@@ -1,14 +1,14 @@
 // src/actions/HeaderActions.js
 /*eslint no-console:0 */
 
-import alt from '../utils/Dispatcher';
+import alt from "../utils/Dispatcher";
 
 class HeaderActions {
-	constructor() {
+	/*constructor() {
 		this.generateActions(
-			'action'
+      "action"
     );
-	}
+	}*/
 }
 
 export default alt.createActions(HeaderActions);

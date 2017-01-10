@@ -1,14 +1,14 @@
 // src/actions/MealPlannerActions.js
 /*eslint no-console:0 */
 
-import alt from '../utils/Dispatcher';
+import alt from "../utils/Dispatcher";
 
 class MealPlannerActions {
-	constructor() {
+	/*constructor() {
 		this.generateActions(
-			'action'
+      "action"
     );
-	}
+	}*/
 }
 
 export default alt.createActions(MealPlannerActions);

@@ -1,20 +1,20 @@
 // src/actions/RecipeListActions.js
 /*eslint no-console:0 */
 
-import alt from '../utils/Dispatcher';
-import $ from 'jquery';
+import alt from "../utils/Dispatcher";
+import $ from "jquery";
 
 class RecipeListActions {
 	constructor() {
 		this.generateActions(
-      'getRecipesSuccess',
-      'getRecipesFail'
+      "getRecipesSuccess",
+      "getRecipesFail"
 
     );
 	}
 
 	getRecipes(payload) {
-		let url = '/api/recipes/top';
+		let url = "/api/recipes/top";
 		let params = {
 			cuisine: payload.cuisine,
 			mainIngredient: payload.mainIngredient,

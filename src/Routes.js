@@ -1,15 +1,15 @@
 // src/Routes.js
 /*eslint no-console:0 */
 
-import React from 'react';
-import {Router, Route, browserHistory} from 'react-router';
+import React from "react";
+import {Router, Route, browserHistory} from "react-router";
 
-import App from './components/App';
-import Home from './components/Home';
-import Recipe from './components/Recipe';
-import RecipeList from './components/RecipeList';
-import AddRecipe from './components/AddRecipe';
-import MealPlanner from './components/MealPlanner';
+import App from "./components/App";
+import Home from "./components/Home";
+import Recipe from "./components/Recipe";
+import RecipeList from "./components/RecipeList";
+import AddRecipe from "./components/AddRecipe";
+import MealPlanner from "./components/MealPlanner";
 
 export default (
 	<Router history={browserHistory}>

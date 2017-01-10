@@ -1,12 +1,12 @@
 // src/components/RecipeList.js
 /*eslint no-console:0 */
 
-import React from 'react';
-import {Link} from 'react-router';
-import {isEqual} from 'underscore';
+import React from "react";
+import {Link} from "react-router";
+import {isEqual} from "underscore";
 
-import RecipeListStore from '../stores/RecipeListStore';
-import RecipeListActions from '../actions/RecipeListActions';
+import RecipeListStore from "../stores/RecipeListStore";
+import RecipeListActions from "../actions/RecipeListActions";
 
 class RecipeList extends React.Component {
 	constructor(props) {
@@ -35,7 +35,7 @@ class RecipeList extends React.Component {
 	}
 
 	render() {
-		let recipeList = '';
+		let recipeList = "";
 
 							/*this.state.characters.map((character, index) => {
 							return (
@@ -69,13 +69,13 @@ class RecipeList extends React.Component {
 						<div className='media'>
 							<span className='position pull-left'>{1}</span>
 							<div className='pull-left thumb-lg'>
-								<Link to={'/recipes/' + 1}>
+								<Link to={"/recipes/" + 1}>
 									<img className='media-object' src='http://images.media-allrecipes.com/userphotos/560x315/1126199.jpg' />
 								</Link>
 							</div>
 							<div className='media-body'>
 								<h4 className='media-heading'>
-									<Link to={'/recipes/' + 1}>Best Pork Chop Marinade</Link>
+									<Link to={"/recipes/" + 1}>Best Pork Chop Marinade</Link>
 								</h4>
 							</div>
 						</div>
@@ -84,13 +84,13 @@ class RecipeList extends React.Component {
 						<div className='media'>
 							<span className='position pull-left'>{2}</span>
 							<div className='pull-left thumb-lg'>
-								<Link to={'/recipes/' + 2}>
+								<Link to={"/recipes/" + 2}>
 									<img className='media-object' src='http://images.media-allrecipes.com/userphotos/560x315/1010419.jpg' />
 								</Link>
 							</div>
 							<div className='media-body'>
 								<h4 className='media-heading'>
-									<Link to={'/recipes/' + 2}>Best Parmesan Chicken Bake</Link>
+									<Link to={"/recipes/" + 2}>Best Parmesan Chicken Bake</Link>
 								</h4>
 							</div>
 						</div>
@@ -99,13 +99,13 @@ class RecipeList extends React.Component {
 						<div className='media'>
 							<span className='position pull-left'>{3}</span>
 							<div className='pull-left thumb-lg'>
-								<Link to={'/recipes/' + 3}>
+								<Link to={"/recipes/" + 3}>
 									<img className='media-object' src='http://images.media-allrecipes.com/userphotos/250x250/129405.jpg' />
 								</Link>
 							</div>
 							<div className='media-body'>
 								<h4 className='media-heading'>
-									<Link to={'/recipes/' + 3}>Homemade Mac and Cheese</Link>
+									<Link to={"/recipes/" + 3}>Homemade Mac and Cheese</Link>
 								</h4>
 							</div>
 						</div>

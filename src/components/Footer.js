@@ -1,14 +1,14 @@
 // src/components/Footer.js
 /*eslint no-console:0 */
 
-import React from 'react';
+import React from "react";
 import {Grid,
 				Row,
-				Col
-        } from 'react-bootstrap';
+				Col,
+        Glyphicon} from "react-bootstrap";
 
-import FooterStore from '../stores/FooterStore';
-import FooterActions from '../actions/FooterActions';
+import FooterStore from "../stores/FooterStore";
+import FooterActions from "../actions/FooterActions";
 
 
 class MyFooter extends React.Component {
@@ -32,25 +32,9 @@ class MyFooter extends React.Component {
 
 	render() {
 		return (
-			<footer>
-				<Grid>
-					<Row>
-						<Col sm={5}>
-							<span>
-								<h3 className='lead'><strong>Information</strong> and <strong>Copyright</strong></h3>
-								<p>
-									Powered by <strong>Node.js</strong>, <strong>React</strong>,
-									<strong> React-Bootstrap</strong> and <strong>MySQL</strong> with Flux architecture
-									via <strong>Alt</strong>.
-								</p>
-								<p>You may view the <a href='https://github.com/philspins/NourishMe'>Source Code</a> behind this project on GitHub.</p>
-								<p>Distributed under the MIT software license.  Copyright © 2016 Philip Craig.</p>
-							</span>
-						</Col>
-					</Row>
-				</Grid>
+			<footer className="block-center">
+				<Glyphicon glyph="info-sign" /> You may view the <a href='https://github.com/philspins/NourishMe'>Source Code</a> behind this project on GitHub. Copyright © 2016 Philip Craig.
 			</footer>
-
 		);
 	}
 }

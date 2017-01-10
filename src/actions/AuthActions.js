@@ -1,9 +1,9 @@
 // src/actions/AuthActions.js
 /*eslint no-console:0 */
 
-import AppDispatcher from '../dispatcher/AppDispatcher';
-import alt from '../utils/Dispatcher';
-import AuthConstants from '../constants/AuthConstants';
+import AppDispatcher from "../dispatcher/AppDispatcher";
+import alt from "../utils/Dispatcher";
+import AuthConstants from "../constants/AuthConstants";
 
 export default {
 

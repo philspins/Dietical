@@ -1,12 +1,14 @@
 // src/components/App.js
 /*eslint no-console:0 */
 
-require('normalize.css/normalize.css');
-require('../styles/App.css');
+require("normalize.css/normalize.css");
+require("../styles/App.css");
+//require("../styles/toastr.min.css");
 
-import React from 'react';
-import Header from './Header';
-import MyFooter from './Footer';
+import React from "react";
+
+import Header from "./Header";
+import MyFooter from "./Footer";
 
 
 class App extends React.Component {

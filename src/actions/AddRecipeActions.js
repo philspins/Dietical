@@ -1,29 +1,29 @@
 // src/actions/AddRecipeActions.js
 /*eslint no-console:0 */
 
-import $ from 'jquery';
-import alt from '../utils/Dispatcher';
+import $ from "jquery";
+import alt from "../utils/Dispatcher";
 
 class AddRecipeActions {
 	constructor() {
 		this.generateActions(
-      'addRecipeSuccess',
-      'addRecipeFail',
-      'updateName',
-      'updateCuisine',
-      'updateMainIngredient',
-      'updateMealType',
-      'invalidName',
-      'invalidCuisine',
-      'invalidMainIngredient',
-      'invalidMealType'
+      "addRecipeSuccess",
+      "addRecipeFail",
+      "updateName",
+      "updateCuisine",
+      "updateMainIngredient",
+      "updateMealType",
+      "invalidName",
+      "invalidCuisine",
+      "invalidMainIngredient",
+      "invalidMealType"
     );
 	}
 
 	addRecipe(name, cuisine, mainIngredient, mealType) {
 		$.ajax({
-			type: 'POST',
-			url: '/api/recipes',
+			type: "POST",
+			url: "/api/recipes",
 			data: {
 				name: name,
 				cuisine: cuisine,

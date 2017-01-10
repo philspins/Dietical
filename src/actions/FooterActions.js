@@ -1,14 +1,14 @@
 // src/actions/FooterActions.js
 /*eslint no-console:0 */
 
-import alt from '../utils/Dispatcher';
+import alt from "../utils/Dispatcher";
 
 class FooterActions {
-	constructor() {
+	/*constructor() {
 		this.generateActions(
-      'action'
+      "action"
     );
-	}
+	}*/
 }
 
 export default alt.createActions(FooterActions);

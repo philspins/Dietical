@@ -1,8 +1,8 @@
 // src/stores/FooterStore.js
 /*eslint no-console:0 */
 
-import alt from '../utils/Dispatcher';
-import FooterActions from '../actions/FooterActions';
+import alt from "../utils/Dispatcher";
+import FooterActions from "../actions/FooterActions";
 
 class FooterStore {
 	constructor() {

@@ -1581,14 +1581,14 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1173px;
   }
 }
-@media (min-width: 1600px) {
+/*@media (min-width: 1600px) {
   .container {
     width: 1570px;
   }
-}
+}*/
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -7308,6 +7308,9 @@ footer {
   width: 100%;
   color: #fff;
   background-color: #3b3f51;
+  padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
 }
 footer a {
   color: #fff;
@@ -7339,85 +7342,6 @@ footer .thumb-md:hover {
 .input-group-btn:last-child > .btn-group {
   margin-left: 0;
   border-left: 0;
-}
-/*
- * Character profile page styles.
- */
-.profile {
-  color: #fff;
-  background-size: cover;
-}
-.profile.amarr {
-  background-image: url('/img/amarr_bg.jpg');
-}
-.profile.caldari {
-  background-image: url('/img/caldari_bg.jpg');
-}
-.profile.gallente {
-  background-image: url('/img/gallente_bg.jpg');
-}
-.profile.minmatar {
-  background-image: url('/img/minmatar_bg.jpg');
-}
-.profile footer {
-  color: #fff;
-  background: transparent;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-}
-.profile .navbar-default {
-  background-color: transparent;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: none;
-}
-.profile .navbar-default .navbar-brand {
-  color: #fff;
-}
-.profile .form-control {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.15);
-  border-right: 0;
-}
-.profile .form-control:focus {
-  border-color: rgba(255, 255, 255, 0.3);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.055), 0 0 8px rgba(255, 255, 255, 0.3);
-}
-.profile .input-group-btn:last-child > .btn {
-  margin-left: 0;
-}
-.profile .btn-default {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.15);
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-}
-.profile .btn-default:focus,
-.profile .btn-default:hover {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.profile .tri {
-  border-top-color: #fff;
-}
-.profile .tri.invert {
-  border-bottom-color: #fff;
-}
-.profile .navbar-default .navbar-nav > .open > a,
-.profile .navbar-default .navbar-nav > .open > a:hover,
-.profile .navbar-default .navbar-nav > .open > a:focus {
-  background-color: rgba(255, 255, 255, 0.15);
-}
-.profile .navbar-default .navbar-nav > li > a:hover,
-.profile .navbar-default .navbar-nav > li > a:focus {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.15);
-}
-.profile .navbar-default .navbar-nav > li > a {
-  color: #fff;
-}
-.profile footer .col-sm-5 {
-  border-right: 1px solid rgba(255, 255, 255, 0.15);
 }
 .table {
   font-size: inherit;

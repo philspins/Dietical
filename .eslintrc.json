@@ -17,11 +17,11 @@
     "rules": {
         "indent": ["error", "tab"],
         "linebreak-style": ["error", "unix"],
-        "quotes": ["error", "single"],
+        "quotes": ["error", "double"],
         "semi": ["error", "always"],
 				"no-unused-vars": 0,
 				"comma-dangle": 1,
-		    "no-undef": 1,
+		    "no-undef": 0,
 		    "global-strict": 0,
 		    "no-extra-semi": 1,
 		    "no-underscore-dangle": 0,

@@ -1,8 +1,8 @@
 // src/stores/HeaderStore.js
 /*eslint no-console:0 */
 
-import alt from '../utils/Dispatcher';
-import HeaderActions from '../actions/HeaderActions';
+import alt from "../utils/Dispatcher";
+import HeaderActions from "../actions/HeaderActions";
 
 class HeaderStore {
 	constructor() {

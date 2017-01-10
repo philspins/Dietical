@@ -1,11 +1,11 @@
 // src/components/Home.js
 /*eslint no-console:0 */
 
-import React from 'react';
-import {Jumbotron} from 'react-bootstrap';
+import React from "react";
+import {Jumbotron} from "react-bootstrap";
 
-import HomeStore from '../stores/HomeStore';
-import HomeActions from '../actions/HomeActions';
+import HomeStore from "../stores/HomeStore";
+import HomeActions from "../actions/HomeActions";
 
 class Home extends React.Component {
 

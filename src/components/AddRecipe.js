@@ -1,7 +1,7 @@
 // src/components/AddRecipe.js
 /*eslint no-console:0 */
 
-import React from 'react';
+import React from "react";
 import {FormGroup,
         FormControl,
 				ControlLabel,
@@ -9,10 +9,10 @@ import {FormGroup,
 				HelpBlock,
 				Grid,
 				Row,
-				Col} from 'react-bootstrap';
+				Col} from "react-bootstrap";
 
-import AddRecipeStore from '../stores/AddRecipeStore';
-import AddRecipeActions from '../actions/AddRecipeActions';
+import AddRecipeStore from "../stores/AddRecipeStore";
+import AddRecipeActions from "../actions/AddRecipeActions";
 
 class AddRecipe extends React.Component {
 	constructor(props) {

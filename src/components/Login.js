@@ -1,9 +1,9 @@
 // src/components/Login.js
 /*eslint no-console:0 */
 
-import React, {PropTypes as T} from 'react';
-import {ButtonToolbar, Button} from 'react-bootstrap';
-import AuthService from '../utils/AuthService';
+import React, {PropTypes as T} from "react";
+import {ButtonToolbar, Button} from "react-bootstrap";
+import AuthService from "../utils/AuthService";
 //import styles from './styles.module.css'
 
 export class Login extends React.Component {
