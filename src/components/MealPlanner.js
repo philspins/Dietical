@@ -46,10 +46,10 @@ class MealPlanner extends React.Component {
 		return (
 			<Grid className="calendar_navigation_box">
 				<CalendarNav />
-				
+
 				<Row>
 					<Col md={12}>
-						<Jumbotron>{moment(this.state.currentDate).format("LL")}</Jumbotron>
+						<h3>{moment(this.state.currentDate).format("dddd")}'s meal plan</h3>
 					</Col>
 				</Row>
 			</Grid>

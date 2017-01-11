@@ -100,6 +100,7 @@ class CalendarNav extends React.Component {
 								{week}
 							</ListGroup>
 						</ButtonGroup>
+						<Button>Jump to today</Button>
 					</Col>
 				</Row>
 			</Grid>

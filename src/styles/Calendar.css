@@ -35,6 +35,11 @@
 		padding-right: 0px;
 }
 
+.calendar_nav_buttons {
+    padding-left: 1px;
+}
+
+
 .previous_date_button {
 	margin-left: -2px;
 	border-top-left-radius: 4px;
@@ -88,6 +93,7 @@
     overflow: hidden;
     width: 100%;
     padding-bottom: 25px;
+		padding-left: 1px;
 }
 
 .date_carousel .calendar_list_elements {
@@ -109,6 +115,7 @@
     position: relative;
     border-bottom: 1px solid #ccc;
     border-right: 1px solid #ccc;
+		margin-left: 0px;
 		padding-top: 0px;
 		padding-bottom: 0px;
 		padding-left: 0px;
@@ -118,7 +125,14 @@
 .date_carousel .calendar_item:nth-of-type(1) {
     border-radius: 0 0 0 4px;
     border-left: 1px solid #ccc;
+}
 
+.date_carousel .calendar_item:nth-of-type(1):hover {
+	padding-left: 1px;
+}
+
+.date_carousel .calendar_item:nth-of-type(7) {
+		width: 129px;
 }
 
 .date_carousel .calendar_item:nth-of-type(9) {
@@ -140,12 +154,11 @@
 .calendar_item:hover {
     border: 1px solid #adadad;
     border-right: 2px solid #adadad;
-    padding-right: 0px;
     height: 100px;
 
-    -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.31), inset 0px -1px 3px 0px rgba(0, 0, 0, 0.05), inset 0px 1px 1px 0px rgba(255, 255, 255, 0.50);
-    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.31), inset 0px -1px 3px 0px rgba(0, 0, 0, 0.05), inset 0px 1px 1px 0px rgba(255, 255, 255, 0.50);
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.31), inset 0px -1px 3px 0px rgba(0, 0, 0, 0.05), inset 0px 1px 1px 0px rgba(255, 255, 255, 0.50);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.31), inset 0px 0px 3px 0px rgba(0, 0, 0, 0.05), inset 0px 1px 1px 0px rgba(255, 255, 255, 0.50);
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.31), inset 0px 0px 3px 0px rgba(0, 0, 0, 0.05), inset 0px 1px 1px 0px rgba(255, 255, 255, 0.50);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.31), inset 0px 0px 3px 0px rgba(0, 0, 0, 0.05), inset 0px 1px 1px 0px rgba(255, 255, 255, 0.50);
 
 }
 
