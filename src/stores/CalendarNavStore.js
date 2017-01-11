@@ -55,10 +55,10 @@ class CalendarNavStore {
 		let range = [];
 
 		try{
-			dat.setDate(dat.getDate() - 3);
+			dat.setDate(dat.getDate() - 4);
 			range.push(new Date(dat));
 
-			for(let i=1; i<=6; i++){
+			for(let i=1; i<=8; i++){
 				dat.setDate(dat.getDate() + 1);
 				range.push(new Date(dat));
 			}

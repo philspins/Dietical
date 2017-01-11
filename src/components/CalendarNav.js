@@ -48,9 +48,9 @@ class CalendarNav extends React.Component {
 
 	render() {
 		var week = this.state.currentWeek.map((day) => {
-			//key={day.valueOf()}
 			return(
 				<li
+					key={day.valueOf()}
 					className={moment(day).date() == moment(this.state.currentDate).date() ? "calendar_item active_date" : "calendar_item"}
 					onClick={CalendarNavActions.selectDate.bind(this, day)}
 				>

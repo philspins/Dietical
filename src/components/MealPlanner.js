@@ -2,27 +2,40 @@
 /*eslint no-console:0 */
 
 import React from "react";
+import {Grid,
+        Row,
+        Col,
+				Button,
+				ButtonGroup,
+				Glyphicon,
+				Image,
+				ListGroup,
+				ListGroupItem,
+				Jumbotron} from "react-bootstrap";
+import moment from "moment";
 
-//import WeekPicker from "./WeekPicker";
-//import WeekPicker2 from "./WeekPickerES6";
 import CalendarNav from "./CalendarNav";
 import MealPlannerStore from "../stores/MealPlannerStore";
 import MealPlannerActions from "../actions/MealPlannerActions";
+import CalendarNavStore from "../stores/CalendarNavStore";
 
 
 class MealPlanner extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = MealPlannerStore.getState();
+		this.state.navState = CalendarNavStore.getState();
 		this.onChange = this.onChange.bind(this);
 	}
 
 	componentDidMount() {
 		MealPlannerStore.listen(this.onChange);
+		CalendarNavStore.listen(this.onChange);
 	}
 
 	componentWillUnmount() {
 		MealPlannerStore.unlisten(this.onChange);
+		CalendarNavStore.unlisten(this.onChange);
 	}
 
 	onChange(state) {
@@ -31,7 +44,15 @@ class MealPlanner extends React.Component {
 
 	render() {
 		return (
-			<CalendarNav />
+			<Grid className="calendar_navigation_box">
+				<CalendarNav />
+				
+				<Row>
+					<Col md={12}>
+						<Jumbotron>{moment(this.state.currentDate).format("LL")}</Jumbotron>
+					</Col>
+				</Row>
+			</Grid>
 		);
 	}
 }
