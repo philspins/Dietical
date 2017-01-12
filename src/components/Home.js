@@ -2,7 +2,16 @@
 /*eslint no-console:0 */
 
 import React from "react";
-import {Jumbotron} from "react-bootstrap";
+import {Grid,
+        Row,
+        Col,
+				Button,
+				ButtonGroup,
+				Glyphicon,
+				Image,
+				ListGroup,
+				ListGroupItem,
+				Jumbotron} from "react-bootstrap";
 
 import HomeStore from "../stores/HomeStore";
 import HomeActions from "../actions/HomeActions";
@@ -29,11 +38,13 @@ class Home extends React.Component {
 
 	render() {
 		return (
-			<Jumbotron>
-				<h2>
-					<p>You are home.</p>
-				</h2>
-			</Jumbotron>
+			<Grid>
+				<Row>
+					<Col md={12}>
+						<h2>You are home.</h2>
+					</Col>
+				</Row>
+			</Grid>
 		);
 	}
 }

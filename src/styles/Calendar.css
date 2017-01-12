@@ -15,7 +15,6 @@
     -moz-box-shadow: inset 0 0 0px #000000;
     -webkit-box-shadow: inset 0 0 0px #000000;
     box-shadow: inset 0 0 0px #000000;
-
 }
 
 #cal_input {
@@ -38,7 +37,6 @@
 .calendar_nav_buttons {
     padding-left: 1px;
 }
-
 
 .previous_date_button {
 	margin-left: -2px;
@@ -159,7 +157,6 @@
     -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.31), inset 0px 0px 3px 0px rgba(0, 0, 0, 0.05), inset 0px 1px 1px 0px rgba(255, 255, 255, 0.50);
     -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.31), inset 0px 0px 3px 0px rgba(0, 0, 0, 0.05), inset 0px 1px 1px 0px rgba(255, 255, 255, 0.50);
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.31), inset 0px 0px 3px 0px rgba(0, 0, 0, 0.05), inset 0px 1px 1px 0px rgba(255, 255, 255, 0.50);
-
 }
 
 .calendar_item.active_date {
@@ -191,7 +188,7 @@
 .calendar_today_button {
     /*background-color: #dfe6fe !important;*/
     /*margin-left: 451px;*/
-    margin-top: -50px;
+    margin-top: -40px;
 }
 
 .calendar_preview_number {

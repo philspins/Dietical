@@ -1,0 +1,293 @@
+Item,Qty,Weight,Calories,Protein,Carbs,Fat,Fibre
+"Beef, ground, 90% lean",4 oz uncooked,113,199,22.7, -   ,11.3, -   
+"Beef, ground, 95% lean",4 oz uncooked,113,155,24.3, -   ,6, -   
+"Beef, round, top,  lean (select)",4 oz uncooked,113,146,26.1, -   ,3.8, -   
+"Beef, round tip, lean (select)",4 oz uncooked,113,138,24.2, -   ,3.8, -   
+"Beef, round, eye of, lean (select)",4 oz uncooked,113,134,25.2, -   ,3, -   
+"Beef, flank steak, lean (select)",4 oz uncooked,113,155,24.2, -   ,5.6, -   
+"Beef, sirloin, top, lean (select)",4 oz uncooked,113,144,25, -   ,4, -   
+"Beef, tenderloin (filet)",4 oz uncooked,113,167,25, -   ,6.7, -   
+"Buffalo (bison) steak, top round",4 oz uncooked,113,138,26.3, -   ,2.7, -   
+"Buffalo (bison) steak, top sirloin",4 oz uncooked,113,128,24.2, -   ,2.7, -   
+"Chicken breast, light meat, skinless, 99% lean",4 oz uncooked,113,110,26, -   ,1, -   
+"Chicken breast, canned",4 oz,113,100,18, -   ,2, -   
+"Chicken breast, ground, lean",4 oz uncooked,113,100,24, -   ,0.5, -   
+"Clams, raw",1/2 cup (4 oz),113,84,15,3,1, - 
+"Crab, fresh, raw (Dungeness, U.S. King or Stone)",4 oz uncooked,113,95,21, - ,1, - 
+Crawfish,4 oz raw meat only,113,87,18, - ,1, - 
+"Egg whites, liquid",1 cup (8.6 oz),244,120,26,1, - , - 
+"Egg whites, large",6,198,102,21,2, - , - 
+"Egg, whole, large",1,50,75,6,1,5, - 
+Elk (game meat),4 oz uncooked,113,125,26, - ,2, - 
+"Fish, Bass, Striped",4 oz uncooked,113,110,20, - ,3, - 
+"Fish, Catfish",4 oz uncooked,113,108,19, - ,3, - 
+"Fish, Cod, Pacific",4 oz uncooked,113,93,20, - ,1, - 
+"Fish, Flounder (flatfish)",4 oz uncooked,113,104,21, - ,1, - 
+"Fish, Halibut, Pacific",4 oz uncooked,113,124,24, - ,3, - 
+"Fish, Mackerel,  Atlantic",4 oz uncooked,113,230,21, - ,16, - 
+"Fish, Mackerel, Pacific (Jack)",4 oz uncooked,113,179,23, - ,9, - 
+"Fish, Mackerel, canned in olive oil",1 can (3.9 oz),110,290,24, - ,22, - 
+"Fish, Mahi-mahi, U.S.",4 oz uncooked,113,97,21, - ,1, - 
+"Fish, Pollack",4 oz uncooked,113,104,22, - ,1, - 
+"Fish, Tuna, canned in water, chunk light",4 oz,113,120,26, - ,1, - 
+"Fish, Tuna, canned in water, albacore",4 oz,113,140,26, - ,2, - 
+"Fish, Tuna, Yellowfin (tuna steak)",4 oz uncooked,113,123,27, - ,1, - 
+"Fish, Rainbow trout",4 oz uncooked,113,135,23, - ,4, - 
+"Fish, Salmon (wild)",4 oz uncooked,113,206,29, - ,9, - 
+"Fish, Tilapia",4  oz uncooked,113,110,23, - ,2, - 
+"Lamb, loin",4 oz roasted,113,217,32, - ,9, - 
+Lobster,4 oz uncooked,113,102,21,1,1, - 
+Mussels,4 oz raw,113,98,14,4,3, - 
+Pork tenderloin,4 oz uncooked,113,123,24, - ,3, - 
+Prawns,4 oz raw,113,119,23,1,2, - 
+Ostrich steak,4 oz uncooked,113,135,28, - ,4, - 
+"Oysters, Pacific",4 oz raw,113,92,11,6,3, - 
+"Protein powder, casein (a milk protein)",1 scoop,31,110,23,3,1,1
+"Protein powder, hemp (vegetarian)",1 scoop,31,110,23,3,1,1
+"Protein powder, soy (vegetarian)",1 scoop,31,120,25,2,2, - 
+"Protein powder, whey (a milk protein)",1 scoop,24,90,18,2,2, - 
+Scallops,4 oz raw,113,100,19,3,1, - 
+"Sardines (herring), canned in water",1 can (3.2 oz),91,150,19, - ,8, - 
+"Sardines (herring), canned in olive oil",1 can (3.2 oz),91,191,23, - ,11, - 
+"Salmon, wild Alaskan",4 oz uncooked,113,206,29, - ,9, - 
+Salmon burgers,1 burger (3.2 oz),91,80,18,1,0,1
+"Salmon, canned, pink",4 oz,113,158,17, - ,7, - 
+Shrimp,4 oz,113,120,23,1,2, - 
+Squid,4 oz raw,113,104,18,4,2, - 
+Tempeh (vegetarian protein),1/2 cup (2.9 oz),82,160,15,8,9,3
+"Tofu, firm, raw (vegetarian protein)",2.9 oz raw,117,117,13,4,7, - 
+"Turkey Breast, skinless",4 oz uncooked,113,178,34, - ,4, - 
+"Turkey, ground 99% lean",4 oz uncooked,113,120,28, - ,1, - 
+Venison steak (deer meat),4 oz uncooked,113,136,26, - ,3, - 
+Cellulor whey protein,1 scoop,33,120,25,3,2, - 
+"Beans, Black, canned",1/2 cup (4.6 oz),130,100,7,20,,8
+"Beans, Kidney, canned",1/2 cup (4.5 oz),127,110,7,20,1,8
+"Beans, Garbanzo (chickpeas), canned",1/2 cup (4.6 oz),130,120,7,19,2,5
+"Beans, Navy, canned",1/2 cup (4.6 oz),130,110,7,20,1,7
+"Beans, Pinto, canned",1/2 cup (4.2 oz),119,100,6,18, - ,6
+"Black eye peas, canned or frozen",1/2 cup (4.6 oz),130,90,6,16,1,4
+Cassava (Yucca root),1/2 cup (3.5 oz),99,165,1,39,0,2
+"Chickpeas (Garbanzos), canned",1/2 cup (4.6 oz),130,120,7,19,2,5
+"Corn, canned",1/2 cup (5.4 oz),153,70,2,18,1,3
+Lentils,1/2 cup cooked (3.5 oz),99,115,9,20, - ,8
+"Lima beans, canned",1/2 cup (4.5 oz),127,120,7,23,1,8
+"Oatmeal, steel-cut (no sugar added)",1/4 cup dry (1.4 oz),40,150,5,27,3,4
+"Oatmeal, old-fashioned (no sugar added)",1/2 cup dry (1.4 oz),40,150,5,27,3,4
+"Peas, split, green, dried",1/4 cup (1.6 oz),45,160,12,24,1,4
+Plantains,1/2 med (3.9 oz),110,180, - ,22, - ,5
+"Potato, white",1 lg. uncooked (7 oz),198,160,4,36,0,3
+"Potato, sweet",1 med uncooked (6 oz),170,136,2,32,0,4
+"Pumpkin, canned",1 can (15 oz),425,174,4,35, - ,14
+"Rice, brown, long grain, dry",1/2 cup dry (3.3 oz),94,320,8,64,3,4
+"Rice, brown, long grain, cooked",1 cup cooked (6.9 oz),195,216,5,45,2,4
+"Rice, brown, basmati, dry",1/2 cup dry (3.3 oz),92,320,8,64,3,4
+"Rice, brown, basmati, cooked",1 cup (6.9 oz),195,216,5,45,2,4
+"Rice, wild, dry",1/4 cup (2.8 oz),79,160,6,34,1,3
+"Rice, wild, cooked",1 cup (5.8 oz),164,166,7,35,1,2
+"Squash, raw, winter, (acorn, butternut)",1 cup cubed (4.9 oz),138,56,1,15,0,2
+Yam,1 med uncooked (5 oz),141,180,2,40,0,6
+"Milk, skim",1 cup (8 fl oz),-,90,8,12, - , - 
+"Milk, 1% low fat",1 cup (8 fl oz),-,100,8,11,2, - 
+"Milk, 2% low fat",1 cup (8 fl oz),-,121,8,12,5, - 
+"Milk, soy, light (dairy substitute; contains sucrose)",1 cup (8 fl oz),,100,7,8,4,1
+"Milk, soy, nonfat (dairy substitute; contains sucrose)",1 cup (8 fl oz),,70,6,10, - , - 
+"Milk, soy, unsweetened (dairy substitute)",1 cup (8 fl oz),,90,7,5,4,1
+"Cheese, American, non fat",2 slices (2 oz),56,60,10,4, - , - 
+"Cheese, cheddar, non fat, shredded",1/2 cup (2 oz),56,90,16,4, - , - 
+"Cheese, cheddar, low fat, block",2 inch cube (2 oz),56,120,18,1,3, - 
+"Cheese, feta low fat",2 oz,56,120,12, - ,8, - 
+"Cheese, feta non fat",2 oz,56,60,12,4, - , - 
+"Cheese, mozzarella, non fat, shredded",1/2 cup (2 oz),56,80,18,2, - , - 
+"Cheese, mozzarella, shredded low fat (part skim)",1/2 cup (2 oz),56,160,16,2,9, - 
+"Cheese, Parmesan, non fat",2 tbsp (0.4 oz),11,25,3,3, - , - 
+"Cheese, Swiss, low fat",2 slices (2 oz),56,100,16,2,3, - 
+"Cheese, Swiss, non fat slices",2 slices (2 oz),56,81,14,5, - , - 
+"Cream cheese, non fat",2 tbsp (1.2 oz),33,30,4,2, - , - 
+"Cottage cheese, nonfat",1/2 cup (4 oz),113,100,16,8, - , - 
+"Cottage cheese, 2% low fat",1/2 cup (4 oz),113,102,16,4,2, - 
+"Cottage cheese, 1% low fat",1/2 cup (4 oz),113,100,18,5,1, - 
+Sour cream low fat,2 tbsp (1.1 oz),31,31,1,3,2, - 
+"Sour cream, non fat",2 tbsp (1.1 oz),31,25,2,4,, - 
+"Yogurt, plain, nonfat",1 yogurt (8 oz),226,110,10,18, - , - 
+"Yogurt, plain, 1% low fat",1 yogurt (8 oz),226,143,12,16,4, - 
+"Yogurt, fruit, low fat",1 yogurt (8 oz),226,240,9,47,2, - 
+"Yogurt, fruit, non fat",1 yogurt (8 oz),226,200,16,32, - , - 
+"Bagel, multi-grain",1 bagel (3.7 oz),104,270,11,47,2,5
+"Bagel, plain, whole wheat",1 bagel (3.7 oz),104,270,12,55,2,1
+"Bagel, plain, whole wheat high fiber",1 bagel (3.3 oz),94,220,11,47,2,6
+"Barley, flaked",1/3 cup dry (1.3 oz),37,110,4,28,1,5
+"Barley, cracked",1/3 cup (1.6 oz),46,140,5,33,1,6
+"Bread,  whole wheat",1 slice (1 oz),28,100,5,20,2,2
+"Bread, whole wheat, bakery light (reduced calorie)",1 slice,21,40,3,9,0,3
+"Bread, whole wheat, light (reduced calorie)",1 slice (.75 oz),21,60,5,8,2,3
+"Bread, multi-grain",1 slice (1 oz),28,90,5,19,1,4
+"Bread, multi-grain, light (reduced calorie)",1 slice (.75 oz),21,60,5,9,2,3
+"Bread, rye",1 slice (1 oz),28,80,2,215,2,1
+"Bread, rye, light (reduced calorie)",1 slice (.75 oz),21,60,5,9,2,3
+"Bread, sprouted grain (Ezekiel)",1 slice (1.2 oz),34,80,4,15,1,3
+Buckwheat groats (Kasha),1/2 cup (2.9 oz),82,284,10,62,2,8
+"Bulgur (whole grain), dry",1/4 cup (1.2 oz),35,120,4,27,1,6
+Bulgur (hot cereal),1/4 cup dry (1.6 oz),45,150,5,34,1,4
+"Cereal, hot, multi-grain (rye, barley, oats, wheat)",1/2 cup dry (1/4 oz),40,130,5,29,1,5
+"Cereal, hot, multi-grain (oats, rye, barley, triticale, flax)",1/2 cup dry (1.4 oz),40,140,6,26,2,5
+"Cereal, hot multi-grain (wheat, oats, barley, flax)",1/2 cup dry (1.4 oz),40,150,6,28,2,6
+"Couscous, whole wheat, uncooked",1/4 cup dry (1.5 oz),43,210,8,45,1,7
+Cream of buckwheat (hot cereal),1/4 cup dry (1.8oz),50,180,2,41, - , - 
+Cream of rice (hot cereal),1/4 cup dry (1.6 oz),45,170,3,38, - , - 
+Cream of rye (hot cereal),1/3 cup dry (1.3 oz),36,110,5,25,1,5
+Cream of wheat (hot cereal),1/3 cup dry (1.4 oz),41,120,4,25,1,4
+"English muffin, whole wheat",1 muffin (2 oz),57,120,5,23,1,3
+Fiber One (boxed cold cereal),1 cup (2.1 oz),60,120,4,48,2,26
+"Granola, low fat  (no sugar added)",1/2 cup (1.7 oz),49,186,4,39,3,3
+"Granola, honey sweetened (no sugar added)",1/2 cup (1.9 oz),55,250,6,31,12,4
+"Grits, corn (hot cereal)",1/4 cup dry (1.3 oz),37,130,3,29,1,2
+"Kamut (whole grain), dry",1/4 cup (1.6 oz),45,170,6,35,1,9
+"Millet (whole grain), dry",1/4 cup (1.6 oz),45,160,5,30,2,4
+"Muesli hot or cold cereal, (oats, grains, fruit, nuts)",1/4 cup dry (1.1 oz),31,110,4,21,3,4
+"Muesli, Swiss, unsweetened (oats, grains, fruit, nuts)",1/2 cup dry),57,210,6,41,3,4
+Oat bran (hot cereal),1/2 cup dry (1.4 oz),40,120,6,23,3,6
+"Pancake Mix, whole wheat & flax",3 tbsp,40,140,7,27,1,2
+"Pasta, spelt, whole grain, uncooked",3/4 cup dry (2 oz),56,210,9,42,1,2
+"Pasta, spaghetti, whole wheat, uncooked",3/4 cup dry (2 oz),56,210,9,40,2,5
+"Pasta, quinoa, uncooked",3/4 cup dry (2 oz),56,210,10,42,1,7
+"Pasta, spinach, uncooked",3/4 cup dry (2 oz),56,200,7,41,1,2
+"Pasta, sprouted multi-grain, uncooked",3/4 cup dry (2 oz),56,210,9,39,2,7
+"Pita, whole wheat",1 large pita (2.1 oz),60,140,6,27,2,5
+"Pita, whole wheat, mini-size (pita pockets)",1 pita pocket (1 oz),28,70,3,14,1,2
+"Quinoa, whole grain, traditional",1/4 cup dry (1.6 oz),46,172,6,31,3,3
+"Quinoa, whole grain, flakes, hot cereal",1/3 cup dry (1.2 oz),34,105,3,23,1,2
+"Rice cakes, brown rice, plain",1 cake (.07 oz),1.9,70,1,16, - , - 
+"Rice, brown, boil-in-bag (pre-cooked)",1 bag (3.5 oz),99,347,9,76,2,5
+"Rice, brown, instant (pre-cooked)",1/4 cup dry (1.7 oz),48,170,4,36,1,2
+"Shredded Wheat, spoon size (boxed cold cereal)",1 cup,49,170,6,40,1,6
+"Tortilla, corn",2 pcs (1.7 oz),48,120,3,21,4, - 
+"Tortilla, corn, sprouted",2 pcs (1.7 oz),48,120,3,23,2,2
+"Tortilla, multi-grain, low fat",1 large (1.4 oz),40,100,7,13,1,8
+"Tortilla, whole wheat",1 large (1.6 oz),47,110,4,16, - ,2
+"Tortilla, whole grain, sprouted (Ezekiel)",1 large (2 oz),57,150,6,24,4,5
+"Tortilla, spelt",1 large (2 oz),57,150,5,28, - ,3
+"Apple butter, unsweetened (no sugar)",1 tbsp (0.7 oz),16,20, - ,5, - , - 
+"Applesauce, unsweetened (no sugar)",1 cup (8.6 oz),243,100, - ,26, - ,4
+"Apricots, fresh",3 med (4 oz),113,60, - ,11, - ,1
+Banana,1 med (4.4 oz),124,110,1,29, - ,4
+Blackberries,1 cup (5.1 oz),144,74,1,18,1,7
+Blueberries,1 cup (5.1 oz),145,82,1,20,1,4
+Cantaloupe (melon),"1/2 med, (3.5 oz)",99,94,2,22,1,2
+"Cherries, pitted","1 cup, 21 pcs (4.9 oz)",139,90,2,22, - ,3
+Clementine,1 med (2.6 oz),74,35,1,9, - ,1
+Cranberries,1 cup (3.4 oz),96,46,0,12, - ,4
+Custard apple (annona aka bullock's heart),1 med (3.5 oz),99,101,2,25,1,2
+Figs,1 large (2.3 oz),65,47,1,12,0,2
+Grapefruit,1/2 large (4.7 oz),133,53,1,13,0,2
+"Grapes, seedless red or green",20 grapes (3.4 oz),96,72,1,18,1,1
+Guava,1 med (4 oz),113,45,1,11,1,5
+"Goji berries (wolfberries), dried",3 tbsp (1 oz),28,104,4,24,1,4
+"Honey, raw (not a fruit, but a natural sugar)",1 tbsp (0.7 oz),60,60, - ,17, - , - 
+Honeydew melon,"1 cup, cubed (6 oz)",170,60,1,16,0,1
+"Jelly, all fruit (no refined sugar)",2 tbsp (1.4 oz),40,80, - ,20, - , - 
+Kiwifruit,2 med (5.2 oz),147,100,2,24, - ,4
+Lemon,1 med (3.8 oz),108,22,1,12, - , - 
+Lime,1 med (2.4),68,20, - ,7, - ,2
+Mango,1/2 med (4.9 oz),139,70, - ,17,1,1
+Nectarine,1 med (4.9 oz),139,70,1,16, - ,2
+Orange,1 med (5 oz),141,65,1,16,0,3
+Papaya,1/2 med (4.9 oz),139,70, - ,19, - ,2
+Passion fruit,1 med (0.6 oz),18,14," ,4 ",4,0,2
+Peach,1 med (3.5 oz),99,40,1,10, - ,2
+Pear,1 med (5.9 oz),167,100,1,25,1,4
+Persimmon,1 med (5.9 oz),167,118,1,31,0,6
+Pineapple,1 cup diced (5.5 oz),156,76,1,19,1,2
+"Pomegranate, whole with peel",1 large (9.7 oz),275,104,2,26, - ,1
+Plum,2 med (4.7),133,80,2,38,2,4
+Prunes (dried plum),5 med (1.5 oz),42,100,1,26, - ,3
+Raisins,1/4 cup (1.4 oz),40,130,1,31, - ,2
+Raspberries,1 cup (4.3 oz),122,61,1,14,1,8
+Strawberries,"halved, 1 cup (5.4 oz)",153,46,1,11, - ,4
+Tangerines,1 med (3.8),108,50,1,15,1,3
+Watermelon,1 cup diced (5.4 oz),153,50,1,11,1,1
+"Arugula, raw",1 cup (0.8 oz),6,6,1,1, - ,0
+"Artichoke, fresh, edible portions",1 med (4.5 oz),128,60,4,14,0,7
+Asparagus spears,"10 large 7"" (6.6 oz)",187,50,4,8, - ,4
+"Beets, raw",1 cup (6 oz),170,70,2,16, - ,4
+"Bok Choy (Chinese cabbage), raw, shredded",1 cup  (2.5 oz),71,10,1,2,0,1
+"Broccoli, raw, chopped",1 cup (3.2 oz),91,44,5,8,0,5
+"Brussels sprouts, raw, chopped",1 cup (3.1 oz),88,38,3,8,0,4
+"Cabbage, raw, shredded",1 cup (3.1 oz),88,18,1,4,0,2
+"Cauliflower, raw, chopped",1 cup (3.5 oz),99,26,2,5,0,3
+"Carrot, raw","1 large 7.5"" (2.8 oz)",79,31,1,7,0,2
+"Celery, raw, stalk","1 med 7.5"" (1.6 oz)",45,6,0,2,0,1
+"Chard, Swiss, fresh chopped",1 cup (1.3 oz),85,6,1,1, - ,0
+"Collard greens, raw",2 cups (2.8 oz),79,25,2,5, - ,3
+"Cucumber, with peel",1 small (5.6 oz),158,19,1,3, - ,1
+"Eggplant, raw",1 cup pieces (3 oz),85,22,1,5,0,2
+"Garlic, fresh",1 clove,5.6,4,0,1, - ,0
+"Green beans (string or snap beans), raw",1 cup (4 oz),113,34,2,8,0,4
+Jerusalem artichokes,1/2 cup sliced (3 oz),85,57,2,13, - ,1
+"Kale, raw, chopped",1 cup (2.4 oz),68,34,2,7,0,1
+"Leeks, raw",1 cup 3.1 oz),87,64,2,15,0,2
+"Lettuce, romaine, loose leaf, chopped",3 cups (6 oz),170,30,2,4, - ,2
+"Okra, raw, sliced",1 cup (3.5 oz),99,38,2,8,0,3
+"Onion, white or yellow, raw, chopped",1 cup (5.2 oz),147,60,2,14, - ,3
+"Onion, green (scallion), raw, chopped",1 cup (3.5 oz),99,32,2,7,0,3
+"Mushrooms, white, raw pieces or slices",1 cup (2.5 oz),71,18,2,3,0,1
+Parsnips,1 med (4 oz),113,85,1,20,0,6
+"Peas, green, frozen",1/2 cup (2.8 oz),79,60,4,11, - ,3
+"Peas, sugar snap or snow, raw",1 cup (3 oz),85,35,2,6, - ,2
+"Pepper, bell or sweet, green or red",med or 1/2 cup (4.2 oz),119,20,1,5,0,1
+"Pepper, yellow, raw",large (6.6 oz),187,50,2,12,0,2
+"Pumpkin, raw, cubes",1 cup (4.1 oz),116,30,1,8,0,2
+"Radishes, raw, sliced",1/2 cup (2 oz),57,12,0,2,0,1
+"Salsa or picante sauce, tomato",4  tbsp (4 oz),115,20, - ,5, - , - 
+Shallots,1 tbsp chopped (0.4 oz),11,7,0,2, - , - 
+"Spinach, raw, leaves, chopped",1.5 cups (3 oz),85,40,2,10,0,5
+"Squash, raw, summer, (zucchini, crookneck)",1 cup (3 oz),85,16,1,3,0,1
+"Tomato, whole, raw *",1 med (5.2 oz),147,35,1,7, - ,1
+Tomato juice,1 cup (8 fl oz),-,50,2,10, - ,2
+Tomato sauce,1 cup (8 fl oz),226,80,3,16, - ,4
+Tomato paste,2 tbsp (1.2 oz),34,30,1,7, - ,2
+Turnips,1 large (6.5 oz),184,51,2,12,0,3
+Turnip Greens,3 cups (5.7 oz),161,42,2,10,1,4
+Water Chestnuts,4 (1.3 oz),37,35, - ,9, - ,1
+Vegetable juice,1 cup (8 fl oz),-,50,2,10, - ,2
+"Vegetables, mixed, frozen, peas and carrots",2/3 cup,85,50,3,9, - ,3
+"Vegetables, mixed, frozen, oriental broccoli stir fry",1 cup,96,35,1,6, - ,2
+"Vegetables, mixed, frozen, broccoli, cauliflower, carrots",1 cup,87,30,1,5, - ,2
+Watercress,1 cup chopped (1.2 oz),34,4,1,0, - ,1
+"Almonds, raw",1/4 cup (1.2 oz),34,210,7,7,,9
+"Almond butter, natural (unsweetened)",2 tbsp (1.2 oz),34,120, - , - ,14, - 
+"Brazil nuts, shelled",1/4 cup (4.9 oz),139,240,5,5,12,2
+"Butter, light, omega-3 fortified",1 tbsp (0.6 oz),14,50, - , - ,5, - 
+"Butter, light, regular",1 tbsp,14,50, - , - ,6, - 
+"Butter flavor sprinkles (Butter Buds, etc)",1 tbsp,6,15, - ,2, - , - 
+"Cashews, raw",1/4 cup (1.2 oz),34,190,5,11,15,1
+"Coconut oil, extra virgin",1 tbsp (0.5 oz),14,125, - , - ,14, - 
+"Coconut, fresh shredded",2 tbsp (1 oz),28,180,2,7,18,5
+Chia seeds,3 tbsp (1 oz),28,139,4,12,11,11
+"Essential oil blend (supplement, not for cooking)",1 tbsp (0.6 oz),-,134, - , - ,14, - 
+"Flaxseed Oil (supplement, not for cooking)",1 tbsp (0.6 oz),-,130, - , - ,14, - 
+"Flaxseeds, ground",2 tbsp (0.7 oz),20,93,4,6,6,5
+"Hazelnuts, dried, chopped",1/4 cup (1 oz),28,182,4,4,18,2
+Hemp seeds (hemp hearts),2 tbsp (1.1 oz),31,165,11,7,10,1
+"Macadamia nuts, raw",1/4 cup (1.1 oz),31,230,3,5,24,2
+"Mayonnaise, Canola",1 tbsp (0.5 oz),15,100, - , - ,11, - 
+"Mayonnaise, fat-free",1 tbsp (0.5 oz),15,10, - ,3, - , - 
+"Mayonnaise, light, omega-3 enriched",1 tbsp (0.5 oz),15,50, - ,2,5, - 
+"Mayonnaise, light, regular",1 tbsp (0.5 oz),15,35, - ,1,4, - 
+"Peanuts, raw",1/4 cup  (1.2 oz),34,214,9,8,18,3
+"Peanut Butter, natural (no sugar added)",1 tbsp (0.6 oz),17,95,4,4,8,1
+"Pecans, halves or pieces",1/4 cup (1 oz),28,190,3,4,20,3
+"Pine nuts, dried",1/4 cup  (1.2 oz),34,227,5,4,23,1
+Pistachios,1/4 cup (1 oz),28,164,6,7,14,3
+"Pumpkin seeds, shelled, roasted",142 kernels (1 oz),28,148,9,4,12,2
+"Olives, Greek black, pitted*",2 oz,56,100,1,4,8, - 
+"Olives, green, pitted*",2 oz,56,100, - ,4,10, - 
+"Olive Oil, extra virgin",1 tbsp,-,120, - , - ,14, - 
+"Salad dressing, olive oil and vinegar",1 tbsp,-,75, - ,1,8, - 
+"Salad dressing, balsamic vinaigrette w. olive oil, light",2 tbsp,-,45, - ,2,4, - 
+"Salad dressing, balsamic vinaigrette, nonfat",2 tbsp,-,5, - ,2, - , - 
+Sesame oil,1 tbsp,-,120, - , - ,14, - 
+"Sesame seeds, whole, dried",1/4 cup (5.1 oz),144,190,6,8,17,4
+Sesame butter,1 tbsp (0.6 oz),17,100,3,4,9, - 
+Sesame paste (Tahini),1 tbsp (0.5 oz),14,95,4,2,9,1
+"Sunflower seed, shelled",1/4 cup (1 oz),28,170,7,6,15,3
+Walnuts,1/4 cup (1.1 oz),28,200,5,3,20,3

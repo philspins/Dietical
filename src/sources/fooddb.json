@@ -1,0 +1,2922 @@
+[
+  {
+    "Item": "Beef, ground, 90% lean",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 199,
+    "Protein": 22.7,
+    "Carbs": "-",
+    "Fat": 11.3,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Beef, ground, 95% lean",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 155,
+    "Protein": 24.3,
+    "Carbs": "-",
+    "Fat": 6,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Beef, round, top,  lean (select)",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 146,
+    "Protein": 26.1,
+    "Carbs": "-",
+    "Fat": 3.8,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Beef, round tip, lean (select)",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 138,
+    "Protein": 24.2,
+    "Carbs": "-",
+    "Fat": 3.8,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Beef, round, eye of, lean (select)",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 134,
+    "Protein": 25.2,
+    "Carbs": "-",
+    "Fat": 3,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Beef, flank steak, lean (select)",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 155,
+    "Protein": 24.2,
+    "Carbs": "-",
+    "Fat": 5.6,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Beef, sirloin, top, lean (select)",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 144,
+    "Protein": 25,
+    "Carbs": "-",
+    "Fat": 4,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Beef, tenderloin (filet)",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 167,
+    "Protein": 25,
+    "Carbs": "-",
+    "Fat": 6.7,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Buffalo (bison) steak, top round",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 138,
+    "Protein": 26.3,
+    "Carbs": "-",
+    "Fat": 2.7,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Buffalo (bison) steak, top sirloin",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 128,
+    "Protein": 24.2,
+    "Carbs": "-",
+    "Fat": 2.7,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Chicken breast, light meat, skinless, 99% lean",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 110,
+    "Protein": 26,
+    "Carbs": "-",
+    "Fat": 1,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Chicken breast, canned",
+    "Qty": "4 oz",
+    "Weight": 113,
+    "Calories": 100,
+    "Protein": 18,
+    "Carbs": "-",
+    "Fat": 2,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Chicken breast, ground, lean",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 100,
+    "Protein": 24,
+    "Carbs": "-",
+    "Fat": 0.5,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Clams, raw",
+    "Qty": "1/2 cup (4 oz)",
+    "Weight": 113,
+    "Calories": 84,
+    "Protein": 15,
+    "Carbs": 3,
+    "Fat": 1,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Crab, fresh, raw (Dungeness, U.S. King or Stone)",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 95,
+    "Protein": 21,
+    "Carbs": "-",
+    "Fat": 1,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Crawfish",
+    "Qty": "4 oz raw meat only",
+    "Weight": 113,
+    "Calories": 87,
+    "Protein": 18,
+    "Carbs": "-",
+    "Fat": 1,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Egg whites, liquid",
+    "Qty": "1 cup (8.6 oz)",
+    "Weight": 244,
+    "Calories": 120,
+    "Protein": 26,
+    "Carbs": 1,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Egg whites, large",
+    "Qty": 6,
+    "Weight": 198,
+    "Calories": 102,
+    "Protein": 21,
+    "Carbs": 2,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Egg, whole, large",
+    "Qty": 1,
+    "Weight": 50,
+    "Calories": 75,
+    "Protein": 6,
+    "Carbs": 1,
+    "Fat": 5,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Elk (game meat)",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 125,
+    "Protein": 26,
+    "Carbs": "-",
+    "Fat": 2,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Fish, Bass, Striped",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 110,
+    "Protein": 20,
+    "Carbs": "-",
+    "Fat": 3,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Fish, Catfish",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 108,
+    "Protein": 19,
+    "Carbs": "-",
+    "Fat": 3,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Fish, Cod, Pacific",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 93,
+    "Protein": 20,
+    "Carbs": "-",
+    "Fat": 1,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Fish, Flounder (flatfish)",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 104,
+    "Protein": 21,
+    "Carbs": "-",
+    "Fat": 1,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Fish, Halibut, Pacific",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 124,
+    "Protein": 24,
+    "Carbs": "-",
+    "Fat": 3,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Fish, Mackerel,  Atlantic",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 230,
+    "Protein": 21,
+    "Carbs": "-",
+    "Fat": 16,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Fish, Mackerel, Pacific (Jack)",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 179,
+    "Protein": 23,
+    "Carbs": "-",
+    "Fat": 9,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Fish, Mackerel, canned in olive oil",
+    "Qty": "1 can (3.9 oz)",
+    "Weight": 110,
+    "Calories": 290,
+    "Protein": 24,
+    "Carbs": "-",
+    "Fat": 22,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Fish, Mahi-mahi, U.S.",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 97,
+    "Protein": 21,
+    "Carbs": "-",
+    "Fat": 1,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Fish, Pollack",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 104,
+    "Protein": 22,
+    "Carbs": "-",
+    "Fat": 1,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Fish, Tuna, canned in water, chunk light",
+    "Qty": "4 oz",
+    "Weight": 113,
+    "Calories": 120,
+    "Protein": 26,
+    "Carbs": "-",
+    "Fat": 1,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Fish, Tuna, canned in water, albacore",
+    "Qty": "4 oz",
+    "Weight": 113,
+    "Calories": 140,
+    "Protein": 26,
+    "Carbs": "-",
+    "Fat": 2,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Fish, Tuna, Yellowfin (tuna steak)",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 123,
+    "Protein": 27,
+    "Carbs": "-",
+    "Fat": 1,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Fish, Rainbow trout",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 135,
+    "Protein": 23,
+    "Carbs": "-",
+    "Fat": 4,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Fish, Salmon (wild)",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 206,
+    "Protein": 29,
+    "Carbs": "-",
+    "Fat": 9,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Fish, Tilapia",
+    "Qty": "4  oz uncooked",
+    "Weight": 113,
+    "Calories": 110,
+    "Protein": 23,
+    "Carbs": "-",
+    "Fat": 2,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Lamb, loin",
+    "Qty": "4 oz roasted",
+    "Weight": 113,
+    "Calories": 217,
+    "Protein": 32,
+    "Carbs": "-",
+    "Fat": 9,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Lobster",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 102,
+    "Protein": 21,
+    "Carbs": 1,
+    "Fat": 1,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Mussels",
+    "Qty": "4 oz raw",
+    "Weight": 113,
+    "Calories": 98,
+    "Protein": 14,
+    "Carbs": 4,
+    "Fat": 3,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Pork tenderloin",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 123,
+    "Protein": 24,
+    "Carbs": "-",
+    "Fat": 3,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Prawns",
+    "Qty": "4 oz raw",
+    "Weight": 113,
+    "Calories": 119,
+    "Protein": 23,
+    "Carbs": 1,
+    "Fat": 2,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Ostrich steak",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 135,
+    "Protein": 28,
+    "Carbs": "-",
+    "Fat": 4,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Oysters, Pacific",
+    "Qty": "4 oz raw",
+    "Weight": 113,
+    "Calories": 92,
+    "Protein": 11,
+    "Carbs": 6,
+    "Fat": 3,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Protein powder, casein (a milk protein)",
+    "Qty": "1 scoop",
+    "Weight": 31,
+    "Calories": 110,
+    "Protein": 23,
+    "Carbs": 3,
+    "Fat": 1,
+    "Fibre": 1
+  },
+  {
+    "Item": "Protein powder, hemp (vegetarian)",
+    "Qty": "1 scoop",
+    "Weight": 31,
+    "Calories": 110,
+    "Protein": 23,
+    "Carbs": 3,
+    "Fat": 1,
+    "Fibre": 1
+  },
+  {
+    "Item": "Protein powder, soy (vegetarian)",
+    "Qty": "1 scoop",
+    "Weight": 31,
+    "Calories": 120,
+    "Protein": 25,
+    "Carbs": 2,
+    "Fat": 2,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Protein powder, whey (a milk protein)",
+    "Qty": "1 scoop",
+    "Weight": 24,
+    "Calories": 90,
+    "Protein": 18,
+    "Carbs": 2,
+    "Fat": 2,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Scallops",
+    "Qty": "4 oz raw",
+    "Weight": 113,
+    "Calories": 100,
+    "Protein": 19,
+    "Carbs": 3,
+    "Fat": 1,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Sardines (herring), canned in water",
+    "Qty": "1 can (3.2 oz)",
+    "Weight": 91,
+    "Calories": 150,
+    "Protein": 19,
+    "Carbs": "-",
+    "Fat": 8,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Sardines (herring), canned in olive oil",
+    "Qty": "1 can (3.2 oz)",
+    "Weight": 91,
+    "Calories": 191,
+    "Protein": 23,
+    "Carbs": "-",
+    "Fat": 11,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Salmon, wild Alaskan",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 206,
+    "Protein": 29,
+    "Carbs": "-",
+    "Fat": 9,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Salmon burgers",
+    "Qty": "1 burger (3.2 oz)",
+    "Weight": 91,
+    "Calories": 80,
+    "Protein": 18,
+    "Carbs": 1,
+    "Fat": 0,
+    "Fibre": 1
+  },
+  {
+    "Item": "Salmon, canned, pink",
+    "Qty": "4 oz",
+    "Weight": 113,
+    "Calories": 158,
+    "Protein": 17,
+    "Carbs": "-",
+    "Fat": 7,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Shrimp",
+    "Qty": "4 oz",
+    "Weight": 113,
+    "Calories": 120,
+    "Protein": 23,
+    "Carbs": 1,
+    "Fat": 2,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Squid",
+    "Qty": "4 oz raw",
+    "Weight": 113,
+    "Calories": 104,
+    "Protein": 18,
+    "Carbs": 4,
+    "Fat": 2,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Tempeh (vegetarian protein)",
+    "Qty": "1/2 cup (2.9 oz)",
+    "Weight": 82,
+    "Calories": 160,
+    "Protein": 15,
+    "Carbs": 8,
+    "Fat": 9,
+    "Fibre": 3
+  },
+  {
+    "Item": "Tofu, firm, raw (vegetarian protein)",
+    "Qty": "2.9 oz raw",
+    "Weight": 117,
+    "Calories": 117,
+    "Protein": 13,
+    "Carbs": 4,
+    "Fat": 7,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Turkey Breast, skinless",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 178,
+    "Protein": 34,
+    "Carbs": "-",
+    "Fat": 4,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Turkey, ground 99% lean",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 120,
+    "Protein": 28,
+    "Carbs": "-",
+    "Fat": 1,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Venison steak (deer meat)",
+    "Qty": "4 oz uncooked",
+    "Weight": 113,
+    "Calories": 136,
+    "Protein": 26,
+    "Carbs": "-",
+    "Fat": 3,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Cellulor whey protein",
+    "Qty": "1 scoop",
+    "Weight": 33,
+    "Calories": 120,
+    "Protein": 25,
+    "Carbs": 3,
+    "Fat": 2,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Beans, Black, canned",
+    "Qty": "1/2 cup (4.6 oz)",
+    "Weight": 130,
+    "Calories": 100,
+    "Protein": 7,
+    "Carbs": 20,
+    "Fat": "",
+    "Fibre": 8
+  },
+  {
+    "Item": "Beans, Kidney, canned",
+    "Qty": "1/2 cup (4.5 oz)",
+    "Weight": 127,
+    "Calories": 110,
+    "Protein": 7,
+    "Carbs": 20,
+    "Fat": 1,
+    "Fibre": 8
+  },
+  {
+    "Item": "Beans, Garbanzo (chickpeas), canned",
+    "Qty": "1/2 cup (4.6 oz)",
+    "Weight": 130,
+    "Calories": 120,
+    "Protein": 7,
+    "Carbs": 19,
+    "Fat": 2,
+    "Fibre": 5
+  },
+  {
+    "Item": "Beans, Navy, canned",
+    "Qty": "1/2 cup (4.6 oz)",
+    "Weight": 130,
+    "Calories": 110,
+    "Protein": 7,
+    "Carbs": 20,
+    "Fat": 1,
+    "Fibre": 7
+  },
+  {
+    "Item": "Beans, Pinto, canned",
+    "Qty": "1/2 cup (4.2 oz)",
+    "Weight": 119,
+    "Calories": 100,
+    "Protein": 6,
+    "Carbs": 18,
+    "Fat": "-",
+    "Fibre": 6
+  },
+  {
+    "Item": "Black eye peas, canned or frozen",
+    "Qty": "1/2 cup (4.6 oz)",
+    "Weight": 130,
+    "Calories": 90,
+    "Protein": 6,
+    "Carbs": 16,
+    "Fat": 1,
+    "Fibre": 4
+  },
+  {
+    "Item": "Cassava (Yucca root)",
+    "Qty": "1/2 cup (3.5 oz)",
+    "Weight": 99,
+    "Calories": 165,
+    "Protein": 1,
+    "Carbs": 39,
+    "Fat": 0,
+    "Fibre": 2
+  },
+  {
+    "Item": "Chickpeas (Garbanzos), canned",
+    "Qty": "1/2 cup (4.6 oz)",
+    "Weight": 130,
+    "Calories": 120,
+    "Protein": 7,
+    "Carbs": 19,
+    "Fat": 2,
+    "Fibre": 5
+  },
+  {
+    "Item": "Corn, canned",
+    "Qty": "1/2 cup (5.4 oz)",
+    "Weight": 153,
+    "Calories": 70,
+    "Protein": 2,
+    "Carbs": 18,
+    "Fat": 1,
+    "Fibre": 3
+  },
+  {
+    "Item": "Lentils",
+    "Qty": "1/2 cup cooked (3.5 oz)",
+    "Weight": 99,
+    "Calories": 115,
+    "Protein": 9,
+    "Carbs": 20,
+    "Fat": "-",
+    "Fibre": 8
+  },
+  {
+    "Item": "Lima beans, canned",
+    "Qty": "1/2 cup (4.5 oz)",
+    "Weight": 127,
+    "Calories": 120,
+    "Protein": 7,
+    "Carbs": 23,
+    "Fat": 1,
+    "Fibre": 8
+  },
+  {
+    "Item": "Oatmeal, steel-cut (no sugar added)",
+    "Qty": "1/4 cup dry (1.4 oz)",
+    "Weight": 40,
+    "Calories": 150,
+    "Protein": 5,
+    "Carbs": 27,
+    "Fat": 3,
+    "Fibre": 4
+  },
+  {
+    "Item": "Oatmeal, old-fashioned (no sugar added)",
+    "Qty": "1/2 cup dry (1.4 oz)",
+    "Weight": 40,
+    "Calories": 150,
+    "Protein": 5,
+    "Carbs": 27,
+    "Fat": 3,
+    "Fibre": 4
+  },
+  {
+    "Item": "Peas, split, green, dried",
+    "Qty": "1/4 cup (1.6 oz)",
+    "Weight": 45,
+    "Calories": 160,
+    "Protein": 12,
+    "Carbs": 24,
+    "Fat": 1,
+    "Fibre": 4
+  },
+  {
+    "Item": "Plantains",
+    "Qty": "1/2 med (3.9 oz)",
+    "Weight": 110,
+    "Calories": 180,
+    "Protein": "-",
+    "Carbs": 22,
+    "Fat": "-",
+    "Fibre": 5
+  },
+  {
+    "Item": "Potato, white",
+    "Qty": "1 lg. uncooked (7 oz)",
+    "Weight": 198,
+    "Calories": 160,
+    "Protein": 4,
+    "Carbs": 36,
+    "Fat": 0,
+    "Fibre": 3
+  },
+  {
+    "Item": "Potato, sweet",
+    "Qty": "1 med uncooked (6 oz)",
+    "Weight": 170,
+    "Calories": 136,
+    "Protein": 2,
+    "Carbs": 32,
+    "Fat": 0,
+    "Fibre": 4
+  },
+  {
+    "Item": "Pumpkin, canned",
+    "Qty": "1 can (15 oz)",
+    "Weight": 425,
+    "Calories": 174,
+    "Protein": 4,
+    "Carbs": 35,
+    "Fat": "-",
+    "Fibre": 14
+  },
+  {
+    "Item": "Rice, brown, long grain, dry",
+    "Qty": "1/2 cup dry (3.3 oz)",
+    "Weight": 94,
+    "Calories": 320,
+    "Protein": 8,
+    "Carbs": 64,
+    "Fat": 3,
+    "Fibre": 4
+  },
+  {
+    "Item": "Rice, brown, long grain, cooked",
+    "Qty": "1 cup cooked (6.9 oz)",
+    "Weight": 195,
+    "Calories": 216,
+    "Protein": 5,
+    "Carbs": 45,
+    "Fat": 2,
+    "Fibre": 4
+  },
+  {
+    "Item": "Rice, brown, basmati, dry",
+    "Qty": "1/2 cup dry (3.3 oz)",
+    "Weight": 92,
+    "Calories": 320,
+    "Protein": 8,
+    "Carbs": 64,
+    "Fat": 3,
+    "Fibre": 4
+  },
+  {
+    "Item": "Rice, brown, basmati, cooked",
+    "Qty": "1 cup (6.9 oz)",
+    "Weight": 195,
+    "Calories": 216,
+    "Protein": 5,
+    "Carbs": 45,
+    "Fat": 2,
+    "Fibre": 4
+  },
+  {
+    "Item": "Rice, wild, dry",
+    "Qty": "1/4 cup (2.8 oz)",
+    "Weight": 79,
+    "Calories": 160,
+    "Protein": 6,
+    "Carbs": 34,
+    "Fat": 1,
+    "Fibre": 3
+  },
+  {
+    "Item": "Rice, wild, cooked",
+    "Qty": "1 cup (5.8 oz)",
+    "Weight": 164,
+    "Calories": 166,
+    "Protein": 7,
+    "Carbs": 35,
+    "Fat": 1,
+    "Fibre": 2
+  },
+  {
+    "Item": "Squash, raw, winter, (acorn, butternut)",
+    "Qty": "1 cup cubed (4.9 oz)",
+    "Weight": 138,
+    "Calories": 56,
+    "Protein": 1,
+    "Carbs": 15,
+    "Fat": 0,
+    "Fibre": 2
+  },
+  {
+    "Item": "Yam",
+    "Qty": "1 med uncooked (5 oz)",
+    "Weight": 141,
+    "Calories": 180,
+    "Protein": 2,
+    "Carbs": 40,
+    "Fat": 0,
+    "Fibre": 6
+  },
+  {
+    "Item": "Milk, skim",
+    "Qty": "1 cup (8 fl oz)",
+    "Weight": "-",
+    "Calories": 90,
+    "Protein": 8,
+    "Carbs": 12,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Milk, 1% low fat",
+    "Qty": "1 cup (8 fl oz)",
+    "Weight": "-",
+    "Calories": 100,
+    "Protein": 8,
+    "Carbs": 11,
+    "Fat": 2,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Milk, 2% low fat",
+    "Qty": "1 cup (8 fl oz)",
+    "Weight": "-",
+    "Calories": 121,
+    "Protein": 8,
+    "Carbs": 12,
+    "Fat": 5,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Milk, soy, light (dairy substitute; contains sucrose)",
+    "Qty": "1 cup (8 fl oz)",
+    "Weight": "",
+    "Calories": 100,
+    "Protein": 7,
+    "Carbs": 8,
+    "Fat": 4,
+    "Fibre": 1
+  },
+  {
+    "Item": "Milk, soy, nonfat (dairy substitute; contains sucrose)",
+    "Qty": "1 cup (8 fl oz)",
+    "Weight": "",
+    "Calories": 70,
+    "Protein": 6,
+    "Carbs": 10,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Milk, soy, unsweetened (dairy substitute)",
+    "Qty": "1 cup (8 fl oz)",
+    "Weight": "",
+    "Calories": 90,
+    "Protein": 7,
+    "Carbs": 5,
+    "Fat": 4,
+    "Fibre": 1
+  },
+  {
+    "Item": "Cheese, American, non fat",
+    "Qty": "2 slices (2 oz)",
+    "Weight": 56,
+    "Calories": 60,
+    "Protein": 10,
+    "Carbs": 4,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Cheese, cheddar, non fat, shredded",
+    "Qty": "1/2 cup (2 oz)",
+    "Weight": 56,
+    "Calories": 90,
+    "Protein": 16,
+    "Carbs": 4,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Cheese, cheddar, low fat, block",
+    "Qty": "2 inch cube (2 oz)",
+    "Weight": 56,
+    "Calories": 120,
+    "Protein": 18,
+    "Carbs": 1,
+    "Fat": 3,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Cheese, feta low fat",
+    "Qty": "2 oz",
+    "Weight": 56,
+    "Calories": 120,
+    "Protein": 12,
+    "Carbs": "-",
+    "Fat": 8,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Cheese, feta non fat",
+    "Qty": "2 oz",
+    "Weight": 56,
+    "Calories": 60,
+    "Protein": 12,
+    "Carbs": 4,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Cheese, mozzarella, non fat, shredded",
+    "Qty": "1/2 cup (2 oz)",
+    "Weight": 56,
+    "Calories": 80,
+    "Protein": 18,
+    "Carbs": 2,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Cheese, mozzarella, shredded low fat (part skim)",
+    "Qty": "1/2 cup (2 oz)",
+    "Weight": 56,
+    "Calories": 160,
+    "Protein": 16,
+    "Carbs": 2,
+    "Fat": 9,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Cheese, Parmesan, non fat",
+    "Qty": "2 tbsp (0.4 oz)",
+    "Weight": 11,
+    "Calories": 25,
+    "Protein": 3,
+    "Carbs": 3,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Cheese, Swiss, low fat",
+    "Qty": "2 slices (2 oz)",
+    "Weight": 56,
+    "Calories": 100,
+    "Protein": 16,
+    "Carbs": 2,
+    "Fat": 3,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Cheese, Swiss, non fat slices",
+    "Qty": "2 slices (2 oz)",
+    "Weight": 56,
+    "Calories": 81,
+    "Protein": 14,
+    "Carbs": 5,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Cream cheese, non fat",
+    "Qty": "2 tbsp (1.2 oz)",
+    "Weight": 33,
+    "Calories": 30,
+    "Protein": 4,
+    "Carbs": 2,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Cottage cheese, nonfat",
+    "Qty": "1/2 cup (4 oz)",
+    "Weight": 113,
+    "Calories": 100,
+    "Protein": 16,
+    "Carbs": 8,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Cottage cheese, 2% low fat",
+    "Qty": "1/2 cup (4 oz)",
+    "Weight": 113,
+    "Calories": 102,
+    "Protein": 16,
+    "Carbs": 4,
+    "Fat": 2,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Cottage cheese, 1% low fat",
+    "Qty": "1/2 cup (4 oz)",
+    "Weight": 113,
+    "Calories": 100,
+    "Protein": 18,
+    "Carbs": 5,
+    "Fat": 1,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Sour cream low fat",
+    "Qty": "2 tbsp (1.1 oz)",
+    "Weight": 31,
+    "Calories": 31,
+    "Protein": 1,
+    "Carbs": 3,
+    "Fat": 2,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Sour cream, non fat",
+    "Qty": "2 tbsp (1.1 oz)",
+    "Weight": 31,
+    "Calories": 25,
+    "Protein": 2,
+    "Carbs": 4,
+    "Fat": "",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Yogurt, plain, nonfat",
+    "Qty": "1 yogurt (8 oz)",
+    "Weight": 226,
+    "Calories": 110,
+    "Protein": 10,
+    "Carbs": 18,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Yogurt, plain, 1% low fat",
+    "Qty": "1 yogurt (8 oz)",
+    "Weight": 226,
+    "Calories": 143,
+    "Protein": 12,
+    "Carbs": 16,
+    "Fat": 4,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Yogurt, fruit, low fat",
+    "Qty": "1 yogurt (8 oz)",
+    "Weight": 226,
+    "Calories": 240,
+    "Protein": 9,
+    "Carbs": 47,
+    "Fat": 2,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Yogurt, fruit, non fat",
+    "Qty": "1 yogurt (8 oz)",
+    "Weight": 226,
+    "Calories": 200,
+    "Protein": 16,
+    "Carbs": 32,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Bagel, multi-grain",
+    "Qty": "1 bagel (3.7 oz)",
+    "Weight": 104,
+    "Calories": 270,
+    "Protein": 11,
+    "Carbs": 47,
+    "Fat": 2,
+    "Fibre": 5
+  },
+  {
+    "Item": "Bagel, plain, whole wheat",
+    "Qty": "1 bagel (3.7 oz)",
+    "Weight": 104,
+    "Calories": 270,
+    "Protein": 12,
+    "Carbs": 55,
+    "Fat": 2,
+    "Fibre": 1
+  },
+  {
+    "Item": "Bagel, plain, whole wheat high fiber",
+    "Qty": "1 bagel (3.3 oz)",
+    "Weight": 94,
+    "Calories": 220,
+    "Protein": 11,
+    "Carbs": 47,
+    "Fat": 2,
+    "Fibre": 6
+  },
+  {
+    "Item": "Barley, flaked",
+    "Qty": "1/3 cup dry (1.3 oz)",
+    "Weight": 37,
+    "Calories": 110,
+    "Protein": 4,
+    "Carbs": 28,
+    "Fat": 1,
+    "Fibre": 5
+  },
+  {
+    "Item": "Barley, cracked",
+    "Qty": "1/3 cup (1.6 oz)",
+    "Weight": 46,
+    "Calories": 140,
+    "Protein": 5,
+    "Carbs": 33,
+    "Fat": 1,
+    "Fibre": 6
+  },
+  {
+    "Item": "Bread,  whole wheat",
+    "Qty": "1 slice (1 oz)",
+    "Weight": 28,
+    "Calories": 100,
+    "Protein": 5,
+    "Carbs": 20,
+    "Fat": 2,
+    "Fibre": 2
+  },
+  {
+    "Item": "Bread, whole wheat, bakery light (reduced calorie)",
+    "Qty": "1 slice",
+    "Weight": 21,
+    "Calories": 40,
+    "Protein": 3,
+    "Carbs": 9,
+    "Fat": 0,
+    "Fibre": 3
+  },
+  {
+    "Item": "Bread, whole wheat, light (reduced calorie)",
+    "Qty": "1 slice (.75 oz)",
+    "Weight": 21,
+    "Calories": 60,
+    "Protein": 5,
+    "Carbs": 8,
+    "Fat": 2,
+    "Fibre": 3
+  },
+  {
+    "Item": "Bread, multi-grain",
+    "Qty": "1 slice (1 oz)",
+    "Weight": 28,
+    "Calories": 90,
+    "Protein": 5,
+    "Carbs": 19,
+    "Fat": 1,
+    "Fibre": 4
+  },
+  {
+    "Item": "Bread, multi-grain, light (reduced calorie)",
+    "Qty": "1 slice (.75 oz)",
+    "Weight": 21,
+    "Calories": 60,
+    "Protein": 5,
+    "Carbs": 9,
+    "Fat": 2,
+    "Fibre": 3
+  },
+  {
+    "Item": "Bread, rye",
+    "Qty": "1 slice (1 oz)",
+    "Weight": 28,
+    "Calories": 80,
+    "Protein": 2,
+    "Carbs": 215,
+    "Fat": 2,
+    "Fibre": 1
+  },
+  {
+    "Item": "Bread, rye, light (reduced calorie)",
+    "Qty": "1 slice (.75 oz)",
+    "Weight": 21,
+    "Calories": 60,
+    "Protein": 5,
+    "Carbs": 9,
+    "Fat": 2,
+    "Fibre": 3
+  },
+  {
+    "Item": "Bread, sprouted grain (Ezekiel)",
+    "Qty": "1 slice (1.2 oz)",
+    "Weight": 34,
+    "Calories": 80,
+    "Protein": 4,
+    "Carbs": 15,
+    "Fat": 1,
+    "Fibre": 3
+  },
+  {
+    "Item": "Buckwheat groats (Kasha)",
+    "Qty": "1/2 cup (2.9 oz)",
+    "Weight": 82,
+    "Calories": 284,
+    "Protein": 10,
+    "Carbs": 62,
+    "Fat": 2,
+    "Fibre": 8
+  },
+  {
+    "Item": "Bulgur (whole grain), dry",
+    "Qty": "1/4 cup (1.2 oz)",
+    "Weight": 35,
+    "Calories": 120,
+    "Protein": 4,
+    "Carbs": 27,
+    "Fat": 1,
+    "Fibre": 6
+  },
+  {
+    "Item": "Bulgur (hot cereal)",
+    "Qty": "1/4 cup dry (1.6 oz)",
+    "Weight": 45,
+    "Calories": 150,
+    "Protein": 5,
+    "Carbs": 34,
+    "Fat": 1,
+    "Fibre": 4
+  },
+  {
+    "Item": "Cereal, hot, multi-grain (rye, barley, oats, wheat)",
+    "Qty": "1/2 cup dry (1/4 oz)",
+    "Weight": 40,
+    "Calories": 130,
+    "Protein": 5,
+    "Carbs": 29,
+    "Fat": 1,
+    "Fibre": 5
+  },
+  {
+    "Item": "Cereal, hot, multi-grain (oats, rye, barley, triticale, flax)",
+    "Qty": "1/2 cup dry (1.4 oz)",
+    "Weight": 40,
+    "Calories": 140,
+    "Protein": 6,
+    "Carbs": 26,
+    "Fat": 2,
+    "Fibre": 5
+  },
+  {
+    "Item": "Cereal, hot multi-grain (wheat, oats, barley, flax)",
+    "Qty": "1/2 cup dry (1.4 oz)",
+    "Weight": 40,
+    "Calories": 150,
+    "Protein": 6,
+    "Carbs": 28,
+    "Fat": 2,
+    "Fibre": 6
+  },
+  {
+    "Item": "Couscous, whole wheat, uncooked",
+    "Qty": "1/4 cup dry (1.5 oz)",
+    "Weight": 43,
+    "Calories": 210,
+    "Protein": 8,
+    "Carbs": 45,
+    "Fat": 1,
+    "Fibre": 7
+  },
+  {
+    "Item": "Cream of buckwheat (hot cereal)",
+    "Qty": "1/4 cup dry (1.8oz)",
+    "Weight": 50,
+    "Calories": 180,
+    "Protein": 2,
+    "Carbs": 41,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Cream of rice (hot cereal)",
+    "Qty": "1/4 cup dry (1.6 oz)",
+    "Weight": 45,
+    "Calories": 170,
+    "Protein": 3,
+    "Carbs": 38,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Cream of rye (hot cereal)",
+    "Qty": "1/3 cup dry (1.3 oz)",
+    "Weight": 36,
+    "Calories": 110,
+    "Protein": 5,
+    "Carbs": 25,
+    "Fat": 1,
+    "Fibre": 5
+  },
+  {
+    "Item": "Cream of wheat (hot cereal)",
+    "Qty": "1/3 cup dry (1.4 oz)",
+    "Weight": 41,
+    "Calories": 120,
+    "Protein": 4,
+    "Carbs": 25,
+    "Fat": 1,
+    "Fibre": 4
+  },
+  {
+    "Item": "English muffin, whole wheat",
+    "Qty": "1 muffin (2 oz)",
+    "Weight": 57,
+    "Calories": 120,
+    "Protein": 5,
+    "Carbs": 23,
+    "Fat": 1,
+    "Fibre": 3
+  },
+  {
+    "Item": "Fiber One (boxed cold cereal)",
+    "Qty": "1 cup (2.1 oz)",
+    "Weight": 60,
+    "Calories": 120,
+    "Protein": 4,
+    "Carbs": 48,
+    "Fat": 2,
+    "Fibre": 26
+  },
+  {
+    "Item": "Granola, low fat  (no sugar added)",
+    "Qty": "1/2 cup (1.7 oz)",
+    "Weight": 49,
+    "Calories": 186,
+    "Protein": 4,
+    "Carbs": 39,
+    "Fat": 3,
+    "Fibre": 3
+  },
+  {
+    "Item": "Granola, honey sweetened (no sugar added)",
+    "Qty": "1/2 cup (1.9 oz)",
+    "Weight": 55,
+    "Calories": 250,
+    "Protein": 6,
+    "Carbs": 31,
+    "Fat": 12,
+    "Fibre": 4
+  },
+  {
+    "Item": "Grits, corn (hot cereal)",
+    "Qty": "1/4 cup dry (1.3 oz)",
+    "Weight": 37,
+    "Calories": 130,
+    "Protein": 3,
+    "Carbs": 29,
+    "Fat": 1,
+    "Fibre": 2
+  },
+  {
+    "Item": "Kamut (whole grain), dry",
+    "Qty": "1/4 cup (1.6 oz)",
+    "Weight": 45,
+    "Calories": 170,
+    "Protein": 6,
+    "Carbs": 35,
+    "Fat": 1,
+    "Fibre": 9
+  },
+  {
+    "Item": "Millet (whole grain), dry",
+    "Qty": "1/4 cup (1.6 oz)",
+    "Weight": 45,
+    "Calories": 160,
+    "Protein": 5,
+    "Carbs": 30,
+    "Fat": 2,
+    "Fibre": 4
+  },
+  {
+    "Item": "Muesli hot or cold cereal, (oats, grains, fruit, nuts)",
+    "Qty": "1/4 cup dry (1.1 oz)",
+    "Weight": 31,
+    "Calories": 110,
+    "Protein": 4,
+    "Carbs": 21,
+    "Fat": 3,
+    "Fibre": 4
+  },
+  {
+    "Item": "Muesli, Swiss, unsweetened (oats, grains, fruit, nuts)",
+    "Qty": "1/2 cup dry)",
+    "Weight": 57,
+    "Calories": 210,
+    "Protein": 6,
+    "Carbs": 41,
+    "Fat": 3,
+    "Fibre": 4
+  },
+  {
+    "Item": "Oat bran (hot cereal)",
+    "Qty": "1/2 cup dry (1.4 oz)",
+    "Weight": 40,
+    "Calories": 120,
+    "Protein": 6,
+    "Carbs": 23,
+    "Fat": 3,
+    "Fibre": 6
+  },
+  {
+    "Item": "Pancake Mix, whole wheat & flax",
+    "Qty": "3 tbsp",
+    "Weight": 40,
+    "Calories": 140,
+    "Protein": 7,
+    "Carbs": 27,
+    "Fat": 1,
+    "Fibre": 2
+  },
+  {
+    "Item": "Pasta, spelt, whole grain, uncooked",
+    "Qty": "3/4 cup dry (2 oz)",
+    "Weight": 56,
+    "Calories": 210,
+    "Protein": 9,
+    "Carbs": 42,
+    "Fat": 1,
+    "Fibre": 2
+  },
+  {
+    "Item": "Pasta, spaghetti, whole wheat, uncooked",
+    "Qty": "3/4 cup dry (2 oz)",
+    "Weight": 56,
+    "Calories": 210,
+    "Protein": 9,
+    "Carbs": 40,
+    "Fat": 2,
+    "Fibre": 5
+  },
+  {
+    "Item": "Pasta, quinoa, uncooked",
+    "Qty": "3/4 cup dry (2 oz)",
+    "Weight": 56,
+    "Calories": 210,
+    "Protein": 10,
+    "Carbs": 42,
+    "Fat": 1,
+    "Fibre": 7
+  },
+  {
+    "Item": "Pasta, spinach, uncooked",
+    "Qty": "3/4 cup dry (2 oz)",
+    "Weight": 56,
+    "Calories": 200,
+    "Protein": 7,
+    "Carbs": 41,
+    "Fat": 1,
+    "Fibre": 2
+  },
+  {
+    "Item": "Pasta, sprouted multi-grain, uncooked",
+    "Qty": "3/4 cup dry (2 oz)",
+    "Weight": 56,
+    "Calories": 210,
+    "Protein": 9,
+    "Carbs": 39,
+    "Fat": 2,
+    "Fibre": 7
+  },
+  {
+    "Item": "Pita, whole wheat",
+    "Qty": "1 large pita (2.1 oz)",
+    "Weight": 60,
+    "Calories": 140,
+    "Protein": 6,
+    "Carbs": 27,
+    "Fat": 2,
+    "Fibre": 5
+  },
+  {
+    "Item": "Pita, whole wheat, mini-size (pita pockets)",
+    "Qty": "1 pita pocket (1 oz)",
+    "Weight": 28,
+    "Calories": 70,
+    "Protein": 3,
+    "Carbs": 14,
+    "Fat": 1,
+    "Fibre": 2
+  },
+  {
+    "Item": "Quinoa, whole grain, traditional",
+    "Qty": "1/4 cup dry (1.6 oz)",
+    "Weight": 46,
+    "Calories": 172,
+    "Protein": 6,
+    "Carbs": 31,
+    "Fat": 3,
+    "Fibre": 3
+  },
+  {
+    "Item": "Quinoa, whole grain, flakes, hot cereal",
+    "Qty": "1/3 cup dry (1.2 oz)",
+    "Weight": 34,
+    "Calories": 105,
+    "Protein": 3,
+    "Carbs": 23,
+    "Fat": 1,
+    "Fibre": 2
+  },
+  {
+    "Item": "Rice cakes, brown rice, plain",
+    "Qty": "1 cake (.07 oz)",
+    "Weight": 1.9,
+    "Calories": 70,
+    "Protein": 1,
+    "Carbs": 16,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Rice, brown, boil-in-bag (pre-cooked)",
+    "Qty": "1 bag (3.5 oz)",
+    "Weight": 99,
+    "Calories": 347,
+    "Protein": 9,
+    "Carbs": 76,
+    "Fat": 2,
+    "Fibre": 5
+  },
+  {
+    "Item": "Rice, brown, instant (pre-cooked)",
+    "Qty": "1/4 cup dry (1.7 oz)",
+    "Weight": 48,
+    "Calories": 170,
+    "Protein": 4,
+    "Carbs": 36,
+    "Fat": 1,
+    "Fibre": 2
+  },
+  {
+    "Item": "Shredded Wheat, spoon size (boxed cold cereal)",
+    "Qty": "1 cup",
+    "Weight": 49,
+    "Calories": 170,
+    "Protein": 6,
+    "Carbs": 40,
+    "Fat": 1,
+    "Fibre": 6
+  },
+  {
+    "Item": "Tortilla, corn",
+    "Qty": "2 pcs (1.7 oz)",
+    "Weight": 48,
+    "Calories": 120,
+    "Protein": 3,
+    "Carbs": 21,
+    "Fat": 4,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Tortilla, corn, sprouted",
+    "Qty": "2 pcs (1.7 oz)",
+    "Weight": 48,
+    "Calories": 120,
+    "Protein": 3,
+    "Carbs": 23,
+    "Fat": 2,
+    "Fibre": 2
+  },
+  {
+    "Item": "Tortilla, multi-grain, low fat",
+    "Qty": "1 large (1.4 oz)",
+    "Weight": 40,
+    "Calories": 100,
+    "Protein": 7,
+    "Carbs": 13,
+    "Fat": 1,
+    "Fibre": 8
+  },
+  {
+    "Item": "Tortilla, whole wheat",
+    "Qty": "1 large (1.6 oz)",
+    "Weight": 47,
+    "Calories": 110,
+    "Protein": 4,
+    "Carbs": 16,
+    "Fat": "-",
+    "Fibre": 2
+  },
+  {
+    "Item": "Tortilla, whole grain, sprouted (Ezekiel)",
+    "Qty": "1 large (2 oz)",
+    "Weight": 57,
+    "Calories": 150,
+    "Protein": 6,
+    "Carbs": 24,
+    "Fat": 4,
+    "Fibre": 5
+  },
+  {
+    "Item": "Tortilla, spelt",
+    "Qty": "1 large (2 oz)",
+    "Weight": 57,
+    "Calories": 150,
+    "Protein": 5,
+    "Carbs": 28,
+    "Fat": "-",
+    "Fibre": 3
+  },
+  {
+    "Item": "Apple butter, unsweetened (no sugar)",
+    "Qty": "1 tbsp (0.7 oz)",
+    "Weight": 16,
+    "Calories": 20,
+    "Protein": "-",
+    "Carbs": 5,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Applesauce, unsweetened (no sugar)",
+    "Qty": "1 cup (8.6 oz)",
+    "Weight": 243,
+    "Calories": 100,
+    "Protein": "-",
+    "Carbs": 26,
+    "Fat": "-",
+    "Fibre": 4
+  },
+  {
+    "Item": "Apricots, fresh",
+    "Qty": "3 med (4 oz)",
+    "Weight": 113,
+    "Calories": 60,
+    "Protein": "-",
+    "Carbs": 11,
+    "Fat": "-",
+    "Fibre": 1
+  },
+  {
+    "Item": "Banana",
+    "Qty": "1 med (4.4 oz)",
+    "Weight": 124,
+    "Calories": 110,
+    "Protein": 1,
+    "Carbs": 29,
+    "Fat": "-",
+    "Fibre": 4
+  },
+  {
+    "Item": "Blackberries",
+    "Qty": "1 cup (5.1 oz)",
+    "Weight": 144,
+    "Calories": 74,
+    "Protein": 1,
+    "Carbs": 18,
+    "Fat": 1,
+    "Fibre": 7
+  },
+  {
+    "Item": "Blueberries",
+    "Qty": "1 cup (5.1 oz)",
+    "Weight": 145,
+    "Calories": 82,
+    "Protein": 1,
+    "Carbs": 20,
+    "Fat": 1,
+    "Fibre": 4
+  },
+  {
+    "Item": "Cantaloupe (melon)",
+    "Qty": "1/2 med, (3.5 oz)",
+    "Weight": 99,
+    "Calories": 94,
+    "Protein": 2,
+    "Carbs": 22,
+    "Fat": 1,
+    "Fibre": 2
+  },
+  {
+    "Item": "Cherries, pitted",
+    "Qty": "1 cup, 21 pcs (4.9 oz)",
+    "Weight": 139,
+    "Calories": 90,
+    "Protein": 2,
+    "Carbs": 22,
+    "Fat": "-",
+    "Fibre": 3
+  },
+  {
+    "Item": "Clementine",
+    "Qty": "1 med (2.6 oz)",
+    "Weight": 74,
+    "Calories": 35,
+    "Protein": 1,
+    "Carbs": 9,
+    "Fat": "-",
+    "Fibre": 1
+  },
+  {
+    "Item": "Cranberries",
+    "Qty": "1 cup (3.4 oz)",
+    "Weight": 96,
+    "Calories": 46,
+    "Protein": 0,
+    "Carbs": 12,
+    "Fat": "-",
+    "Fibre": 4
+  },
+  {
+    "Item": "Custard apple (annona aka bullock's heart)",
+    "Qty": "1 med (3.5 oz)",
+    "Weight": 99,
+    "Calories": 101,
+    "Protein": 2,
+    "Carbs": 25,
+    "Fat": 1,
+    "Fibre": 2
+  },
+  {
+    "Item": "Figs",
+    "Qty": "1 large (2.3 oz)",
+    "Weight": 65,
+    "Calories": 47,
+    "Protein": 1,
+    "Carbs": 12,
+    "Fat": 0,
+    "Fibre": 2
+  },
+  {
+    "Item": "Grapefruit",
+    "Qty": "1/2 large (4.7 oz)",
+    "Weight": 133,
+    "Calories": 53,
+    "Protein": 1,
+    "Carbs": 13,
+    "Fat": 0,
+    "Fibre": 2
+  },
+  {
+    "Item": "Grapes, seedless red or green",
+    "Qty": "20 grapes (3.4 oz)",
+    "Weight": 96,
+    "Calories": 72,
+    "Protein": 1,
+    "Carbs": 18,
+    "Fat": 1,
+    "Fibre": 1
+  },
+  {
+    "Item": "Guava",
+    "Qty": "1 med (4 oz)",
+    "Weight": 113,
+    "Calories": 45,
+    "Protein": 1,
+    "Carbs": 11,
+    "Fat": 1,
+    "Fibre": 5
+  },
+  {
+    "Item": "Goji berries (wolfberries), dried",
+    "Qty": "3 tbsp (1 oz)",
+    "Weight": 28,
+    "Calories": 104,
+    "Protein": 4,
+    "Carbs": 24,
+    "Fat": 1,
+    "Fibre": 4
+  },
+  {
+    "Item": "Honey, raw (not a fruit, but a natural sugar)",
+    "Qty": "1 tbsp (0.7 oz)",
+    "Weight": 60,
+    "Calories": 60,
+    "Protein": "-",
+    "Carbs": 17,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Honeydew melon",
+    "Qty": "1 cup, cubed (6 oz)",
+    "Weight": 170,
+    "Calories": 60,
+    "Protein": 1,
+    "Carbs": 16,
+    "Fat": 0,
+    "Fibre": 1
+  },
+  {
+    "Item": "Jelly, all fruit (no refined sugar)",
+    "Qty": "2 tbsp (1.4 oz)",
+    "Weight": 40,
+    "Calories": 80,
+    "Protein": "-",
+    "Carbs": 20,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Kiwifruit",
+    "Qty": "2 med (5.2 oz)",
+    "Weight": 147,
+    "Calories": 100,
+    "Protein": 2,
+    "Carbs": 24,
+    "Fat": "-",
+    "Fibre": 4
+  },
+  {
+    "Item": "Lemon",
+    "Qty": "1 med (3.8 oz)",
+    "Weight": 108,
+    "Calories": 22,
+    "Protein": 1,
+    "Carbs": 12,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Lime",
+    "Qty": "1 med (2.4)",
+    "Weight": 68,
+    "Calories": 20,
+    "Protein": "-",
+    "Carbs": 7,
+    "Fat": "-",
+    "Fibre": 2
+  },
+  {
+    "Item": "Mango",
+    "Qty": "1/2 med (4.9 oz)",
+    "Weight": 139,
+    "Calories": 70,
+    "Protein": "-",
+    "Carbs": 17,
+    "Fat": 1,
+    "Fibre": 1
+  },
+  {
+    "Item": "Nectarine",
+    "Qty": "1 med (4.9 oz)",
+    "Weight": 139,
+    "Calories": 70,
+    "Protein": 1,
+    "Carbs": 16,
+    "Fat": "-",
+    "Fibre": 2
+  },
+  {
+    "Item": "Orange",
+    "Qty": "1 med (5 oz)",
+    "Weight": 141,
+    "Calories": 65,
+    "Protein": 1,
+    "Carbs": 16,
+    "Fat": 0,
+    "Fibre": 3
+  },
+  {
+    "Item": "Papaya",
+    "Qty": "1/2 med (4.9 oz)",
+    "Weight": 139,
+    "Calories": 70,
+    "Protein": "-",
+    "Carbs": 19,
+    "Fat": "-",
+    "Fibre": 2
+  },
+  {
+    "Item": "Passion fruit",
+    "Qty": "1 med (0.6 oz)",
+    "Weight": 18,
+    "Calories": 14,
+    "Protein": ",4",
+    "Carbs": 4,
+    "Fat": 0,
+    "Fibre": 2
+  },
+  {
+    "Item": "Peach",
+    "Qty": "1 med (3.5 oz)",
+    "Weight": 99,
+    "Calories": 40,
+    "Protein": 1,
+    "Carbs": 10,
+    "Fat": "-",
+    "Fibre": 2
+  },
+  {
+    "Item": "Pear",
+    "Qty": "1 med (5.9 oz)",
+    "Weight": 167,
+    "Calories": 100,
+    "Protein": 1,
+    "Carbs": 25,
+    "Fat": 1,
+    "Fibre": 4
+  },
+  {
+    "Item": "Persimmon",
+    "Qty": "1 med (5.9 oz)",
+    "Weight": 167,
+    "Calories": 118,
+    "Protein": 1,
+    "Carbs": 31,
+    "Fat": 0,
+    "Fibre": 6
+  },
+  {
+    "Item": "Pineapple",
+    "Qty": "1 cup diced (5.5 oz)",
+    "Weight": 156,
+    "Calories": 76,
+    "Protein": 1,
+    "Carbs": 19,
+    "Fat": 1,
+    "Fibre": 2
+  },
+  {
+    "Item": "Pomegranate, whole with peel",
+    "Qty": "1 large (9.7 oz)",
+    "Weight": 275,
+    "Calories": 104,
+    "Protein": 2,
+    "Carbs": 26,
+    "Fat": "-",
+    "Fibre": 1
+  },
+  {
+    "Item": "Plum",
+    "Qty": "2 med (4.7)",
+    "Weight": 133,
+    "Calories": 80,
+    "Protein": 2,
+    "Carbs": 38,
+    "Fat": 2,
+    "Fibre": 4
+  },
+  {
+    "Item": "Prunes (dried plum)",
+    "Qty": "5 med (1.5 oz)",
+    "Weight": 42,
+    "Calories": 100,
+    "Protein": 1,
+    "Carbs": 26,
+    "Fat": "-",
+    "Fibre": 3
+  },
+  {
+    "Item": "Raisins",
+    "Qty": "1/4 cup (1.4 oz)",
+    "Weight": 40,
+    "Calories": 130,
+    "Protein": 1,
+    "Carbs": 31,
+    "Fat": "-",
+    "Fibre": 2
+  },
+  {
+    "Item": "Raspberries",
+    "Qty": "1 cup (4.3 oz)",
+    "Weight": 122,
+    "Calories": 61,
+    "Protein": 1,
+    "Carbs": 14,
+    "Fat": 1,
+    "Fibre": 8
+  },
+  {
+    "Item": "Strawberries",
+    "Qty": "halved, 1 cup (5.4 oz)",
+    "Weight": 153,
+    "Calories": 46,
+    "Protein": 1,
+    "Carbs": 11,
+    "Fat": "-",
+    "Fibre": 4
+  },
+  {
+    "Item": "Tangerines",
+    "Qty": "1 med (3.8)",
+    "Weight": 108,
+    "Calories": 50,
+    "Protein": 1,
+    "Carbs": 15,
+    "Fat": 1,
+    "Fibre": 3
+  },
+  {
+    "Item": "Watermelon",
+    "Qty": "1 cup diced (5.4 oz)",
+    "Weight": 153,
+    "Calories": 50,
+    "Protein": 1,
+    "Carbs": 11,
+    "Fat": 1,
+    "Fibre": 1
+  },
+  {
+    "Item": "Arugula, raw",
+    "Qty": "1 cup (0.8 oz)",
+    "Weight": 6,
+    "Calories": 6,
+    "Protein": 1,
+    "Carbs": 1,
+    "Fat": "-",
+    "Fibre": 0
+  },
+  {
+    "Item": "Artichoke, fresh, edible portions",
+    "Qty": "1 med (4.5 oz)",
+    "Weight": 128,
+    "Calories": 60,
+    "Protein": 4,
+    "Carbs": 14,
+    "Fat": 0,
+    "Fibre": 7
+  },
+  {
+    "Item": "Asparagus spears",
+    "Qty": "10 large 7\" (6.6 oz)",
+    "Weight": 187,
+    "Calories": 50,
+    "Protein": 4,
+    "Carbs": 8,
+    "Fat": "-",
+    "Fibre": 4
+  },
+  {
+    "Item": "Beets, raw",
+    "Qty": "1 cup (6 oz)",
+    "Weight": 170,
+    "Calories": 70,
+    "Protein": 2,
+    "Carbs": 16,
+    "Fat": "-",
+    "Fibre": 4
+  },
+  {
+    "Item": "Bok Choy (Chinese cabbage), raw, shredded",
+    "Qty": "1 cup  (2.5 oz)",
+    "Weight": 71,
+    "Calories": 10,
+    "Protein": 1,
+    "Carbs": 2,
+    "Fat": 0,
+    "Fibre": 1
+  },
+  {
+    "Item": "Broccoli, raw, chopped",
+    "Qty": "1 cup (3.2 oz)",
+    "Weight": 91,
+    "Calories": 44,
+    "Protein": 5,
+    "Carbs": 8,
+    "Fat": 0,
+    "Fibre": 5
+  },
+  {
+    "Item": "Brussels sprouts, raw, chopped",
+    "Qty": "1 cup (3.1 oz)",
+    "Weight": 88,
+    "Calories": 38,
+    "Protein": 3,
+    "Carbs": 8,
+    "Fat": 0,
+    "Fibre": 4
+  },
+  {
+    "Item": "Cabbage, raw, shredded",
+    "Qty": "1 cup (3.1 oz)",
+    "Weight": 88,
+    "Calories": 18,
+    "Protein": 1,
+    "Carbs": 4,
+    "Fat": 0,
+    "Fibre": 2
+  },
+  {
+    "Item": "Cauliflower, raw, chopped",
+    "Qty": "1 cup (3.5 oz)",
+    "Weight": 99,
+    "Calories": 26,
+    "Protein": 2,
+    "Carbs": 5,
+    "Fat": 0,
+    "Fibre": 3
+  },
+  {
+    "Item": "Carrot, raw",
+    "Qty": "1 large 7.5\" (2.8 oz)",
+    "Weight": 79,
+    "Calories": 31,
+    "Protein": 1,
+    "Carbs": 7,
+    "Fat": 0,
+    "Fibre": 2
+  },
+  {
+    "Item": "Celery, raw, stalk",
+    "Qty": "1 med 7.5\" (1.6 oz)",
+    "Weight": 45,
+    "Calories": 6,
+    "Protein": 0,
+    "Carbs": 2,
+    "Fat": 0,
+    "Fibre": 1
+  },
+  {
+    "Item": "Chard, Swiss, fresh chopped",
+    "Qty": "1 cup (1.3 oz)",
+    "Weight": 85,
+    "Calories": 6,
+    "Protein": 1,
+    "Carbs": 1,
+    "Fat": "-",
+    "Fibre": 0
+  },
+  {
+    "Item": "Collard greens, raw",
+    "Qty": "2 cups (2.8 oz)",
+    "Weight": 79,
+    "Calories": 25,
+    "Protein": 2,
+    "Carbs": 5,
+    "Fat": "-",
+    "Fibre": 3
+  },
+  {
+    "Item": "Cucumber, with peel",
+    "Qty": "1 small (5.6 oz)",
+    "Weight": 158,
+    "Calories": 19,
+    "Protein": 1,
+    "Carbs": 3,
+    "Fat": "-",
+    "Fibre": 1
+  },
+  {
+    "Item": "Eggplant, raw",
+    "Qty": "1 cup pieces (3 oz)",
+    "Weight": 85,
+    "Calories": 22,
+    "Protein": 1,
+    "Carbs": 5,
+    "Fat": 0,
+    "Fibre": 2
+  },
+  {
+    "Item": "Garlic, fresh",
+    "Qty": "1 clove",
+    "Weight": 5.6,
+    "Calories": 4,
+    "Protein": 0,
+    "Carbs": 1,
+    "Fat": "-",
+    "Fibre": 0
+  },
+  {
+    "Item": "Green beans (string or snap beans), raw",
+    "Qty": "1 cup (4 oz)",
+    "Weight": 113,
+    "Calories": 34,
+    "Protein": 2,
+    "Carbs": 8,
+    "Fat": 0,
+    "Fibre": 4
+  },
+  {
+    "Item": "Jerusalem artichokes",
+    "Qty": "1/2 cup sliced (3 oz)",
+    "Weight": 85,
+    "Calories": 57,
+    "Protein": 2,
+    "Carbs": 13,
+    "Fat": "-",
+    "Fibre": 1
+  },
+  {
+    "Item": "Kale, raw, chopped",
+    "Qty": "1 cup (2.4 oz)",
+    "Weight": 68,
+    "Calories": 34,
+    "Protein": 2,
+    "Carbs": 7,
+    "Fat": 0,
+    "Fibre": 1
+  },
+  {
+    "Item": "Leeks, raw",
+    "Qty": "1 cup 3.1 oz)",
+    "Weight": 87,
+    "Calories": 64,
+    "Protein": 2,
+    "Carbs": 15,
+    "Fat": 0,
+    "Fibre": 2
+  },
+  {
+    "Item": "Lettuce, romaine, loose leaf, chopped",
+    "Qty": "3 cups (6 oz)",
+    "Weight": 170,
+    "Calories": 30,
+    "Protein": 2,
+    "Carbs": 4,
+    "Fat": "-",
+    "Fibre": 2
+  },
+  {
+    "Item": "Okra, raw, sliced",
+    "Qty": "1 cup (3.5 oz)",
+    "Weight": 99,
+    "Calories": 38,
+    "Protein": 2,
+    "Carbs": 8,
+    "Fat": 0,
+    "Fibre": 3
+  },
+  {
+    "Item": "Onion, white or yellow, raw, chopped",
+    "Qty": "1 cup (5.2 oz)",
+    "Weight": 147,
+    "Calories": 60,
+    "Protein": 2,
+    "Carbs": 14,
+    "Fat": "-",
+    "Fibre": 3
+  },
+  {
+    "Item": "Onion, green (scallion), raw, chopped",
+    "Qty": "1 cup (3.5 oz)",
+    "Weight": 99,
+    "Calories": 32,
+    "Protein": 2,
+    "Carbs": 7,
+    "Fat": 0,
+    "Fibre": 3
+  },
+  {
+    "Item": "Mushrooms, white, raw pieces or slices",
+    "Qty": "1 cup (2.5 oz)",
+    "Weight": 71,
+    "Calories": 18,
+    "Protein": 2,
+    "Carbs": 3,
+    "Fat": 0,
+    "Fibre": 1
+  },
+  {
+    "Item": "Parsnips",
+    "Qty": "1 med (4 oz)",
+    "Weight": 113,
+    "Calories": 85,
+    "Protein": 1,
+    "Carbs": 20,
+    "Fat": 0,
+    "Fibre": 6
+  },
+  {
+    "Item": "Peas, green, frozen",
+    "Qty": "1/2 cup (2.8 oz)",
+    "Weight": 79,
+    "Calories": 60,
+    "Protein": 4,
+    "Carbs": 11,
+    "Fat": "-",
+    "Fibre": 3
+  },
+  {
+    "Item": "Peas, sugar snap or snow, raw",
+    "Qty": "1 cup (3 oz)",
+    "Weight": 85,
+    "Calories": 35,
+    "Protein": 2,
+    "Carbs": 6,
+    "Fat": "-",
+    "Fibre": 2
+  },
+  {
+    "Item": "Pepper, bell or sweet, green or red",
+    "Qty": "med or 1/2 cup (4.2 oz)",
+    "Weight": 119,
+    "Calories": 20,
+    "Protein": 1,
+    "Carbs": 5,
+    "Fat": 0,
+    "Fibre": 1
+  },
+  {
+    "Item": "Pepper, yellow, raw",
+    "Qty": "large (6.6 oz)",
+    "Weight": 187,
+    "Calories": 50,
+    "Protein": 2,
+    "Carbs": 12,
+    "Fat": 0,
+    "Fibre": 2
+  },
+  {
+    "Item": "Pumpkin, raw, cubes",
+    "Qty": "1 cup (4.1 oz)",
+    "Weight": 116,
+    "Calories": 30,
+    "Protein": 1,
+    "Carbs": 8,
+    "Fat": 0,
+    "Fibre": 2
+  },
+  {
+    "Item": "Radishes, raw, sliced",
+    "Qty": "1/2 cup (2 oz)",
+    "Weight": 57,
+    "Calories": 12,
+    "Protein": 0,
+    "Carbs": 2,
+    "Fat": 0,
+    "Fibre": 1
+  },
+  {
+    "Item": "Salsa or picante sauce, tomato",
+    "Qty": "4  tbsp (4 oz)",
+    "Weight": 115,
+    "Calories": 20,
+    "Protein": "-",
+    "Carbs": 5,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Shallots",
+    "Qty": "1 tbsp chopped (0.4 oz)",
+    "Weight": 11,
+    "Calories": 7,
+    "Protein": 0,
+    "Carbs": 2,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Spinach, raw, leaves, chopped",
+    "Qty": "1.5 cups (3 oz)",
+    "Weight": 85,
+    "Calories": 40,
+    "Protein": 2,
+    "Carbs": 10,
+    "Fat": 0,
+    "Fibre": 5
+  },
+  {
+    "Item": "Squash, raw, summer, (zucchini, crookneck)",
+    "Qty": "1 cup (3 oz)",
+    "Weight": 85,
+    "Calories": 16,
+    "Protein": 1,
+    "Carbs": 3,
+    "Fat": 0,
+    "Fibre": 1
+  },
+  {
+    "Item": "Tomato, whole, raw *",
+    "Qty": "1 med (5.2 oz)",
+    "Weight": 147,
+    "Calories": 35,
+    "Protein": 1,
+    "Carbs": 7,
+    "Fat": "-",
+    "Fibre": 1
+  },
+  {
+    "Item": "Tomato juice",
+    "Qty": "1 cup (8 fl oz)",
+    "Weight": "-",
+    "Calories": 50,
+    "Protein": 2,
+    "Carbs": 10,
+    "Fat": "-",
+    "Fibre": 2
+  },
+  {
+    "Item": "Tomato sauce",
+    "Qty": "1 cup (8 fl oz)",
+    "Weight": 226,
+    "Calories": 80,
+    "Protein": 3,
+    "Carbs": 16,
+    "Fat": "-",
+    "Fibre": 4
+  },
+  {
+    "Item": "Tomato paste",
+    "Qty": "2 tbsp (1.2 oz)",
+    "Weight": 34,
+    "Calories": 30,
+    "Protein": 1,
+    "Carbs": 7,
+    "Fat": "-",
+    "Fibre": 2
+  },
+  {
+    "Item": "Turnips",
+    "Qty": "1 large (6.5 oz)",
+    "Weight": 184,
+    "Calories": 51,
+    "Protein": 2,
+    "Carbs": 12,
+    "Fat": 0,
+    "Fibre": 3
+  },
+  {
+    "Item": "Turnip Greens",
+    "Qty": "3 cups (5.7 oz)",
+    "Weight": 161,
+    "Calories": 42,
+    "Protein": 2,
+    "Carbs": 10,
+    "Fat": 1,
+    "Fibre": 4
+  },
+  {
+    "Item": "Water Chestnuts",
+    "Qty": "4 (1.3 oz)",
+    "Weight": 37,
+    "Calories": 35,
+    "Protein": "-",
+    "Carbs": 9,
+    "Fat": "-",
+    "Fibre": 1
+  },
+  {
+    "Item": "Vegetable juice",
+    "Qty": "1 cup (8 fl oz)",
+    "Weight": "-",
+    "Calories": 50,
+    "Protein": 2,
+    "Carbs": 10,
+    "Fat": "-",
+    "Fibre": 2
+  },
+  {
+    "Item": "Vegetables, mixed, frozen, peas and carrots",
+    "Qty": "2/3 cup",
+    "Weight": 85,
+    "Calories": 50,
+    "Protein": 3,
+    "Carbs": 9,
+    "Fat": "-",
+    "Fibre": 3
+  },
+  {
+    "Item": "Vegetables, mixed, frozen, oriental broccoli stir fry",
+    "Qty": "1 cup",
+    "Weight": 96,
+    "Calories": 35,
+    "Protein": 1,
+    "Carbs": 6,
+    "Fat": "-",
+    "Fibre": 2
+  },
+  {
+    "Item": "Vegetables, mixed, frozen, broccoli, cauliflower, carrots",
+    "Qty": "1 cup",
+    "Weight": 87,
+    "Calories": 30,
+    "Protein": 1,
+    "Carbs": 5,
+    "Fat": "-",
+    "Fibre": 2
+  },
+  {
+    "Item": "Watercress",
+    "Qty": "1 cup chopped (1.2 oz)",
+    "Weight": 34,
+    "Calories": 4,
+    "Protein": 1,
+    "Carbs": 0,
+    "Fat": "-",
+    "Fibre": 1
+  },
+  {
+    "Item": "Almonds, raw",
+    "Qty": "1/4 cup (1.2 oz)",
+    "Weight": 34,
+    "Calories": 210,
+    "Protein": 7,
+    "Carbs": 7,
+    "Fat": "",
+    "Fibre": 9
+  },
+  {
+    "Item": "Almond butter, natural (unsweetened)",
+    "Qty": "2 tbsp (1.2 oz)",
+    "Weight": 34,
+    "Calories": 120,
+    "Protein": "-",
+    "Carbs": "-",
+    "Fat": 14,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Brazil nuts, shelled",
+    "Qty": "1/4 cup (4.9 oz)",
+    "Weight": 139,
+    "Calories": 240,
+    "Protein": 5,
+    "Carbs": 5,
+    "Fat": 12,
+    "Fibre": 2
+  },
+  {
+    "Item": "Butter, light, omega-3 fortified",
+    "Qty": "1 tbsp (0.6 oz)",
+    "Weight": 14,
+    "Calories": 50,
+    "Protein": "-",
+    "Carbs": "-",
+    "Fat": 5,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Butter, light, regular",
+    "Qty": "1 tbsp",
+    "Weight": 14,
+    "Calories": 50,
+    "Protein": "-",
+    "Carbs": "-",
+    "Fat": 6,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Butter flavor sprinkles (Butter Buds, etc)",
+    "Qty": "1 tbsp",
+    "Weight": 6,
+    "Calories": 15,
+    "Protein": "-",
+    "Carbs": 2,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Cashews, raw",
+    "Qty": "1/4 cup (1.2 oz)",
+    "Weight": 34,
+    "Calories": 190,
+    "Protein": 5,
+    "Carbs": 11,
+    "Fat": 15,
+    "Fibre": 1
+  },
+  {
+    "Item": "Coconut oil, extra virgin",
+    "Qty": "1 tbsp (0.5 oz)",
+    "Weight": 14,
+    "Calories": 125,
+    "Protein": "-",
+    "Carbs": "-",
+    "Fat": 14,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Coconut, fresh shredded",
+    "Qty": "2 tbsp (1 oz)",
+    "Weight": 28,
+    "Calories": 180,
+    "Protein": 2,
+    "Carbs": 7,
+    "Fat": 18,
+    "Fibre": 5
+  },
+  {
+    "Item": "Chia seeds",
+    "Qty": "3 tbsp (1 oz)",
+    "Weight": 28,
+    "Calories": 139,
+    "Protein": 4,
+    "Carbs": 12,
+    "Fat": 11,
+    "Fibre": 11
+  },
+  {
+    "Item": "Essential oil blend (supplement, not for cooking)",
+    "Qty": "1 tbsp (0.6 oz)",
+    "Weight": "-",
+    "Calories": 134,
+    "Protein": "-",
+    "Carbs": "-",
+    "Fat": 14,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Flaxseed Oil (supplement, not for cooking)",
+    "Qty": "1 tbsp (0.6 oz)",
+    "Weight": "-",
+    "Calories": 130,
+    "Protein": "-",
+    "Carbs": "-",
+    "Fat": 14,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Flaxseeds, ground",
+    "Qty": "2 tbsp (0.7 oz)",
+    "Weight": 20,
+    "Calories": 93,
+    "Protein": 4,
+    "Carbs": 6,
+    "Fat": 6,
+    "Fibre": 5
+  },
+  {
+    "Item": "Hazelnuts, dried, chopped",
+    "Qty": "1/4 cup (1 oz)",
+    "Weight": 28,
+    "Calories": 182,
+    "Protein": 4,
+    "Carbs": 4,
+    "Fat": 18,
+    "Fibre": 2
+  },
+  {
+    "Item": "Hemp seeds (hemp hearts)",
+    "Qty": "2 tbsp (1.1 oz)",
+    "Weight": 31,
+    "Calories": 165,
+    "Protein": 11,
+    "Carbs": 7,
+    "Fat": 10,
+    "Fibre": 1
+  },
+  {
+    "Item": "Macadamia nuts, raw",
+    "Qty": "1/4 cup (1.1 oz)",
+    "Weight": 31,
+    "Calories": 230,
+    "Protein": 3,
+    "Carbs": 5,
+    "Fat": 24,
+    "Fibre": 2
+  },
+  {
+    "Item": "Mayonnaise, Canola",
+    "Qty": "1 tbsp (0.5 oz)",
+    "Weight": 15,
+    "Calories": 100,
+    "Protein": "-",
+    "Carbs": "-",
+    "Fat": 11,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Mayonnaise, fat-free",
+    "Qty": "1 tbsp (0.5 oz)",
+    "Weight": 15,
+    "Calories": 10,
+    "Protein": "-",
+    "Carbs": 3,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Mayonnaise, light, omega-3 enriched",
+    "Qty": "1 tbsp (0.5 oz)",
+    "Weight": 15,
+    "Calories": 50,
+    "Protein": "-",
+    "Carbs": 2,
+    "Fat": 5,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Mayonnaise, light, regular",
+    "Qty": "1 tbsp (0.5 oz)",
+    "Weight": 15,
+    "Calories": 35,
+    "Protein": "-",
+    "Carbs": 1,
+    "Fat": 4,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Peanuts, raw",
+    "Qty": "1/4 cup  (1.2 oz)",
+    "Weight": 34,
+    "Calories": 214,
+    "Protein": 9,
+    "Carbs": 8,
+    "Fat": 18,
+    "Fibre": 3
+  },
+  {
+    "Item": "Peanut Butter, natural (no sugar added)",
+    "Qty": "1 tbsp (0.6 oz)",
+    "Weight": 17,
+    "Calories": 95,
+    "Protein": 4,
+    "Carbs": 4,
+    "Fat": 8,
+    "Fibre": 1
+  },
+  {
+    "Item": "Pecans, halves or pieces",
+    "Qty": "1/4 cup (1 oz)",
+    "Weight": 28,
+    "Calories": 190,
+    "Protein": 3,
+    "Carbs": 4,
+    "Fat": 20,
+    "Fibre": 3
+  },
+  {
+    "Item": "Pine nuts, dried",
+    "Qty": "1/4 cup  (1.2 oz)",
+    "Weight": 34,
+    "Calories": 227,
+    "Protein": 5,
+    "Carbs": 4,
+    "Fat": 23,
+    "Fibre": 1
+  },
+  {
+    "Item": "Pistachios",
+    "Qty": "1/4 cup (1 oz)",
+    "Weight": 28,
+    "Calories": 164,
+    "Protein": 6,
+    "Carbs": 7,
+    "Fat": 14,
+    "Fibre": 3
+  },
+  {
+    "Item": "Pumpkin seeds, shelled, roasted",
+    "Qty": "142 kernels (1 oz)",
+    "Weight": 28,
+    "Calories": 148,
+    "Protein": 9,
+    "Carbs": 4,
+    "Fat": 12,
+    "Fibre": 2
+  },
+  {
+    "Item": "Olives, Greek black, pitted*",
+    "Qty": "2 oz",
+    "Weight": 56,
+    "Calories": 100,
+    "Protein": 1,
+    "Carbs": 4,
+    "Fat": 8,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Olives, green, pitted*",
+    "Qty": "2 oz",
+    "Weight": 56,
+    "Calories": 100,
+    "Protein": "-",
+    "Carbs": 4,
+    "Fat": 10,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Olive Oil, extra virgin",
+    "Qty": "1 tbsp",
+    "Weight": "-",
+    "Calories": 120,
+    "Protein": "-",
+    "Carbs": "-",
+    "Fat": 14,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Salad dressing, olive oil and vinegar",
+    "Qty": "1 tbsp",
+    "Weight": "-",
+    "Calories": 75,
+    "Protein": "-",
+    "Carbs": 1,
+    "Fat": 8,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Salad dressing, balsamic vinaigrette w. olive oil, light",
+    "Qty": "2 tbsp",
+    "Weight": "-",
+    "Calories": 45,
+    "Protein": "-",
+    "Carbs": 2,
+    "Fat": 4,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Salad dressing, balsamic vinaigrette, nonfat",
+    "Qty": "2 tbsp",
+    "Weight": "-",
+    "Calories": 5,
+    "Protein": "-",
+    "Carbs": 2,
+    "Fat": "-",
+    "Fibre": "-"
+  },
+  {
+    "Item": "Sesame oil",
+    "Qty": "1 tbsp",
+    "Weight": "-",
+    "Calories": 120,
+    "Protein": "-",
+    "Carbs": "-",
+    "Fat": 14,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Sesame seeds, whole, dried",
+    "Qty": "1/4 cup (5.1 oz)",
+    "Weight": 144,
+    "Calories": 190,
+    "Protein": 6,
+    "Carbs": 8,
+    "Fat": 17,
+    "Fibre": 4
+  },
+  {
+    "Item": "Sesame butter",
+    "Qty": "1 tbsp (0.6 oz)",
+    "Weight": 17,
+    "Calories": 100,
+    "Protein": 3,
+    "Carbs": 4,
+    "Fat": 9,
+    "Fibre": "-"
+  },
+  {
+    "Item": "Sesame paste (Tahini)",
+    "Qty": "1 tbsp (0.5 oz)",
+    "Weight": 14,
+    "Calories": 95,
+    "Protein": 4,
+    "Carbs": 2,
+    "Fat": 9,
+    "Fibre": 1
+  },
+  {
+    "Item": "Sunflower seed, shelled",
+    "Qty": "1/4 cup (1 oz)",
+    "Weight": 28,
+    "Calories": 170,
+    "Protein": 7,
+    "Carbs": 6,
+    "Fat": 15,
+    "Fibre": 3
+  },
+  {
+    "Item": "Walnuts",
+    "Qty": "1/4 cup (1.1 oz)",
+    "Weight": 28,
+    "Calories": 200,
+    "Protein": 5,
+    "Carbs": 3,
+    "Fat": 20,
+    "Fibre": 3
+  }
+]

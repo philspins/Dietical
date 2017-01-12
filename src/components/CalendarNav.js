@@ -100,7 +100,11 @@ class CalendarNav extends React.Component {
 								{week}
 							</ListGroup>
 						</ButtonGroup>
-						<Button>Jump to today</Button>
+					</Col>
+				</Row>
+				<Row>
+					<Col md={12}>
+						<Button bsClass="btn btn-default btn-xs calendar_today_button" onClick={CalendarNavActions.getNow.bind(this)}>Jump to today</Button>
 					</Col>
 				</Row>
 			</Grid>

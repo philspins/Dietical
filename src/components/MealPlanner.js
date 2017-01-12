@@ -44,7 +44,7 @@ class MealPlanner extends React.Component {
 
 	render() {
 		return (
-			<Grid className="calendar_navigation_box">
+			<Grid>
 				<CalendarNav />
 
 				<Row>
