@@ -70,7 +70,7 @@ class CalendarNav extends React.Component {
 		});
 
 		return (
-      <Grid className="calendar_navigation_box">
+      <Grid bsClass="calendar_navigation_box">
 				<Row>
 					<Col md={12}>
 						<ButtonGroup bsClass="calendar_nav_buttons btn-group btn-group-justified">

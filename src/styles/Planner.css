@@ -1,0 +1,11 @@
+.single_day_view {
+	background-clip: border-box;
+	background-color: #ffffff;
+	border: 1px solid #ccc;;
+	border-radius: 4px;
+	display: block;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 30px;
+}
