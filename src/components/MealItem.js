@@ -21,6 +21,7 @@ class MealItem extends React.PureComponent {
 
 	componentDidMount() {
 		MealItemStore.listen(this.onChange);
+
 	}
 
 	componentWillUnmount() {

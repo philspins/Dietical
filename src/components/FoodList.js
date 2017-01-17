@@ -1,31 +1,31 @@
-// src/components/RecipeList.js
+// src/components/FoodList.js
 /*eslint no-console:0 */
 
 import React from "react";
 import {Link} from "react-router";
 import {isEqual} from "underscore";
 
-import RecipeListStore from "../stores/RecipeListStore";
-import RecipeListActions from "../actions/RecipeListActions";
+import FoodListStore from "../stores/FoodListStore";
+import FoodListActions from "../actions/FoodListActions";
 
-class RecipeList extends React.PureComponent {
+class FoodList extends React.PureComponent {
 	constructor(props) {
 		super(props);
-		this.state = RecipeListStore.getState();
+		this.state = FoodListStore.getState();
 		this.onChange = this.onChange.bind(this);
 	}
 
 	componentDidMount() {
-		RecipeListStore.listen(this.onChange);
-		RecipeListActions.getRecipes(this.props.params);
+		FoodListStore.listen(this.onChange);
+		FoodListActions.getFoods(this.props.params);
 	}
 
 	componentWillUnmount() {
-		RecipeListStore.unlisten(this.onChange);
+		FoodListStore.unlisten(this.onChange);
 	}
 
 	componentDidUpdate(prevProps) {
-		RecipeListActions.getRecipes(this.props.params);
+		FoodListActions.getFoods(this.props.params);
 	}
 
 	onChange(state) {
@@ -33,7 +33,7 @@ class RecipeList extends React.PureComponent {
 	}
 
 	render() {
-		let recipeList = "";
+		let foodList = "";
 
 		return (
       <div className='container'>
@@ -42,13 +42,13 @@ class RecipeList extends React.PureComponent {
 						<div className='media'>
 							<span className='position pull-left'>{1}</span>
 							<div className='pull-left thumb-lg'>
-								<Link to={"/recipes/" + 1}>
-									<img className='media-object' src='http://images.media-allrecipes.com/userphotos/560x315/1126199.jpg' />
+								<Link to={"/food/" + 1}>
+									<img className='media-object' src='http://pngimg.com/upload/carrot_PNG4985.png' />
 								</Link>
 							</div>
 							<div className='media-body'>
 								<h4 className='media-heading'>
-									<Link to={"/recipes/" + 1}>Best Pork Chop Marinade</Link>
+									<Link to={"/food/" + 1}>Carrot</Link>
 								</h4>
 							</div>
 						</div>
@@ -57,13 +57,13 @@ class RecipeList extends React.PureComponent {
 						<div className='media'>
 							<span className='position pull-left'>{2}</span>
 							<div className='pull-left thumb-lg'>
-								<Link to={"/recipes/" + 2}>
-									<img className='media-object' src='http://images.media-allrecipes.com/userphotos/560x315/1010419.jpg' />
+								<Link to={"/food/" + 2}>
+									<img className='media-object' src='http://www.irishnews.com/picturesarchive/irishnews/irishnews/2016/01/04/114204997-20c06d35-2d7e-4e51-8bd6-50b866c8648c.jpg' />
 								</Link>
 							</div>
 							<div className='media-body'>
 								<h4 className='media-heading'>
-									<Link to={"/recipes/" + 2}>Best Parmesan Chicken Bake</Link>
+									<Link to={"/food/" + 2}>Celery</Link>
 								</h4>
 							</div>
 						</div>
@@ -72,13 +72,13 @@ class RecipeList extends React.PureComponent {
 						<div className='media'>
 							<span className='position pull-left'>{3}</span>
 							<div className='pull-left thumb-lg'>
-								<Link to={"/recipes/" + 3}>
-									<img className='media-object' src='http://images.media-allrecipes.com/userphotos/250x250/129405.jpg' />
+								<Link to={"/food/" + 3}>
+									<img className='media-object' src='http://www.glatt-organics.com/wp-content/uploads/2013/08/iStock_000010753409Large.jpg' />
 								</Link>
 							</div>
 							<div className='media-body'>
 								<h4 className='media-heading'>
-									<Link to={"/recipes/" + 3}>Homemade Mac and Cheese</Link>
+									<Link to={"/food/" + 3}>Chicken breast</Link>
 								</h4>
 							</div>
 						</div>
@@ -89,4 +89,4 @@ class RecipeList extends React.PureComponent {
 	}
 }
 
-export default RecipeList;
+export default FoodList;

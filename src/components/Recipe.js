@@ -45,10 +45,6 @@ class Recipe extends React.Component {
 	}
 
 	componentDidUpdate(prevProps) {
-    // Fetch new charachter data when URL path changes
-		if (prevProps.params.id !== this.props.params.id) {
-      //CharacterActions.getCharacter(this.props.params.id);
-		}
 	}
 
 	onChange(state) {

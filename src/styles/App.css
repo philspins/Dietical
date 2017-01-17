@@ -7523,6 +7523,19 @@ label {
   max-width: 405px;
   color: #444;
 }
+.food-item-img {
+  position: relative;
+  margin-bottom: 20px;
+  float: left;
+  width: 256px;
+  height: 256px;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.25);
+}
+.food-item-info {
+  margin: 0 0 20px 286px;
+  max-width: 405px;
+  color: #444;
+}
 .btn-transparent {
   border: 1px solid white;
   border-radius: 3px;
