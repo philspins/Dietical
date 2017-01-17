@@ -32,7 +32,7 @@ class MyFooter extends React.Component {
 
 	render() {
 		return (
-			<footer className="block-center">
+			<footer className="footer block-center">
 				<Glyphicon glyph="info-sign" /> You may view the <a href='https://github.com/philspins/NourishMe'>Source Code</a> behind this project on GitHub. Copyright © 2016 Philip Craig.
 			</footer>
 		);

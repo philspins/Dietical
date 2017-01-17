@@ -36,14 +36,12 @@ class CalendarNav extends React.Component {
 		CalendarNavStore.unlisten(this.onChange);
 	}
 
-	componentDidUpdate(prevProps) {
-		if (!isEqual(prevProps.params, this.props.params)) {
-			CalendarNavActions.getNow();
-		}
-	}
-
 	onChange(state) {
 		this.setState(state);
+	}
+
+	getDay() {
+		return this.state.currentDate;
 	}
 
 	render() {

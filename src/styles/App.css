@@ -7299,8 +7299,10 @@ html {
   min-height: 100%;
 }
 body {
-  margin-bottom: 220px;
+  margin-bottom: 100px;
   -webkit-font-smoothing: antialiased;
+	padding-top: 100px;
+	/*overflow: hidden;*/
 }
 footer {
   position: absolute;

@@ -10,8 +10,13 @@ import CalendarNavActions from "../actions/CalendarNavActions";
 class CalendarNavStore {
 	constructor() {
 		this.bindActions(CalendarNavActions);
+
 		this.currentDate = new Date();
 		this.currentWeek = [];
+	}
+
+	getCurrentDate(){
+		return this.currentDate;
 	}
 
 	onGetNow(data){

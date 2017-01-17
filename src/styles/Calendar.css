@@ -94,18 +94,6 @@
 		width: 129px;
 }
 
-@media (min-width: 768px) {
-    .date_carousel .calendar_item {
-
-    }
-}
-
-@media (min-width: 992px) {
-    .date_carousel .calendar_item {
-
-    }
-}
-
 .calendar_item:hover {
     border: 1px solid #adadad;
     border-right: 2px solid #adadad;
