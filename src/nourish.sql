@@ -29,7 +29,8 @@ CREATE TABLE `tblFoodItems` (
   `Protein` decimal(10,0) NOT NULL DEFAULT '0',
   `Carbs` decimal(10,0) NOT NULL DEFAULT '0',
   `Fat` decimal(10,0) NOT NULL DEFAULT '0',
-  `Fibre` decimal(10,0) NOT NULL DEFAULT '0'
+  `Fibre` decimal(10,0) NOT NULL DEFAULT '0',
+  `ImageURL` TEXT NULL DEFAULT NULL;
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -65,7 +66,8 @@ CREATE TABLE `tblMeals` (
 
 CREATE TABLE `tblRecipes` (
   `pkRecipeID` int(11) NOT NULL,
-  `Name` varchar(50) NOT NULL
+  `Name` varchar(50) NOT NULL,
+  `ImageURL` TEXT NULL DEFAULT NULL;
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
