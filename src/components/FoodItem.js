@@ -2,8 +2,6 @@
 /*eslint no-console:0 */
 
 import React from "react";
-import $ from "jquery";
-import magnific from "magnific-popup";
 import {FormGroup,
         FormControl,
 				ControlLabel,
@@ -11,7 +9,8 @@ import {FormGroup,
 				HelpBlock,
 				Grid,
 				Row,
-				Col} from "react-bootstrap";
+				Col,
+				Thumbnail} from "react-bootstrap";
 
 import FoodItemStore from "../stores/FoodItemStore";
 import FoodItemActions from "../actions/FoodItemActions";
@@ -27,17 +26,6 @@ class FoodItem extends React.Component {
 	componentDidMount() {
 		FoodItemStore.listen(this.onChange);
 		FoodItemActions.getFoodItem(this.props.params.id);
-
-		$(".magnific-popup").magnificPopup({
-			type: "image",
-			mainClass: "mfp-zoom-in",
-			closeOnContentClick: true,
-			midClick: true,
-			zoom: {
-				enabled: true,
-				duration: 300
-			}
-		});
 	}
 
 	componentWillUnmount() {
@@ -57,9 +45,7 @@ class FoodItem extends React.Component {
 				<Row>
 					<Col sm={8}>
 						<div className='food-item-img'>
-							<a className='magnific-popup' href={"https://somepath/" + this.state.FoodItemId + ".jpg"}>
-								<img src={"https://somepath/" + this.state.FoodItemId + ".jpg"} />
-							</a>
+							<Thumbnail src="/images/placeholder.png" />
 						</div>
 						<div className='food-item-info clearfix'>
 							<h2><strong>{this.state.name}</strong></h2>

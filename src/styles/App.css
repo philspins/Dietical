@@ -1071,7 +1071,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #58666f;
-  background-color: #f0f3f4;
+  /*background-color: #f0f3f4;*/
 }
 input,
 button,
@@ -1113,13 +1113,13 @@ img {
   border-radius: 6px;
 }
 .img-thumbnail {
-  padding: 4px;
+  /*padding: 4px;
   line-height: 1.42857143;
   background-color: #f0f3f4;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;*/
   display: inline-block;
   max-width: 100%;
   height: auto;
@@ -2279,7 +2279,7 @@ th {
   border-top: 2px solid #ddd;
 }
 .table .table {
-  background-color: #f0f3f4;
+  /*background-color: #f0f3f4;*/
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -4047,7 +4047,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #f0f3f4;
+    /*border-bottom-color: #f0f3f4;*/
   }
 }
 .nav-pills > li {
@@ -4115,7 +4115,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #f0f3f4;
+    /*border-bottom-color: #f0f3f4;*/
   }
 }
 .tab-content > .tab-pane {
@@ -4963,14 +4963,14 @@ a.badge:focus {
 }
 .thumbnail {
   display: block;
-  padding: 4px;
+  /*padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
   background-color: #f0f3f4;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;*/
 }
 .thumbnail > img,
 .thumbnail a > img {
@@ -4980,7 +4980,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #363f34;
+  /*border-color: #363f34;*/
 }
 .thumbnail .caption {
   padding: 9px;
@@ -7484,25 +7484,22 @@ footer .thumb-md:hover {
 .thumbnail {
   background-color: #fff;
   padding: 0;
-  border-radius: 2px;
-  border-color: #dee5e7;
+  /*border-radius: 2px;
+  border-color: #dee5e7;*/
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 .thumbnail img {
-  padding: 6px;
-  border-radius: 2px 2px 0 0;
+  /*padding: 6px;
+  border-radius: 2px 2px 0 0;*/
   border: 0;
   background-color: #fff;
   cursor: pointer;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
+	cursor: auto;
 }
 .thumbnail img:hover {
   background-color: #23b7f5;
-}
-.thumbnail img:active {
-  position: relative;
-  top: 2px;
 }
 .form-control {
   box-shadow: none;
