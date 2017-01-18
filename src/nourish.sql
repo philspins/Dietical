@@ -67,6 +67,7 @@ CREATE TABLE `tblMeals` (
 CREATE TABLE `tblRecipes` (
   `pkRecipeID` int(11) NOT NULL,
   `Name` varchar(50) NOT NULL,
+  `Instructions` TEXT NULL DEFAULT NULL,
   `ImageURL` TEXT NULL DEFAULT NULL;
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
