@@ -3,28 +3,82 @@ require("babel-register");
 require("ignore-styles");
 "use strict";
 
+const express = require("express");
 const webpack = require("webpack");
-const WebpackDevServer = require("webpack-dev-server");
-const config = require("./webpack.config");
+const webpackDevMiddleware = require("webpack-dev-middleware");
+const React = require("react");
+const ReactDOM = require("react-dom/server");
+const Router = require("react-router");
+const swig  = require("swig");
+const expressGraphQL = require("express-graphql");
+
+const bodyParser = require("body-parser");
 const open = require("open");
+const path = require("path");
+const compression = require("compression");
+const logger = require("morgan");
+
+const config = require("./webpack.config");
 const routes = require("./src/Routes");
+const models = require("./src/data/models");
+const schema = require("./src/data/schema");
 
-/**
- * Flag indicating whether webpack compiled for the first time.
- * @type {boolean}
- */
-let isInitialCompilation = true;
 
+//
+// Configure Express server
+// -----------------------------------------------------------------------------
+var app = express();
+app.set("port", config.port);
+app.use(compression());
+app.use(logger("dev"));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, "src")));
+
+
+//
+// Register webpack middleware
+// -----------------------------------------------------------------------------
 const compiler = webpack(config);
+app.use(webpackDevMiddleware(compiler, config.devServer));
 
-new WebpackDevServer(compiler, config.devServer)
-.listen(config.port, "localhost", (err) => {
-	if (err) {
-		console.log(err);
-	}
-	console.log("Listening at localhost:" + config.port);
+
+//
+// Register GraphQL API middleware
+// -----------------------------------------------------------------------------
+app.use("/graphql", expressGraphQL(req => ({
+	schema,
+	graphiql: process.env.NODE_ENV !== "production",
+	rootValue: { request: req },
+	pretty: process.env.NODE_ENV !== "production"
+})));
+
+
+//
+// Always return the default index.html so react-router can do its job
+// -----------------------------------------------------------------------------
+app.get("*", (req, res) => {
+	res.sendFile(path.resolve(__dirname, "src", "index.html"));
 });
 
+
+//
+// Launch the server
+// -----------------------------------------------------------------------------
+models.sync().catch(err => console.error(err.stack)).then(() => {
+	app.listen(config.port, "localhost", (err) => {
+		if (err) {
+			console.log(err);
+		}
+		console.log(`The server is running at http://localhost:${config.port}/`);
+	});
+});
+
+
+//
+// Register Webpack compiler
+// -----------------------------------------------------------------------------
+let isInitialCompilation = true;
 compiler.plugin("done", () => {
 	if (isInitialCompilation) {
     // Ensures that we log after webpack printed its stats (is there a better way?)
