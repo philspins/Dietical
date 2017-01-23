@@ -3,7 +3,6 @@
 
 require("normalize.css/normalize.css");
 require("../styles/App.css");
-//require("../styles/toastr.min.css");
 
 import React from "react";
 

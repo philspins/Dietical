@@ -1,10 +1,13 @@
 /*eslint no-console:0 */
+require("babel-register");
+require("ignore-styles");
 "use strict";
-require("core-js/fn/object/assign");
+
 const webpack = require("webpack");
 const WebpackDevServer = require("webpack-dev-server");
 const config = require("./webpack.config");
 const open = require("open");
+const routes = require("./src/Routes");
 
 /**
  * Flag indicating whether webpack compiled for the first time.

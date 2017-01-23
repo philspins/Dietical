@@ -20,8 +20,8 @@ export default (
 			<Route path='/' component={Home} />
 			<Route path='/planner' component={MealPlanner} />
 			<Route path='/recipes' component={RecipeList} />
-			<Route path='/recipes/:id' component={Recipe} />
 			<Route path='/recipes/add' component={AddRecipe} />
+			<Route path='/recipes/:id' component={Recipe} />
 			<Route path='/food' component={FoodList} />
 			<Route path='/food/add' component={AddFood} />
 			<Route path='/food/:id' component={FoodItem} />
