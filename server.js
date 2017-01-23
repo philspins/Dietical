@@ -6,16 +6,10 @@ require("ignore-styles");
 const express = require("express");
 const webpack = require("webpack");
 const webpackDevMiddleware = require("webpack-dev-middleware");
-const React = require("react");
-const ReactDOM = require("react-dom/server");
-const Router = require("react-router");
-const swig  = require("swig");
 const expressGraphQL = require("express-graphql");
 
 const bodyParser = require("body-parser");
-const open = require("open");
 const path = require("path");
-const compression = require("compression");
 const logger = require("morgan");
 
 const config = require("./webpack.config");
@@ -29,7 +23,6 @@ const schema = require("./src/data/schema");
 // -----------------------------------------------------------------------------
 var app = express();
 app.set("port", config.port);
-app.use(compression());
 app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -48,9 +41,9 @@ app.use(webpackDevMiddleware(compiler, config.devServer));
 // -----------------------------------------------------------------------------
 app.use("/graphql", expressGraphQL(req => ({
 	schema,
-	graphiql: process.env.NODE_ENV !== "production",
+	graphiql: config.env !== "production",
 	rootValue: { request: req },
-	pretty: process.env.NODE_ENV !== "production"
+	pretty: config.env !== "production"
 })));
 
 
