@@ -33,6 +33,9 @@ class FoodItem extends React.Component {
 	}
 
 	componentDidUpdate(prevProps) {
+		if (prevProps.params.id !== this.props.params.id) {
+			FoodItemActions.getFoodItem(this.props.params.id);
+		}
 	}
 
 	onChange(state) {

@@ -8,7 +8,7 @@ import {isEqual} from "underscore";
 import RecipeListStore from "../stores/RecipeListStore";
 import RecipeListActions from "../actions/RecipeListActions";
 
-class RecipeList extends React.PureComponent {
+class RecipeList extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = RecipeListStore.getState();

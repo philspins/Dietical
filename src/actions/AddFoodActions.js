@@ -1,14 +1,14 @@
-// src/actions/AddRecipeActions.js
+// src/actions/AddFoodActions.js
 /*eslint no-console:0 */
 
-//import $ from "jquery";
+import toastr from "toastr";
 import alt from "../utils/Dispatcher";
 
-class AddRecipeActions {
+class AddFoodActions {
 	constructor() {
 		this.generateActions(
-      "addRecipeSuccess",
-      "addRecipeFail",
+      "addFoodSuccess",
+      "addFoodFail",
       "updateName",
       "updateCuisine",
       "updateMainIngredient",
@@ -20,11 +20,12 @@ class AddRecipeActions {
     );
 	}
 
-	addRecipe(name, cuisine, mainIngredient, mealType) {
+	addFood() {
+		toastr.error("Adding a food.");
 		/*
 		$.ajax({
 			type: "POST",
-			url: "/api/recipes",
+			url: "/api/Foods",
 			data: {
 				name: name,
 				cuisine: cuisine,
@@ -33,13 +34,13 @@ class AddRecipeActions {
 			}
 		})
     .done((data) => {
-			this.actions.addRecipeSuccess(data.message);
+			this.actions.addFoodSuccess(data.message);
 		})
     .fail((jqXhr) => {
-			this.actions.addRecipeFail(jqXhr.responseJSON.message);
+			this.actions.addFoodFail(jqXhr.responseJSON.message);
 		});
 		*/
 	}
 }
 
-export default alt.createActions(AddRecipeActions);
+export default alt.createActions(AddFoodActions);

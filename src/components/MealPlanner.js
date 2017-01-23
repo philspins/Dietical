@@ -119,7 +119,7 @@ class MealPlanner extends React.PureComponent {
 								</Col>
 								<Col md={3} className="macro_panel">
 									Percent calories from...<br />
-									<Pie data={this.chartData} options={this.chartOptions} width={200} height={200}/>
+									{<Pie data={this.chartData} options={this.chartOptions} width={200} height={200}/>}
 									<strong>Cumulative Stats:</strong><br />
 									{this.state.carbs}g Carbs<br />
 									<div className="net_carbs_div">{(this.state.carbs - this.state.fibre).toFixed(1)}g net carbs</div>

@@ -2,7 +2,7 @@
 /*eslint no-console:0 */
 
 import alt from "../utils/Dispatcher";
-import $ from "jquery";
+//import $ from "jquery";
 
 class FoodListActions {
 	constructor() {
@@ -20,13 +20,15 @@ class FoodListActions {
 			mealType: payload.mealType
 		};
 
+		/*
 		$.ajax({ url: url, data: params })
-      .done((data) => {
-	this.actions.getFoodItemsSuccess(data);
-})
-      .fail((jqXhr) => {
-	this.actions.getFoodItemsFail(jqXhr);
-});
+    .done((data) => {
+			this.actions.getFoodItemsSuccess(data);
+		})
+		.fail((jqXhr) => {
+			this.actions.getFoodItemsFail(jqXhr);
+		});
+		*/
 	}
 }
 

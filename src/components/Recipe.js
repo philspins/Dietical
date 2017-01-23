@@ -33,6 +33,9 @@ class Recipe extends React.Component {
 	}
 
 	componentDidUpdate(prevProps) {
+		if (prevProps.params.id !== this.props.params.id) {
+			RecipeActions.getRecipe(this.props.params.id);
+		}
 	}
 
 	onChange(state) {
@@ -49,9 +52,9 @@ class Recipe extends React.Component {
 						</div>
 						<div className='recipe-info clearfix'>
 							<h2><strong>{this.state.name}</strong></h2>
-							<h4 className='lead'>Cuisine: <strong>{this.state.cuisine}</strong></h4>
-							<h4 className='lead'>Main Ingredient: <strong>{this.state.mainIngredient}</strong></h4>
-							<h4 className='lead'>Meal Type: <strong>{this.state.mealType}</strong></h4>
+							<h5>Ingredients:</h5>
+							<h5>Instructions:</h5>
+							<h6 className='lead'>Tags: <strong>{this.state.cuisine}</strong></h6>
 						</div>
 					</Col>
 				</Row>

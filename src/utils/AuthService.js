@@ -1,20 +1,20 @@
 // app/utils/AuthService.js
 /*eslint no-console:0 */
 
-import Auth0Lock from 'auth0-lock';
-import {browserHistory} from 'react-router';
+import Auth0Lock from "auth0-lock";
+import {browserHistory} from "react-router";
 
 export default class AuthService {
 	constructor(clientId, domain) {
     // Configure Auth0
 		this.lock = new Auth0Lock(clientId, domain, {
 			auth: {
-				redirectUrl: 'http://localhost:3000/login',
-				responseType: 'token'
+				redirectUrl: "http://localhost:3000/login",
+				responseType: "token"
 			}
 		});
     // Add callback for lock `authenticated` event
-		this.lock.on('authenticated', this._doAuthentication.bind(this));
+		this.lock.on("authenticated", this._doAuthentication.bind(this));
     // binds login functions to keep this context
 		this.login = this.login.bind(this);
 	}
@@ -23,7 +23,7 @@ export default class AuthService {
     // Saves the user token
 		this.setToken(authResult.idToken);
     // navigate to the home route
-		browserHistory.replace('/home');
+		browserHistory.replace("/home");
 	}
 
 	login() {
@@ -38,16 +38,16 @@ export default class AuthService {
 
 	setToken(idToken) {
     // Saves user token to local storage
-		localStorage.setItem('id_token', idToken);
+		localStorage.setItem("id_token", idToken);
 	}
 
 	getToken() {
     // Retrieves the user token from local storage
-		return localStorage.getItem('id_token');
+		return localStorage.getItem("id_token");
 	}
 
 	logout() {
     // Clear user token and profile data from local storage
-		localStorage.removeItem('id_token');
+		localStorage.removeItem("id_token");
 	}
 }
