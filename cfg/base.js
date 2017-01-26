@@ -12,8 +12,7 @@ let additionalPaths = [];
 module.exports = {
 	additionalPaths: additionalPaths,
 	port: defaultSettings.port,
-	debug: true,
-	devtool: "eval",
+	stats: { chunks: false },
 	output: {
 		path: path.join(__dirname, "/../dist/assets"),
 		filename: "app.js",
@@ -25,7 +24,7 @@ module.exports = {
 		hot: true,
 		port: defaultSettings.port,
 		publicPath: defaultSettings.publicPath,
-		noInfo: false
+		quiet: true
 	},
 	resolve: {
 		extensions: ["", ".js", ".jsx"],

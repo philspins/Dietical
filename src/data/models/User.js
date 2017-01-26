@@ -4,32 +4,33 @@
 var DataType = require("sequelize");
 var Model = require("../sequelize");
 
+var UserClaim = require("./UserClaim");
+var UserLogin = require("./UserLogin");
+var UserProfile = require("./UserProfile");
+
 const User = Model.define("User",
 	{
-		pkUserId: {
+		id: {
 			type: DataType.UUID,
+			defaultValue: DataType.UUIDV1,
 			primaryKey: true
 		},
-
-		FirstName: {
-			type: DataType.STRING(100)
+		email: {
+			type: DataType.STRING(255),
+			validate: { isEmail: true }
 		},
-
-		LastName: {
-			type: DataType.STRING(100)
-		},
-
-		Email: {
-			type: DataType.STRING(100)
+		emailConfirmed: {
+			type: DataType.BOOLEAN,
+			defaultValue: false
 		}
 	},
 	{
-		freezeTableName: true,
-		tableName: "tblUsers",
-		indexes: [
-			{ fields: ["pkUserId"] }
-		]
+		indexes: [{ fields: ["email"] }]
 	}
 );
+
+User.hasMany(UserLogin);
+User.hasMany(UserClaim);
+User.hasOne(UserProfile);
 
 module.exports = User;

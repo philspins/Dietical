@@ -8,7 +8,7 @@ import {Grid,
         Row,
         Col} from "react-bootstrap";
 import moment from "moment";
-import {Pie} from "react-chartjs-2";
+//import {Pie} from "react-chartjs-2";
 
 import CalendarNav from "./CalendarNav";
 import CalendarNavStore from "../stores/CalendarNavStore";
@@ -73,6 +73,16 @@ class MealPlanner extends React.PureComponent {
 	}
 
 	render() {
+		//<HACK ref="https://github.com/reactjs/react-chartjs/issues/57#issuecomment-162224638 ">
+		let graph;
+		if(window === undefined){
+			graph = (<div></div>);
+		} else {
+			var Pie = require("react-chartjs-2").Pie;
+			graph = (<Pie data={this.chartData} options={this.chartOptions} width={200} height={200}/>);
+		}
+		//</HACK>
+
 		return (
 			<Grid>
 				<CalendarNav />
@@ -119,7 +129,7 @@ class MealPlanner extends React.PureComponent {
 								</Col>
 								<Col md={3} className="macro_panel">
 									Percent calories from...<br />
-									{<Pie data={this.chartData} options={this.chartOptions} width={200} height={200}/>}
+									{graph}
 									<strong>Cumulative Stats:</strong><br />
 									{this.state.carbs}g Carbs<br />
 									<div className="net_carbs_div">{(this.state.carbs - this.state.fibre).toFixed(1)}g net carbs</div>

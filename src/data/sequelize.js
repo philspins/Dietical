@@ -6,6 +6,11 @@ var Sequelize = require("sequelize");
 const sequelize = new Sequelize("nourish", "nourish", "Nourish!123", {
 	host: "localhost",
 	dialect: "mysql",
+	logging: false,
+
+	define: {
+		timestamps: false
+	},
 
 	pool: {
 		max: 5,

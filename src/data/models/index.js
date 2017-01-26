@@ -3,33 +3,86 @@
 
 var sequelize = require("../sequelize");
 var User = require("./User");
-var UserClaim = require("./UserClaim");
-var UserLogin = require("./UserLogin");
-var UserProfile = require("./UserProfile");
-/*
-User.hasMany(UserLogin, {
-	foreignKey: "userId",
-	as: "logins",
-	onUpdate: "cascade",
-	onDelete: "cascade"
+var Recipe = require("./Recipe");
+var FoodItem = require("./FoodItem");
+var MealItem = require("./MealItem");
+var MealType = require("./MealType");
+var Meal = require("./Meal");
+var TagDef = require("./TagDef");
+var Tag = require("./Tag");
+
+
+// Define relations
+// -----------------------------------------------------------------------------
+MealItem.hasMany(Recipe, {
+	foreignKey: "ItemID",
+	constraints: false,
+	scope: {
+		ItemType: "Recipe"
+	}
+});
+Recipe.belongsTo(MealItem, {
+	foreignKey: "ItemID",
+	constraints: false,
+	as: "Recipe"
+});
+FoodItem.hasMany(MealItem, {
+	foreignKey: "ItemID",
+	constraints: false,
+	scope: {
+		ItemType: "FoodItem"
+	}
+});
+MealItem.belongsTo(FoodItem, {
+	foreignKey: "ItemID",
+	constraints: false,
+	as: "FoodItem"
 });
 
-User.hasMany(UserClaim, {
-	foreignKey: "userId",
-	as: "claims",
-	onUpdate: "cascade",
-	onDelete: "cascade"
+Meal.hasMany(MealItem);
+User.hasMany(Meal);
+Recipe.Ingredients = FoodItem.belongsToMany(Recipe, {through: "Ingredients"});
+
+Recipe.hasMany(Tag, {
+	foreignKey: "TaggableID",
+	constraints: false,
+	scope: {
+		Taggable: "Recipe"
+	}
+});
+Tag.belongsTo(Recipe, {
+	foreignKey: "TaggableID",
+	constraints: false,
+	as: "Recipe"
+});
+FoodItem.hasMany(Tag, {
+	foreignKey: "TaggableID",
+	constraints: false,
+	scope: {
+		Taggable: "FoodItem"
+	}
+});
+Tag.belongsTo(FoodItem, {
+	foreignKey: "TaggableID",
+	constraints: false,
+	as: "FoodItem"
 });
 
-User.hasOne(UserProfile, {
-	foreignKey: "userId",
-	as: "profile",
-	onUpdate: "cascade",
-	onDelete: "cascade"
-});
-*/
+TagDef.hasMany(Tag);
+MealType.hasMany(Meal);
+
+// -----------------------------------------------------------------------------
+
 function sync(...args) {
 	return sequelize.sync(...args);
 }
 
-module.exports = { sync, User };
+function query(...args) {
+	return sequelize.query(...args);
+}
+
+function get(...args) {
+	return sequelize.get(...args);
+}
+
+module.exports = { sync, query, get, User, Recipe, FoodItem, Tag };

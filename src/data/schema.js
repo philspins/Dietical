@@ -1,16 +1,25 @@
 // src/data/schema.js
 /*eslint no-console:0 */
 
-var {GraphQLSchema,
-		GraphQLObjectType} = require("graphql");
+import {
+  GraphQLSchema as Schema,
+  GraphQLObjectType as ObjectType} from "graphql";
 
-var user = require("./queries/user");
+import User from "./queries/User";
+import Meal from "./queries/Meal";
+import MealType from "./queries/MealType";
+import Food from "./queries/Food";
+import Recipe from "./queries/Recipe";
 
-const schema = new GraphQLSchema({
-	query: new GraphQLObjectType({
-		name: "user",
+const schema = new Schema({
+	query: new ObjectType({
+		name: "Root",
 		fields: {
-			user
+			User,
+			Meal,
+			MealType,
+			Food,
+			Recipe
 		}
 	})
 });
