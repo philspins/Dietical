@@ -11,6 +11,7 @@ import MealType from "./queries/MealType";
 import FoodItem from "./queries/FoodItem";
 import FoodItems from "./queries/FoodItems";
 import Recipe from "./queries/Recipe";
+import Recipes from "./queries/Recipes";
 
 const schema = new Schema({
 	query: new ObjectType({
@@ -21,7 +22,8 @@ const schema = new Schema({
 			MealType,
 			FoodItem,
 			FoodItems,
-			Recipe
+			Recipe,
+			Recipes
 		}
 	})
 });
