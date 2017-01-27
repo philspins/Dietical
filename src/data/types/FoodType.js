@@ -9,7 +9,7 @@ var ObjectType = graphql.GraphQLObjectType;
 
 
 const FoodType = new ObjectType({
-	name: "Food",
+	name: "FoodItem",
 	fields: attributeFields(FoodModel)
 });
 

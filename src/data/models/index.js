@@ -4,6 +4,7 @@
 var sequelize = require("../sequelize");
 var User = require("./User");
 var Recipe = require("./Recipe");
+var Ingredient = require("./Ingredient");
 var FoodItem = require("./FoodItem");
 var MealItem = require("./MealItem");
 var MealType = require("./MealType");
@@ -12,65 +13,95 @@ var TagDef = require("./TagDef");
 var Tag = require("./Tag");
 
 
-// Define relations
+//
+// Recipe and FoodItem relations
 // -----------------------------------------------------------------------------
-MealItem.hasMany(Recipe, {
+Recipe.FoodItems = Recipe.belongsToMany(FoodItem, {
+	through: Ingredient,
+	as: "FoodItems"
+});
+FoodItem.Recipes = FoodItem.belongsToMany(Recipe, {
+	through: Ingredient,
+	as: "Recipes"
+});
+
+
+//
+// Meals relationships with Recipe and FoodItem
+// -----------------------------------------------------------------------------
+Meal.belongsToMany(Recipe, {
+	through: MealItem,
 	foreignKey: "ItemID",
 	constraints: false,
 	scope: {
 		ItemType: "Recipe"
 	}
 });
-Recipe.belongsTo(MealItem, {
+Recipe.belongsToMany(Meal, {
+	through: MealItem,
 	foreignKey: "ItemID",
 	constraints: false,
 	as: "Recipe"
 });
-FoodItem.hasMany(MealItem, {
+Meal.belongsToMany(FoodItem, {
+	through: MealItem,
 	foreignKey: "ItemID",
 	constraints: false,
 	scope: {
 		ItemType: "FoodItem"
 	}
 });
-MealItem.belongsTo(FoodItem, {
+FoodItem.belongsToMany(Meal, {
+	through: MealItem,
 	foreignKey: "ItemID",
 	constraints: false,
 	as: "FoodItem"
 });
 
+
+//
+// Other Meal relationships
+// -----------------------------------------------------------------------------
 Meal.hasMany(MealItem);
 User.hasMany(Meal);
-Recipe.Ingredients = FoodItem.belongsToMany(Recipe, {through: "Ingredients"});
+MealType.hasMany(Meal);
 
-Recipe.hasMany(Tag, {
+
+//
+// Tag relationships
+// -----------------------------------------------------------------------------
+TagDef.belongsToMany(Recipe, {
+	through: Tag,
 	foreignKey: "TaggableID",
 	constraints: false,
 	scope: {
 		Taggable: "Recipe"
 	}
 });
-Tag.belongsTo(Recipe, {
+Recipe.belongsToMany(TagDef, {
+	through: Tag,
 	foreignKey: "TaggableID",
 	constraints: false,
 	as: "Recipe"
 });
-FoodItem.hasMany(Tag, {
+TagDef.belongsToMany(FoodItem, {
+	through: Tag,
 	foreignKey: "TaggableID",
 	constraints: false,
 	scope: {
 		Taggable: "FoodItem"
 	}
 });
-Tag.belongsTo(FoodItem, {
+FoodItem.belongsToMany(TagDef, {
+	through: Tag,
 	foreignKey: "TaggableID",
 	constraints: false,
 	as: "FoodItem"
 });
 
-TagDef.hasMany(Tag);
-MealType.hasMany(Meal);
 
+//
+// Define sequelize functions to export
 // -----------------------------------------------------------------------------
 
 function sync(...args) {
@@ -85,4 +116,14 @@ function get(...args) {
 	return sequelize.get(...args);
 }
 
-module.exports = { sync, query, get, User, Recipe, FoodItem, Tag };
+module.exports = {
+	sync, query, get,
+	User,
+	Recipe,
+	Ingredient,
+	FoodItem,
+	MealItem,
+	MealType,
+	Meal,
+	TagDef,
+	Tag };

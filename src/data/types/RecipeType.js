@@ -2,15 +2,15 @@
 /*eslint no-console:0 */
 
 var graphql = require("graphql");
+var resolver = require("graphql-sequelize").resolver;
 var ObjectType = graphql.GraphQLObjectType;
 var ListType = graphql.GraphQLList;
 var ID = graphql.GraphQLID;
 var StringType = graphql.GraphQLString;
 var NonNull = graphql.GraphQLNonNull;
-var Recipe = require("../models").Recipe;
 
-var resolver = require("graphql-sequelize").resolver;
-var IngredientType = require("./IngredientType");
+var Recipe = require("../models").Recipe;
+var FoodType = require("./FoodType");
 
 const RecipeType = new ObjectType({
 	name: "Recipe",
@@ -19,7 +19,9 @@ const RecipeType = new ObjectType({
 		Name: { type: StringType },
 		Instructions: { type: StringType },
 		ImageURL: { type: StringType },
-		Ingredients: { type: new ListType(IngredientType) }
+		Ingredients: {
+			type: new ListType(FoodType),
+			resolve: resolver(Recipe.FoodItems) }
 	}
 });
 

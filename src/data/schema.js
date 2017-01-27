@@ -8,7 +8,8 @@ import {
 import User from "./queries/User";
 import Meal from "./queries/Meal";
 import MealType from "./queries/MealType";
-import Food from "./queries/Food";
+import FoodItem from "./queries/FoodItem";
+import FoodItems from "./queries/FoodItems";
 import Recipe from "./queries/Recipe";
 
 const schema = new Schema({
@@ -18,7 +19,8 @@ const schema = new Schema({
 			User,
 			Meal,
 			MealType,
-			Food,
+			FoodItem,
+			FoodItems,
 			Recipe
 		}
 	})

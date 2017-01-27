@@ -17,7 +17,7 @@ const config = require("./webpack.config");
 const routes = require("./src/Routes");
 const models = require("./src/data/models");
 const schema = require("./src/data/schema");
-
+const foodData = require("./src/data/fooddb.json");
 
 
 //
@@ -92,7 +92,7 @@ app.get("*", (req, res) => {
 logger.info("\x1b[36mSequelize: synchronizing data models...\x1b[0m");
 models.query("SET FOREIGN_KEY_CHECKS = 0")
 .then(function(){
-	return models.sync().catch(err =>
+	return models.sync({ force: true }).catch(err =>
 		logger.error("\x1b[91m" & err.stack & "\x1b[0m")
 	);
 })
@@ -101,11 +101,26 @@ models.query("SET FOREIGN_KEY_CHECKS = 0")
 })
 .then(function(){
 	logger.info("\x1b[36mSequelize: data models synchronized\x1b[0m");
-	/*
-	models.Recipe.findAll({attributes: ["Name", "Instructions"]}).then(function(recipes){
-		console.log(recipes);
-	});
-	*/
+
+	//Load some mock data
+	for(var item in foodData){
+		models.FoodItem.create(foodData[item]);
+	}
+
+	for(var i=1; i<=10; i++){
+		models.Recipe.create(
+			{
+				id: i,
+				Name: "Test Recipe " & i,
+				Instructions: "Recipe instructions go here..."
+			}
+		);
+		for(var x=25; x<=200; x+=25){
+			models.Ingredient.create({ RecipeId: i, FoodItemId: x });
+		}
+	}
+
+	logger.info("\x1b[36mSequelize: mock data loaded\x1b[0m");
 })
 .then(function(err){
 	if (err) {
