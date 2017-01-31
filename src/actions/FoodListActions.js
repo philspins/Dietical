@@ -1,34 +1,30 @@
 // src/actions/FoodListActions.js
 /*eslint no-console:0 */
 
+
+import toastr from "toastr";
 import alt from "../utils/Dispatcher";
-//import $ from "jquery";
+import FoodListSource from "../sources/FoodListSource";
 
 class FoodListActions {
 	constructor() {
 		this.generateActions(
-      "getFoodItemsSuccess",
-      "getFoodItemsFail"
-    );
+			"getFoodItemsSuccess",
+			"getFoodItemsFail"
+		);
 	}
 
-	getFoodItems(payload) {
-		let url = "/api/food/top";
-		let params = {
-			cuisine: payload.cuisine,
-			mainIngredient: payload.mainIngredient,
-			mealType: payload.mealType
+	getFoodItems() {
+		return (dispatch) => {
+			dispatch();
+			FoodListSource.fetch()
+				.then((data) => {
+					this.getFoodItemsSuccess(data);
+				})
+				.catch((error) => {
+					this.getFoodItemsFail(error);
+				});
 		};
-
-		/*
-		$.ajax({ url: url, data: params })
-    .done((data) => {
-			this.actions.getFoodItemsSuccess(data);
-		})
-		.fail((jqXhr) => {
-			this.actions.getFoodItemsFail(jqXhr);
-		});
-		*/
 	}
 }
 

@@ -17,7 +17,7 @@ class FoodList extends React.PureComponent {
 
 	componentDidMount() {
 		FoodListStore.listen(this.onChange);
-		FoodListActions.getFoods(this.props.params);
+		FoodListActions.getFoodItems();
 	}
 
 	componentWillUnmount() {
@@ -25,7 +25,7 @@ class FoodList extends React.PureComponent {
 	}
 
 	componentDidUpdate(prevProps) {
-		FoodListActions.getFoods(this.props.params);
+		//FoodListActions.getFoodItems();
 	}
 
 	onChange(state) {

@@ -9,6 +9,7 @@
 const path = require("path");
 const srcPath = path.join(__dirname, "/../src");
 const dfltPort = 3000;
+const graphqlPort = 9090;
 
 /**
  * Get the default modules object for webpack
@@ -60,5 +61,6 @@ module.exports = {
 	srcPath: srcPath,
 	publicPath: "/assets/",
 	port: dfltPort,
+	graphqlPort: graphqlPort,
 	getDefaultModules: getDefaultModules
 };

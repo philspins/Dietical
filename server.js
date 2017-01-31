@@ -12,12 +12,13 @@ const winstonExpress = require("express-winston");
 const bodyParser = require("body-parser");
 const path = require("path");
 const moment = require("moment");
+const promise = require("bluebird");
 
 const config = require("./webpack.config");
 const routes = require("./src/Routes");
 const models = require("./src/data/models");
 const schema = require("./src/data/schema");
-const foodData = require("./src/data/fooddb.json");
+const foodData = require("./src/data/foodData.json");
 
 
 //
@@ -34,7 +35,7 @@ var logger = new (winston.Logger)({
 			formatter: function (options) {
 				return "["+ options.timestamp() +"] ["+ options.level.toUpperCase() +"] "+ (undefined !== options.message ? options.message : "");
 			}
-		}),
+		})/*,
 		new (winston.transports.File)({
 			filename: "nourish.log",
 			timestamp: function() {
@@ -44,7 +45,7 @@ var logger = new (winston.Logger)({
 				return options.timestamp() +" "+ options.level.toUpperCase() +" "+ (options.message ? options.message : "") +
           (options.meta && Object.keys(options.meta).length ? "\n\t"+ JSON.stringify(options.meta) : "" );
 			}
-		})
+		})*/
 	]
 });
 
@@ -68,13 +69,18 @@ app.use(webpackDevMiddleware(compiler, config.devServer));
 
 
 //
-// Register GraphQL API middleware
+// Expose a GraphQL endpoint
 // -----------------------------------------------------------------------------
 app.use("/graphql", expressGraphQL(req => ({
 	schema,
 	graphiql: config.env !== "dist",
 	rootValue: { request: req },
-	pretty: config.env !== "dist"
+	pretty: config.env !== "dist",
+	formatError: error => ({
+		message: error.message,
+		locations: error.locations,
+		stack: error.stack
+	})
 })));
 
 
@@ -102,25 +108,28 @@ models.query("SET FOREIGN_KEY_CHECKS = 0")
 .then(function(){
 	logger.info("\x1b[36mSequelize: data models synchronized\x1b[0m");
 
-	//Load some mock data
-	for(var item in foodData){
-		models.FoodItem.create(foodData[item]);
-	}
-
-	for(var i=1; i<=10; i++){
-		models.Recipe.create(
-			{
+	promise.map(foodData, function(item) {
+		return models.FoodItem.create(item);
+	}).then(function() {
+		for(var i=1; i<=10; i++){
+			models.Recipe.create({
 				id: i,
-				Name: "Test Recipe " & i,
+				Name: "Test Recipe " + i,
 				Instructions: "Recipe instructions go here..."
-			}
-		);
-		for(var x=25; x<=200; x+=25){
-			models.Ingredient.create({ RecipeId: i, FoodItemId: x });
+			});
 		}
 	}
-
-	logger.info("\x1b[36mSequelize: mock data loaded\x1b[0m");
+	).then(function() {
+		for(var i=1; i<=10; i++){
+			for(var x=25; x<=200; x+=25){
+				models.Ingredient.create({ RecipeId: i, FoodItemId: x });
+			}
+		}
+	}).then(function() {
+		logger.info("\x1b[36mSequelize: mock data loaded\x1b[0m");
+	}).catch(function(err) {
+		logger.error("\x1b[36mSequelize: an error occured while loading mock data!\x1b[0m\n" + err.message);
+	});
 })
 .then(function(err){
 	if (err) {

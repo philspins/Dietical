@@ -116,8 +116,12 @@ function get(...args) {
 	return sequelize.get(...args);
 }
 
+function transaction(...args) {
+	return sequelize.transaction(...args);
+}
+
 module.exports = {
-	sync, query, get,
+	sync, query, get, transaction,
 	User,
 	Recipe,
 	Ingredient,
