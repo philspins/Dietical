@@ -34,7 +34,7 @@ class FoodItem extends React.Component {
 
 	componentDidUpdate(prevProps) {
 		if (prevProps.params.id !== this.props.params.id) {
-			FoodItemActions.getFoodItem(this.props.params.id);
+			//FoodItemActions.getFoodItem(this.props.params.id);
 		}
 	}
 
@@ -48,11 +48,11 @@ class FoodItem extends React.Component {
 				<Row>
 					<Col sm={8}>
 						<div className='food-item-img'>
-							<Thumbnail src="/images/placeholder.png" />
+							<Thumbnail src={this.state.ImageURL || "/images/placeholder.png"} />
 						</div>
 						<div className='food-item-info clearfix'>
 							<h2><strong>{this.state.name}</strong></h2>
-							<h4 className='lead'>Unit of Measure: <strong>{this.state.uom}</strong></h4>
+							<h4 className='lead'>Unit of Measure: <strong>{this.state.quantity}</strong></h4>
 							<h4 className='lead'>Weight (g): <strong>{this.state.weight}</strong></h4>
 							<h4 className='lead'>Calories: <strong>{this.state.calories}</strong></h4>
 							<h4 className='lead'>Protein (g): <strong>{this.state.protein}</strong></h4>

@@ -14,9 +14,8 @@ class FoodListStore {
 	}
 
 	onGetFoodItemsSuccess(data) {
-		toastr.info("onGetFoodItemsSuccess");
 		this.food = data;
-		toastr.info(JSON.stringify(this.food));
+		//toastr.info(JSON.stringify(this.food));
 	}
 
 	onGetFoodItemsFail(jqXhr) {

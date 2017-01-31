@@ -2,7 +2,7 @@
 /*eslint no-console:0 */
 
 import alt from "../utils/Dispatcher";
-//import $ from "jquery";
+import FoodItemSource from "../sources/FoodItemSource";
 
 class FoodItemActions {
 	constructor() {
@@ -12,16 +12,17 @@ class FoodItemActions {
     );
 	}
 
-	getFoodItem(FoodItemId) {
-		/*
-		$.ajax({ url: "/api/food/" + FoodItemId })
-      .done((data) => {
-				this.actions.getFoodItemSuccess(data);
-			})
-			.fail((jqXhr) => {
-				this.actions.getFoodItemFail(jqXhr);
-			});
-	*/
+	getFoodItem(id) {
+		return (dispatch) => {
+			dispatch();
+			FoodItemSource.fetch(id)
+				.then((data) => {
+					this.getFoodItemSuccess(data);
+				})
+				.catch((error) => {
+					this.getFoodItemFail(error);
+				});
+		};
 	}
 }
 

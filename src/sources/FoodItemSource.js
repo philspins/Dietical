@@ -1,18 +1,18 @@
-// src/sources/FoodListSource.js
+// src/sources/FoodItemSource.js
 /*eslint no-console:0 */
 
 
 import toastr from "toastr";
 
-var FoodListSource = {
-	fetch: function() {
+var FoodItemSource = {
+	fetch: function(foodId) {
 		return new Promise(function(resolve, reject) {
 			setTimeout(function() {
 				resolve(axios.post("/graphql", {
-					query: 	"{FoodItems { id, Name, Quantity, Calories, Protein, " +
-									"Fat, Carbs, Fibre, ImageURL }}"
+					query: 	"{FoodItem(id:" + foodId + ") { id, Name, Quantity, " +
+									"Calories, Protein, Fat, Carbs, Fibre, ImageURL }}"
 				}).then(function (response) {
-					return response.data.data.FoodItems;
+					return response.data.data.FoodItem;
 				}).catch(function (error) {
 					return error;
 				}));
@@ -21,4 +21,4 @@ var FoodListSource = {
 	}
 };
 
-export default FoodListSource;
+export default FoodItemSource;
