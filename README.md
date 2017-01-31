@@ -8,7 +8,6 @@ Usage
 git clone https://github.com/philspins/NourishMe.git
 cd NourishMe
 npm install
-mysql -u username -p < src/nourish.sql
 npm start
 ```
 Open http://localhost:3000
