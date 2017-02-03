@@ -1,6 +1,7 @@
 // src/stores/FoodItemStore.js
-/*eslint no-console:0 */
+/* eslint */
 
+import toastr from "toastr";
 import alt from "../utils/Dispatcher";
 import FoodItemActions from "../actions/FoodItemActions";
 

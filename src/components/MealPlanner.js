@@ -1,7 +1,5 @@
 // src/components/MealPlanner.js
-/*eslint no-console:0 */
-
-require("../styles/Planner.css");
+/* eslint */
 
 import React from "react";
 import {Grid,

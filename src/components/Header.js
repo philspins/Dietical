@@ -1,5 +1,5 @@
 // src/components/Header.js
-/*eslint no-console:0 */
+/* eslint */
 
 
 import React from "react";
@@ -43,6 +43,7 @@ class Header extends React.Component {
 								<a href="#"><Image src="/images/favicon.png" />&nbsp;&nbsp;Nourish Me!</a>
 							</LinkContainer>
 						</Navbar.Brand>
+						<Navbar.Toggle />
 					</Navbar.Header>
 					<Nav>
             <LinkContainer to="/">

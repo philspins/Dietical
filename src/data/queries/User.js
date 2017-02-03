@@ -1,17 +1,14 @@
 // src/data/queries/User.js
-/*eslint no-console:0 */
+/* eslint */
 
-var UserType = require("../types/UserType");
+import {resolver} from "graphql-sequelize";
+
+import UserType from "../types/UserType";
+import {default as UserModel} from "../models/User";
 
 const User = {
 	type: UserType,
-	resolve({ request }) {
-		return request.user && {
-			Id: request.user.pkUserId,
-			Name: request.user.FirstName & " " & request.user.LastName,
-			Email: request.user.Email
-		};
-	}
+	resolve: resolver(UserModel)
 };
 
-module.exports = User;
+export default User;

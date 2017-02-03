@@ -1,18 +1,14 @@
 // src/data/types/UserType.js
-/*eslint no-console:0 */
+/* eslint */
 
-var graphql = require("graphql");
-var ObjectType = graphql.GraphQLObjectType;
-var ID = graphql.GraphQLID;
-var StringType = graphql.GraphQLString;
-var NonNull = graphql.GraphQLNonNull;
+import {GraphQLObjectType} from "graphql";
+import {attributeFields} from "graphql-sequelize";
 
-const UserType = new ObjectType({
+import {default as UserModel} from "../models/User";
+
+const UserType = new GraphQLObjectType({
 	name: "User",
-	fields: {
-		id: { type: new NonNull(ID) },
-		email: { type: StringType }
-	}
+	fields: attributeFields(UserModel)
 });
 
-module.exports = UserType;
+export default UserType;

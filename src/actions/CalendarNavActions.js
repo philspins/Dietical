@@ -1,5 +1,5 @@
 // src/actions/CalendarNavActions.js
-/*eslint no-console:0 */
+/* eslint */
 
 import toastr from "toastr";
 

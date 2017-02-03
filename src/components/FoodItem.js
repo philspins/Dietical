@@ -1,5 +1,5 @@
 // src/components/FoodItem.js
-/*eslint no-console:0 */
+/* eslint */
 
 import React from "react";
 import {FormGroup,
@@ -34,7 +34,7 @@ class FoodItem extends React.Component {
 
 	componentDidUpdate(prevProps) {
 		if (prevProps.params.id !== this.props.params.id) {
-			//FoodItemActions.getFoodItem(this.props.params.id);
+			FoodItemActions.getFoodItem(this.props.params.id);
 		}
 	}
 
@@ -44,25 +44,29 @@ class FoodItem extends React.Component {
 
 	render() {
 		return (
-      <Grid>
-				<Row>
-					<Col sm={8}>
-						<div className='food-item-img'>
-							<Thumbnail src={this.state.ImageURL || "/images/placeholder.png"} />
-						</div>
-						<div className='food-item-info clearfix'>
-							<h2><strong>{this.state.name}</strong></h2>
-							<h4 className='lead'>Unit of Measure: <strong>{this.state.quantity}</strong></h4>
-							<h4 className='lead'>Weight (g): <strong>{this.state.weight}</strong></h4>
-							<h4 className='lead'>Calories: <strong>{this.state.calories}</strong></h4>
-							<h4 className='lead'>Protein (g): <strong>{this.state.protein}</strong></h4>
-							<h4 className='lead'>Carbohydrates (g): <strong>{this.state.carbs}</strong></h4>
-							<h4 className='lead'>Fat (g): <strong>{this.state.fat}</strong></h4>
-							<h4 className='lead'>Fibre (g): <strong>{this.state.fibre}</strong></h4>
-						</div>
-					</Col>
-				</Row>
-			</Grid>
+			<table className='container item-box'>
+				<tr>
+					<td className='item-img'>
+						<Thumbnail src={this.state.imageurl || "/images/placeholder.png"} />
+					</td>
+					<td>
+						<Grid className="info-col">
+							<h2 className="item-title"><strong>{this.state.name}</strong></h2>
+							<Row>
+								<Col md={12}>
+									<h4><strong>Quantity: </strong>{this.state.quantity}</h4>
+									<h4><strong>Weight: </strong>{this.state.weight}g</h4>
+									<h4><strong>Calories: </strong>{this.state.calories}g</h4>
+									<h4><strong>Protein: </strong>{this.state.protein}g</h4>
+									<h4><strong>Carbohydrates: </strong>{this.state.carbs}g</h4>
+									<h4><strong>Fat: </strong>{this.state.fat}g</h4>
+									<h4><strong>Fibre: </strong>{this.state.fibre}g</h4>
+								</Col>
+							</Row>
+						</Grid>
+					</td>
+				</tr>
+			</table>
 		);
 	}
 }

@@ -1,7 +1,7 @@
 // src/data/sequelize.js
-/*eslint no-console:0 */
+/* eslint */
 
-var Sequelize = require("sequelize");
+import Sequelize from "sequelize";
 
 const sequelize = new Sequelize("nourish", "nourish", "Nourish!123", {
 	host: "localhost",

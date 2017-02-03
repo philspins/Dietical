@@ -1,24 +1,22 @@
 // src/data/types/MealType.js
-/*eslint no-console:0 */
+/* eslint */
 
-var graphql = require("graphql");
-var DateType = require("graphql-date");
+import {GraphQLObjectType,
+				GraphQLNonNull,
+				GraphQLID} from "graphql";
+import DateType from "graphql-date";
 
-var MealTypeType = require("./MealTypeType");
-var UserType = require("./UserType");
+import MealTypeType from "./MealTypeType";
+import UserType from "./UserType";
 
-var ObjectType = graphql.GraphQLObjectType;
-var ID = graphql.GraphQLID;
-var NonNull = graphql.GraphQLNonNull;
-
-const MealType = new ObjectType({
+const MealType = new GraphQLObjectType({
 	name: "Meal",
 	fields: {
-		id: { type: new NonNull(ID) },
+		id: { type: new GraphQLNonNull(GraphQLID) },
 		Day: { type: DateType },
 		User: { type: UserType },
 		Type: { type: MealTypeType }
 	}
 });
 
-module.exports = MealType;
+export default MealType;

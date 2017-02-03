@@ -1,5 +1,5 @@
 // src/data/schema.js
-/*eslint no-console:0 */
+/* eslint */
 
 import {
   GraphQLSchema as Schema,

@@ -1,8 +1,8 @@
 // src/data/models/Meal.js
-/*eslint no-console:0 */
+/* eslint */
 
-var DataType = require("sequelize");
-var Model = require("../sequelize");
+import DataType from "sequelize";
+import Model from "../sequelize";
 
 const Meal = Model.define("Meal",
 	{
@@ -10,4 +10,4 @@ const Meal = Model.define("Meal",
 	}
 );
 
-module.exports = Meal;
+export default Meal;

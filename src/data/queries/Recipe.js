@@ -1,13 +1,15 @@
 // src/data/queries/Recipe.js
-/*eslint no-console:0 */
+/* eslint */
 
-var RecipeType = require("../types/RecipeType");
-var resolver = require("graphql-sequelize").resolver;
-var RecipeModel = require("../models/Recipe");
+import {GraphQLID} from "graphql";
+import {resolver} from "graphql-sequelize";
+import RecipeType from "../types/RecipeType";
+import {default as RecipeModel} from "../models/Recipe";
 
 const Recipe = {
 	type: RecipeType,
+	args: {id: {type: GraphQLID}},
 	resolve: resolver(RecipeModel)
 };
 
-module.exports = Recipe;
+export default Recipe;

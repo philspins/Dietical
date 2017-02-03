@@ -1,16 +1,15 @@
 // src/data/queries/Recipes.js
-/*eslint no-console:0 */
+/* eslint */
 
-var graphql = require("graphql");
-var resolver = require("graphql-sequelize").resolver;
+import {GraphQLList} from "graphql";
+import {resolver} from "graphql-sequelize";
 
-var RecipeType = require("../types/RecipeType");
-var RecipeModel = require("../models/Recipe");
-var ListType = graphql.GraphQLList;
+import RecipeType from "../types/RecipeType";
+import {default as RecipeModel} from "../models/Recipe";
 
 const Recipes = {
-	type: new ListType(RecipeType),
+	type: new GraphQLList(RecipeType),
 	resolve: resolver(RecipeModel)
 };
 
-module.exports = Recipes;
+export default Recipes;

@@ -1,8 +1,8 @@
 // src/actions/RecipeActions.js
-/*eslint no-console:0 */
+/* eslint */
 
 import alt from "../utils/Dispatcher";
-//import $ from "jquery";
+import RecipeSource from "../sources/RecipeSource";
 
 class RecipeActions {
 	constructor() {
@@ -12,16 +12,17 @@ class RecipeActions {
     );
 	}
 
-	getRecipe(recipeId) {
-		/*
-		$.ajax({ url: "/api/recipes/" + recipeId })
-    .done((data) => {
-			this.actions.getRecipeSuccess(data);
-		})
-		.fail((jqXhr) => {
-			this.actions.getRecipeFail(jqXhr);
-		});
-		*/
+	getRecipe(id) {
+		return (dispatch) => {
+			dispatch();
+			RecipeSource.fetch(id)
+				.then((data) => {
+					this.getRecipeSuccess(data);
+				})
+				.catch((error) => {
+					this.getRecipeFail(error);
+				});
+		};
 	}
 }
 

@@ -1,8 +1,8 @@
 // src/data/models/TagDef.js
-/*eslint no-console:0 */
+/* eslint */
 
-var DataType = require("sequelize");
-var Model = require("../sequelize");
+import DataType from "sequelize";
+import Model from "../sequelize";
 
 const TagDef = Model.define("TagDef",
 	{
@@ -13,4 +13,4 @@ const TagDef = Model.define("TagDef",
 	}
 );
 
-module.exports = TagDef;
+export default TagDef;

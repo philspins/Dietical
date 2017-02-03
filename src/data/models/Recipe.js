@@ -1,8 +1,8 @@
 // src/data/models/Recipe.js
-/*eslint no-console:0 */
+/* eslint */
 
-var DataType = require("sequelize");
-var Model = require("../sequelize");
+import DataType from "sequelize";
+import Model from "../sequelize";
 
 const Recipe = Model.define("Recipe",
 	{
@@ -12,4 +12,4 @@ const Recipe = Model.define("Recipe",
 	}
 );
 
-module.exports = Recipe;
+export default Recipe;

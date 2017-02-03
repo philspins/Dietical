@@ -1,5 +1,5 @@
 // src/stores/AddFoodStore.js
-/*eslint no-console:0 */
+/* eslint */
 
 import alt from "../utils/Dispatcher";
 import AddFoodActions from "../actions/AddFoodActions";

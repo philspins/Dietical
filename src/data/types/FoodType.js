@@ -1,16 +1,15 @@
 // src/data/types/FoodType.js
-/*eslint no-console:0 */
+/* eslint */
 
-var graphql = require("graphql");
-var attributeFields = require("graphql-sequelize").attributeFields;
+import {GraphQLObjectType} from "graphql";
+import {attributeFields} from "graphql-sequelize";
 
-var FoodModel = require("../models/FoodItem");
-var ObjectType = graphql.GraphQLObjectType;
+import {default as FoodModel} from "../models/FoodItem";
 
 
-const FoodType = new ObjectType({
+const FoodType = new GraphQLObjectType({
 	name: "FoodItem",
 	fields: attributeFields(FoodModel)
 });
 
-module.exports = FoodType;
+export default FoodType;

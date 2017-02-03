@@ -1,4 +1,4 @@
-// src/sources/FoodItemSource.js
+// src/sources/RecipeSource.js
 /* eslint */
 
 
@@ -7,10 +7,10 @@ var FoodItemSource = {
 		return new Promise(function(resolve, reject) {
 			setTimeout(function() {
 				resolve(axios.post("/graphql", {
-					query: 	"{FoodItem(id:" + id + ") { id, Name, Quantity, Weight, " +
-									"Calories, Protein, Fat, Carbs, Fibre, ImageURL }}"
+					query: 	"{Recipe(id:" + id + "){id,Name,Instructions,ImageURL,Ingredients" +
+									"{id,Name,Quantity,Weight, Fat,Carbs,Fibre,ImageURL}}}"
 				}).then(function (response) {
-					return response.data.data.FoodItem;
+					return response.data.data.Recipe;
 				}).catch(function (error) {
 					return error;
 				}));

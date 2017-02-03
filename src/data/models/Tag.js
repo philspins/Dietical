@@ -1,8 +1,8 @@
 // src/data/models/Tag.js
-/*eslint no-console:0 */
+/* eslint */
 
-var DataType = require("sequelize");
-var Model = require("../sequelize");
+import DataType from "sequelize";
+import Model from "../sequelize";
 
 const Tag = Model.define("Tag",
 	{
@@ -11,4 +11,4 @@ const Tag = Model.define("Tag",
 	}
 );
 
-module.exports = Tag;
+export default Tag;

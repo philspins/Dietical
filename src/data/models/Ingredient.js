@@ -1,9 +1,9 @@
 // src/data/models/Ingredient.js
-/*eslint no-console:0 */
+/* eslint */
 
-var DataType = require("sequelize");
-var Model = require("../sequelize");
+import DataType from "sequelize";
+import Model from "../sequelize";
 
 const Ingredient = Model.define("Ingredient");
 
-module.exports = Ingredient;
+export default Ingredient;

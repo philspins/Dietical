@@ -1,5 +1,5 @@
 // src/actions/AddFoodActions.js
-/*eslint no-console:0 */
+/* eslint */
 
 import toastr from "toastr";
 import alt from "../utils/Dispatcher";

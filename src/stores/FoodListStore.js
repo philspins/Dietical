@@ -1,8 +1,7 @@
 // src/stores/FoodListStore.js
-/*eslint no-console:0 */
+/* eslint */
 
 import toastr from "toastr";
-
 import alt from "../utils/Dispatcher";
 import FoodListActions from "../actions/FoodListActions";
 
@@ -15,7 +14,6 @@ class FoodListStore {
 
 	onGetFoodItemsSuccess(data) {
 		this.food = data;
-		//toastr.info(JSON.stringify(this.food));
 	}
 
 	onGetFoodItemsFail(jqXhr) {

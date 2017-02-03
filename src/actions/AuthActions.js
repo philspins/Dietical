@@ -1,5 +1,5 @@
 // src/actions/AuthActions.js
-/*eslint no-console:0 */
+/* eslint */
 
 import AppDispatcher from "../dispatcher/AppDispatcher";
 import alt from "../utils/Dispatcher";

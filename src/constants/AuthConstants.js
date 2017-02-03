@@ -1,5 +1,5 @@
 // src/constants/AuthConstants.js
-/*eslint no-console:0 */
+/* eslint */
 
 import keyMirror from "keymirror";
 

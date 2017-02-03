@@ -1,16 +1,14 @@
 // src/sources/FoodListSource.js
-/*eslint no-console:0 */
+/* eslint */
 
-
-import toastr from "toastr";
 
 var FoodListSource = {
 	fetch: function() {
 		return new Promise(function(resolve, reject) {
 			setTimeout(function() {
 				resolve(axios.post("/graphql", {
-					query: 	"{FoodItems { id, Name, Quantity, Calories, Protein, " +
-									"Fat, Carbs, Fibre, ImageURL }}"
+					query: 	"{FoodItems { id, Name, Quantity, Weight, Calories, " +
+									"Protein, Fat, Carbs, Fibre, ImageURL }}"
 				}).then(function (response) {
 					return response.data.data.FoodItems;
 				}).catch(function (error) {

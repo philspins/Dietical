@@ -1,35 +1,28 @@
 // src/actions/RecipeListActions.js
-/*eslint no-console:0 */
+/* eslint */
 
 import alt from "../utils/Dispatcher";
-//import $ from "jquery";
+import RecipeListSource from "../sources/RecipeListSource";
 
 class RecipeListActions {
 	constructor() {
 		this.generateActions(
       "getRecipesSuccess",
       "getRecipesFail"
-
     );
 	}
 
-	getRecipes(payload) {
-		let url = "/api/recipes/top";
-		let params = {
-			cuisine: payload.cuisine,
-			mainIngredient: payload.mainIngredient,
-			mealType: payload.mealType
+	getRecipes() {
+		return (dispatch) => {
+			dispatch();
+			RecipeListSource.fetch()
+				.then((data) => {
+					this.getRecipesSuccess(data);
+				})
+				.catch((error) => {
+					this.getRecipesFail(error);
+				});
 		};
-
-		/*
-		$.ajax({ url: url, data: params })
-    .done((data) => {
-			this.actions.getRecipesSuccess(data);
-		})
-		.fail((jqXhr) => {
-			this.actions.getRecipesFail(jqXhr);
-		});
-	*/
 	}
 }
 

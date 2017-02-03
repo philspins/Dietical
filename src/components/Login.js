@@ -1,5 +1,5 @@
 // src/components/Login.js
-/*eslint no-console:0 */
+/* eslint */
 
 import React, {PropTypes as T} from "react";
 import {ButtonToolbar, Button} from "react-bootstrap";

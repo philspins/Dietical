@@ -1,8 +1,8 @@
 // src/data/models/UserProfile.js
-/*eslint no-console:0 */
+/* eslint */
 
-var DataType = require("sequelize");
-var Model = require("../sequelize");
+import DataType from "sequelize";
+import Model from "../sequelize";
 
 const UserProfile = Model.define("UserProfile",
 	{
@@ -14,4 +14,4 @@ const UserProfile = Model.define("UserProfile",
 );
 
 
-module.exports = UserProfile;
+export default UserProfile;

@@ -1,5 +1,5 @@
 // src/actions/FoodItemActions.js
-/*eslint no-console:0 */
+/* eslint */
 
 import alt from "../utils/Dispatcher";
 import FoodItemSource from "../sources/FoodItemSource";

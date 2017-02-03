@@ -1,17 +1,14 @@
 // src/data/types/MealTypeType.js
-/*eslint no-console:0 */
+/* eslint */
 
-var graphql = require("graphql");
-var attributeFields = require("graphql-sequelize").attributeFields;
+import {GraphQLObjectType} from "graphql";
+import {attributeFields} from "graphql-sequelize";
 
-var MealTypeModel = require("../models/MealType");
-var sequelize = require("../sequelize");
+import MealType from "../models/MealType";
 
-var ObjectType = graphql.GraphQLObjectType;
-
-const MealTypeType = new ObjectType({
+const MealTypeType = new GraphQLObjectType({
 	name: "MealType",
-	fields: attributeFields(MealTypeModel)
+	fields: attributeFields(MealType)
 });
 
-module.exports = MealTypeType;
+export default MealTypeType;

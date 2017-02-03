@@ -1,4 +1,4 @@
-/*eslint no-console:0 */
+/* eslint */
 require("babel-register");
 require("ignore-styles");
 "use strict";
@@ -95,6 +95,7 @@ app.get("*", (req, res) => {
 //
 // Sync the database schema
 // -----------------------------------------------------------------------------
+/*
 logger.info("\x1b[36mSequelize: synchronizing data models...\x1b[0m");
 models.query("SET FOREIGN_KEY_CHECKS = 0")
 .then(function(){
@@ -136,7 +137,7 @@ models.query("SET FOREIGN_KEY_CHECKS = 0")
 		logger.error("\x1b[91m" & err & "\x1b[0m");
 	}
 });
-
+*/
 
 //
 // Launch the server

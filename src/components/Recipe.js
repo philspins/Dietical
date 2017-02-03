@@ -1,16 +1,15 @@
 // src/components/Recipe.js
-/*eslint no-console:0 */
+/* eslint */
 
 import React from "react";
-import {FormGroup,
-        FormControl,
-				ControlLabel,
-				Button,
-				HelpBlock,
-				Grid,
+import {LinkContainer} from "react-router-bootstrap";
+import {Grid,
 				Row,
 				Col,
-				Thumbnail} from "react-bootstrap";
+				Thumbnail,
+				Image,
+				ListGroup,
+				ListGroupItem} from "react-bootstrap";
 
 import RecipeStore from "../stores/RecipeStore";
 import RecipeActions from "../actions/RecipeActions";
@@ -43,22 +42,65 @@ class Recipe extends React.Component {
 	}
 
 	render() {
+		let ingredients = this.state.ingredients.map((ingredient, index) => {
+			return (
+				<LinkContainer to={"/food/" + ingredient.id}>
+					<ListGroupItem bsClass="ingredient-box">
+							<Col xs={2} className="food_image">
+								<Image responsive src={ingredient.ImageURL || "/images/placeholder.png"} />
+							</Col>
+							<Col xs={6} className="food_name">
+								<div className="print_name">{ingredient.Name}</div>
+							</Col>
+							<Col xs={4} className="food_units">
+								{ingredient.Quantity}
+							</Col>
+					</ListGroupItem>
+				</LinkContainer>
+			);
+		});
+
 		return (
-      <Grid>
-				<Row>
-					<Col sm={8}>
-						<div className='recipe-img'>
-							<Thumbnail src="/images/placeholder.png" />
-						</div>
-						<div className='recipe-info clearfix'>
-							<h2><strong>{this.state.name}</strong></h2>
-							<h5>Ingredients:</h5>
-							<h5>Instructions:</h5>
-							<h6 className='lead'>Tags: <strong>{this.state.cuisine}</strong></h6>
-						</div>
-					</Col>
-				</Row>
-			</Grid>
+      <table className='container item-box'>
+				<tr>
+					<td className='item-img'>
+						<Thumbnail src={this.state.imageurl || "/images/placeholder.png"} />
+					</td>
+					<td>
+						<Grid className="info-col">
+							<h2 className="item-title"><strong>{this.state.name}</strong></h2>
+							<Row>
+								<Col md={1}>
+									<h4>Instructions:</h4>
+								</Col>
+								<Col md={10} className="item-info">
+									<h5 className="recipe-instructions">{this.state.instructions}</h5>
+								</Col>
+							</Row>
+							<Row>
+								<Col md={1}>
+									<h4>Ingredients:</h4>
+								</Col>
+								<Col md={10} className="item-info">
+									<h5>
+										<ListGroup className="recipe-ingredients">
+											{ingredients}
+										</ListGroup>
+									</h5>
+								</Col>
+							</Row>
+							<Row>
+								<Col md={1}>
+									<h4>Tags:</h4>
+								</Col>
+								<Col md={10} className="item-info">
+									<h5>test</h5>
+								</Col>
+							</Row>
+						</Grid>
+					</td>
+			</tr>
+			</table>
 		);
 	}
 }

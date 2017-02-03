@@ -2,7 +2,15 @@
 /*eslint no-console:0 */
 
 import React from "react";
-import {Link} from "react-router";
+import {LinkContainer} from "react-router-bootstrap";
+import {ListGroup,
+				ListGroupItem,
+        Media,
+				Thumbnail,
+				Image,
+				Grid,
+				Row,
+				Col} from "react-bootstrap";
 import {isEqual} from "underscore";
 
 import RecipeListStore from "../stores/RecipeListStore";
@@ -17,7 +25,7 @@ class RecipeList extends React.Component {
 
 	componentDidMount() {
 		RecipeListStore.listen(this.onChange);
-		RecipeListActions.getRecipes(this.props.params);
+		RecipeListActions.getRecipes();
 	}
 
 	componentWillUnmount() {
@@ -25,7 +33,7 @@ class RecipeList extends React.Component {
 	}
 
 	componentDidUpdate(prevProps) {
-		RecipeListActions.getRecipes(this.props.params);
+		//RecipeListActions.getRecipes();
 	}
 
 	onChange(state) {
@@ -33,58 +41,35 @@ class RecipeList extends React.Component {
 	}
 
 	render() {
-		let recipeList = "";
+		if(!this.state.recipes.length){
+			return (
+				<div className="spinner">
+					<Image src="/images/spinner.gif"/>
+				</div>
+			);
+		}
+
+		let recipeList = this.state.recipes.map((recipe, index) => {
+			return (
+				<LinkContainer to={"/recipes/" + recipe.id}>
+					<ListGroupItem className="col-xs-6">
+						<Media>
+							<Thumbnail src={recipe.ImageURL || "/images/placeholder.png"} className='pull-left thumb-lg'/>
+							<Media.Body>
+								<Media.Heading>{recipe.Name}</Media.Heading>
+							</Media.Body>
+						</Media>
+					</ListGroupItem>
+				</LinkContainer>
+			);
+		});
 
 		return (
-      <div className='container'>
-        <div className='list-group'>
-					<div key={1} className='list-group-item animated fadeIn'>
-						<div className='media'>
-							<span className='position pull-left'>{1}</span>
-							<div className='pull-left thumb-lg'>
-								<Link to={"/recipes/" + 1}>
-									<img className='media-object' src='http://images.media-allrecipes.com/userphotos/560x315/1126199.jpg' />
-								</Link>
-							</div>
-							<div className='media-body'>
-								<h4 className='media-heading'>
-									<Link to={"/recipes/" + 1}>Best Pork Chop Marinade</Link>
-								</h4>
-							</div>
-						</div>
-					</div>
-					<div key={2} className='list-group-item animated fadeIn'>
-						<div className='media'>
-							<span className='position pull-left'>{2}</span>
-							<div className='pull-left thumb-lg'>
-								<Link to={"/recipes/" + 2}>
-									<img className='media-object' src='http://images.media-allrecipes.com/userphotos/560x315/1010419.jpg' />
-								</Link>
-							</div>
-							<div className='media-body'>
-								<h4 className='media-heading'>
-									<Link to={"/recipes/" + 2}>Best Parmesan Chicken Bake</Link>
-								</h4>
-							</div>
-						</div>
-					</div>
-					<div key={3} className='list-group-item animated fadeIn'>
-						<div className='media'>
-							<span className='position pull-left'>{3}</span>
-							<div className='pull-left thumb-lg'>
-								<Link to={"/recipes/" + 3}>
-									<img className='media-object' src='http://images.media-allrecipes.com/userphotos/250x250/129405.jpg' />
-								</Link>
-							</div>
-							<div className='media-body'>
-								<h4 className='media-heading'>
-									<Link to={"/recipes/" + 3}>Homemade Mac and Cheese</Link>
-								</h4>
-							</div>
-						</div>
-					</div>
-        </div>
-      </div>
+			<Grid className="">
+        <ListGroup className="row animated fadeIn">
+					{recipeList}
+        </ListGroup>
+      </Grid>
 		);
 	}
 }

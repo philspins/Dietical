@@ -1,8 +1,8 @@
 // src/data/models/UserLogin.js
-/*eslint no-console:0 */
+/* eslint */
 
-var DataType = require("sequelize");
-var Model = require("../sequelize");
+import DataType from "sequelize";
+import Model from "../sequelize";
 
 const UserLogin = Model.define("UserLogin",
 	{
@@ -11,4 +11,4 @@ const UserLogin = Model.define("UserLogin",
 	}
 );
 
-module.exports = UserLogin;
+export default UserLogin;

@@ -1,5 +1,5 @@
 // src/components/CalendarNav.js
-/*eslint no-console:0 */
+/* eslint */
 
 require("../styles/Calendar.css");
 

@@ -1,5 +1,5 @@
 // src/actions/MealItemActions.js
-/*eslint no-console:0 */
+/* eslint */
 
 import toastr from "toastr";
 

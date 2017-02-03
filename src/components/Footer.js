@@ -1,5 +1,5 @@
 // src/components/Footer.js
-/*eslint no-console:0 */
+/* eslint */
 
 import React from "react";
 import {Grid,

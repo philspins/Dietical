@@ -1,5 +1,5 @@
 // src/components/MealItem.js
-/*eslint no-console:0 */
+/* eslint */
 
 import React from "react";
 import {Row,

@@ -1,5 +1,5 @@
 // src/actions/HeaderActions.js
-/*eslint no-console:0 */
+/* eslint */
 
 import alt from "../utils/Dispatcher";
 

@@ -1,16 +1,16 @@
 // src/data/models/index.js
-/*eslint no-console:0 */
+/* eslint */
 
-var sequelize = require("../sequelize");
-var User = require("./User");
-var Recipe = require("./Recipe");
-var Ingredient = require("./Ingredient");
-var FoodItem = require("./FoodItem");
-var MealItem = require("./MealItem");
-var MealType = require("./MealType");
-var Meal = require("./Meal");
-var TagDef = require("./TagDef");
-var Tag = require("./Tag");
+import sequelize from "../sequelize";
+import User from "./User";
+import Recipe from "./Recipe";
+import Ingredient from "./Ingredient";
+import FoodItem from "./FoodItem";
+import MealItem from "./MealItem";
+import MealType from "./MealType";
+import Meal from "./Meal";
+import TagDef from "./TagDef";
+import Tag from "./Tag";
 
 
 //

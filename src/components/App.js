@@ -1,5 +1,5 @@
 // src/components/App.js
-/*eslint no-console:0 */
+/* eslint */
 
 require("normalize.css/normalize.css");
 require("../styles/App.css");
@@ -17,7 +17,7 @@ class App extends React.Component {
 
 	render() {
 		return (
-      <div>
+      <div className="animated fadeIn">
 				<Header />
 				{this.props.children}
 				<MyFooter />

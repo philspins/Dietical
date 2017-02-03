@@ -1,5 +1,5 @@
 // src/stores/HomeStore.js
-/*eslint no-console:0 */
+/* eslint */
 
 import alt from "../utils/Dispatcher";
 import HomeActions from "../actions/HomeActions";

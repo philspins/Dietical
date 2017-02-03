@@ -1,13 +1,13 @@
 // src/data/queries/MealType.js
-/*eslint no-console:0 */
+/* eslint */
 
-var MealTypeType = require("../types/MealTypeType");
-var resolver = require("graphql-sequelize").resolver;
-var MealTypeModel = require("../models/MealType");
+import MealTypeType from "../types/MealTypeType";
+import {resolver} from "graphql-sequelize";
+import {default as MealTypeModel} from "../models/MealType";
 
 const MealType = {
 	type: MealTypeType,
 	resolve: resolver(MealTypeModel)
 };
 
-module.exports = MealType;
+export default MealType;

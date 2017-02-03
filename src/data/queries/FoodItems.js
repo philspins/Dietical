@@ -1,16 +1,15 @@
 // src/data/queries/FoodItems.js
-/*eslint no-console:0 */
+/* eslint */
 
-var graphql = require("graphql");
-var resolver = require("graphql-sequelize").resolver;
+import {GraphQLList} from "graphql";
+import {resolver} from "graphql-sequelize";
 
-var FoodType = require("../types/FoodType");
-var FoodModel = require("../models/FoodItem");
-var ListType = graphql.GraphQLList;
+import FoodType from "../types/FoodType";
+import {default as FoodModel} from "../models/FoodItem";
 
 const FoodItems = {
-	type: new ListType(FoodType),
+	type: new GraphQLList(FoodType),
 	resolve: resolver(FoodModel)
 };
 
-module.exports = FoodItems;
+export default FoodItems;

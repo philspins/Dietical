@@ -1,12 +1,12 @@
 // src/data/models/User.js
-/*eslint no-console:0 */
+/* eslint */
 
-var DataType = require("sequelize");
-var Model = require("../sequelize");
+import DataType from "sequelize";
+import Model from "../sequelize";
 
-var UserClaim = require("./UserClaim");
-var UserLogin = require("./UserLogin");
-var UserProfile = require("./UserProfile");
+import UserClaim from "./UserClaim";
+import UserLogin from "./UserLogin";
+import UserProfile from "./UserProfile";
 
 const User = Model.define("User",
 	{
@@ -33,4 +33,4 @@ User.hasMany(UserLogin);
 User.hasMany(UserClaim);
 User.hasOne(UserProfile);
 
-module.exports = User;
+export default User;

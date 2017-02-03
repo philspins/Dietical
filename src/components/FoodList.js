@@ -1,8 +1,16 @@
 // src/components/FoodList.js
-/*eslint no-console:0 */
+/* eslint */
 
 import React from "react";
-import {Link} from "react-router";
+import {LinkContainer} from "react-router-bootstrap";
+import {ListGroup,
+				ListGroupItem,
+        Media,
+				Thumbnail,
+				Image,
+				Grid,
+				Row,
+				Col} from "react-bootstrap";
 import {isEqual} from "underscore";
 
 import FoodListStore from "../stores/FoodListStore";
@@ -25,7 +33,9 @@ class FoodList extends React.PureComponent {
 	}
 
 	componentDidUpdate(prevProps) {
-		//FoodListActions.getFoodItems();
+		if (prevProps.params.id !== this.props.params.id) {
+			FoodListActions.getFoodItems();
+		}
 	}
 
 	onChange(state) {
@@ -33,41 +43,45 @@ class FoodList extends React.PureComponent {
 	}
 
 	render() {
+		if(!this.state.food.length){
+			return (
+				<div className="spinner">
+					<Image src="/images/spinner.gif"/>
+				</div>
+			);
+		}
+
 		let foodList = this.state.food.map((food, index) => {
 			return (
-				<div key={food.id} className='list-group-item animated fadeIn'>
-					<div className='media'>
-						<span className='position pull-left'>{food.id}</span>
-						<div className='pull-left thumb-lg'>
-							<Link to={"/food/" + 1}>
-								<img className='media-object' src={food.ImageURL || "/images/placeholder.png"} />
-							</Link>
-						</div>
-						<div className='media-body'>
-							<h4 className='media-heading'>
-								<Link to={"/food/" + 1}>{food.Name}</Link>
-							</h4>
-							<small>Unit: <strong>{food.Quantity}</strong></small>
-              <br />
-              <small>Calories: <strong>{food.Calories}</strong></small>
-              <br />
-              <small>
-								Protein: <strong>{food.Protein}</strong><span> - </span>
-								Fat: <strong>{food.Fat}</strong><span> - </span>
-								Net Carbs: <strong>{food.Carbs - food.Fibre}</strong>
-							</small>
-						</div>
-					</div>
-				</div>
+				<LinkContainer to={"/food/" + food.id}>
+					<ListGroupItem className="col-xs-6">
+						<Media>
+							<Thumbnail src={food.ImageURL || "/images/placeholder.png"} className='pull-left thumb-lg'/>
+							<Media.Body>
+								<Media.Heading>{food.Name}</Media.Heading>
+								<small>Unit: <strong>{food.Quantity}</strong></small>
+								<br />
+								<small>Calories: <strong>{food.Calories}</strong></small>
+								<br />
+								<small>
+									Protein: <strong>{food.Protein}</strong><span> - </span>
+									Fat: <strong>{food.Fat}</strong><span> - </span>
+									Carbs: <strong>{food.Carbs}</strong><span> - </span>
+									Fibre: <strong>{food.Fibre}</strong>
+								</small>
+							</Media.Body>
+						</Media>
+					</ListGroupItem>
+				</LinkContainer>
 			);
 		});
 
 		return (
-      <div className='container'>
-        <div className='list-group'>
+      <Grid className="">
+        <ListGroup className="row animated fadeIn">
 					{foodList}
-        </div>
-      </div>
+        </ListGroup>
+      </Grid>
 		);
 	}
 }

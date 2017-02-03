@@ -1,28 +1,27 @@
 // src/data/types/RecipeType.js
-/*eslint no-console:0 */
+/* eslint */
 
-var graphql = require("graphql");
-var resolver = require("graphql-sequelize").resolver;
-var ObjectType = graphql.GraphQLObjectType;
-var ListType = graphql.GraphQLList;
-var ID = graphql.GraphQLID;
-var StringType = graphql.GraphQLString;
-var NonNull = graphql.GraphQLNonNull;
+import {GraphQLObjectType,
+				GraphQLList,
+				GraphQLNonNull,
+				GraphQLID,
+				GraphQLString} from "graphql";
+import {resolver} from "graphql-sequelize";
 
-var Recipe = require("../models").Recipe;
-var FoodType = require("./FoodType");
+import {Recipe} from "../models";
+import FoodType from "./FoodType";
 
-const RecipeType = new ObjectType({
+const RecipeType = new GraphQLObjectType({
 	name: "Recipe",
 	fields: {
-		id: { type: new NonNull(ID) },
-		Name: { type: StringType },
-		Instructions: { type: StringType },
-		ImageURL: { type: StringType },
+		id: { type: new GraphQLNonNull(GraphQLID) },
+		Name: { type: GraphQLString },
+		Instructions: { type: GraphQLString },
+		ImageURL: { type: GraphQLString },
 		Ingredients: {
-			type: new ListType(FoodType),
+			type: new GraphQLList(FoodType),
 			resolve: resolver(Recipe.FoodItems) }
 	}
 });
 
-module.exports = RecipeType;
+export default RecipeType;
