@@ -54,7 +54,7 @@ class RecipeList extends React.Component {
 				<LinkContainer to={"/recipes/" + recipe.id}>
 					<ListGroupItem className="col-xs-6">
 						<Media>
-							<Thumbnail src={recipe.ImageURL || "/images/placeholder.png"} className='pull-left thumb-lg'/>
+							<Thumbnail src={recipe.ImageURL || "/images/placeholder.png"} className="pull-left thumb-lg"/>
 							<Media.Body>
 								<Media.Heading>{recipe.Name}</Media.Heading>
 							</Media.Body>

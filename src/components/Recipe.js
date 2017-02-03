@@ -61,9 +61,9 @@ class Recipe extends React.Component {
 		});
 
 		return (
-      <table className='container item-box'>
+      <table className="container item-box">
 				<tr>
-					<td className='item-img'>
+					<td className="item-img">
 						<Thumbnail src={this.state.imageurl || "/images/placeholder.png"} />
 					</td>
 					<td>

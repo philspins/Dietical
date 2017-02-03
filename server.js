@@ -95,7 +95,7 @@ app.get("*", (req, res) => {
 //
 // Sync the database schema
 // -----------------------------------------------------------------------------
-/*
+
 logger.info("\x1b[36mSequelize: synchronizing data models...\x1b[0m");
 models.query("SET FOREIGN_KEY_CHECKS = 0")
 .then(function(){
@@ -127,6 +127,20 @@ models.query("SET FOREIGN_KEY_CHECKS = 0")
 			}
 		}
 	}).then(function() {
+		models.User.create({ login: "phil", email: "phil@test.com" });
+	}).then(function() {
+		models.MealType.create({Name: "Breakfast"});
+		models.MealType.create({Name: "Lunch"});
+		models.MealType.create({Name: "Dinner"});
+		models.MealType.create({Name: "Snack"});
+	}).then(function() {
+		models.Meal.create({UserId: 1, Day: Date.now(), MealTypeId: 1});
+		models.Meal.create({UserId: 1, Day: Date.now(), MealTypeId: 2});
+		models.Meal.create({UserId: 1, Day: Date.now(), MealTypeId: 3});
+		models.Meal.create({UserId: 1, Day: Date.now(), MealTypeId: 4});
+	}).then(function() {
+		//models.MealItem.create({});
+	}).then(function() {
 		logger.info("\x1b[36mSequelize: mock data loaded\x1b[0m");
 	}).catch(function(err) {
 		logger.error("\x1b[36mSequelize: an error occured while loading mock data!\x1b[0m\n" + err.message);
@@ -137,7 +151,7 @@ models.query("SET FOREIGN_KEY_CHECKS = 0")
 		logger.error("\x1b[91m" & err & "\x1b[0m");
 	}
 });
-*/
+
 
 //
 // Launch the server

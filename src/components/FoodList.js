@@ -56,7 +56,7 @@ class FoodList extends React.PureComponent {
 				<LinkContainer to={"/food/" + food.id}>
 					<ListGroupItem className="col-xs-6">
 						<Media>
-							<Thumbnail src={food.ImageURL || "/images/placeholder.png"} className='pull-left thumb-lg'/>
+							<Thumbnail src={food.ImageURL || "/images/placeholder.png"} className="pull-left thumb-lg"/>
 							<Media.Body>
 								<Media.Heading>{food.Name}</Media.Heading>
 								<small>Unit: <strong>{food.Quantity}</strong></small>

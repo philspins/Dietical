@@ -10,10 +10,9 @@ import UserProfile from "./UserProfile";
 
 const User = Model.define("User",
 	{
-		id: {
+		login: {
 			type: DataType.UUID,
-			defaultValue: DataType.UUIDV1,
-			primaryKey: true
+			defaultValue: DataType.UUIDV1
 		},
 		email: {
 			type: DataType.STRING(255),
@@ -25,7 +24,7 @@ const User = Model.define("User",
 		}
 	},
 	{
-		indexes: [{ fields: ["email"] }]
+		indexes: [{ fields: ["login", "email"] }]
 	}
 );
 

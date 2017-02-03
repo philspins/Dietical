@@ -62,9 +62,9 @@ FoodItem.belongsToMany(Meal, {
 //
 // Other Meal relationships
 // -----------------------------------------------------------------------------
-Meal.hasMany(MealItem);
-User.hasMany(Meal);
-MealType.hasMany(Meal);
+Meal.hasMany(MealItem, {foreignKey: {allowNull: false}, onDelete: "CASCADE"});
+User.hasMany(Meal, {foreignKey: {allowNull: false}, onDelete: "CASCADE"});
+MealType.hasMany(Meal, {foreignKey: {allowNull: false}, onDelete: "CASCADE"});
 
 
 //
