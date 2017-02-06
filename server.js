@@ -139,7 +139,17 @@ models.query("SET FOREIGN_KEY_CHECKS = 0")
 		models.Meal.create({UserId: 1, Day: Date.now(), MealTypeId: 3});
 		models.Meal.create({UserId: 1, Day: Date.now(), MealTypeId: 4});
 	}).then(function() {
-		//models.MealItem.create({});
+
+		models.MealItem.create({ItemType: "Recipe", ItemID: 1, Quantity: 1, MealId: 1});
+		models.MealItem.create({ItemType: "FoodItem", ItemID: 25, Quantity: 2, MealId: 1});
+		models.MealItem.create({ItemType: "Recipe", ItemID: 2, Quantity: 1, MealId: 2});
+		models.MealItem.create({ItemType: "Recipe", ItemID: 3, Quantity: 1, MealId: 2});
+		models.MealItem.create({ItemType: "FoodItem", ItemID: 100, Quantity: 1, MealId: 2});
+		models.MealItem.create({ItemType: "Recipe", ItemID: 4, Quantity: 1, MealId: 3});
+		models.MealItem.create({ItemType: "Recipe", ItemID: 5, Quantity: 1, MealId: 3});
+		models.MealItem.create({ItemType: "FoodItem", ItemID: 150, Quantity: 1, MealId: 3});
+		models.MealItem.create({ItemType: "FoodItem", ItemID: 75, Quantity: 1, MealId: 4});
+
 	}).then(function() {
 		logger.info("\x1b[36mSequelize: mock data loaded\x1b[0m");
 	}).catch(function(err) {
@@ -151,6 +161,9 @@ models.query("SET FOREIGN_KEY_CHECKS = 0")
 		logger.error("\x1b[91m" & err & "\x1b[0m");
 	}
 });
+
+
+
 
 
 //

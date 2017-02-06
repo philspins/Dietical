@@ -8,8 +8,7 @@ import FoodType from "../types/FoodType";
 import {default as FoodModel} from "../models/FoodItem";
 
 const FoodItems = {
-	type: new GraphQLList(FoodType),
-	resolve: resolver(FoodModel)
+	type: new GraphQLList(FoodType)
 };
 
 export default FoodItems;

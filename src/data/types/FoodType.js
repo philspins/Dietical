@@ -3,13 +3,15 @@
 
 import {GraphQLObjectType} from "graphql";
 import {attributeFields} from "graphql-sequelize";
+import {resolver} from "graphql-sequelize";
 
 import {default as FoodModel} from "../models/FoodItem";
 
 
 const FoodType = new GraphQLObjectType({
 	name: "FoodItem",
-	fields: attributeFields(FoodModel)
+	fields: attributeFields(FoodModel),
+	resolve: resolver(FoodModel)
 });
 
 export default FoodType;
