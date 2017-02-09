@@ -4,7 +4,7 @@
 import {GraphQLObjectType,
 				GraphQLList,
 				GraphQLNonNull,
-				GraphQLID,
+				GraphQLInt,
 				GraphQLString} from "graphql";
 import {resolver} from "graphql-sequelize";
 
@@ -14,7 +14,7 @@ import FoodType from "./FoodType";
 const RecipeType = new GraphQLObjectType({
 	name: "Recipe",
 	fields: {
-		id: { type: new GraphQLNonNull(GraphQLID) },
+		id: { type: new GraphQLNonNull(GraphQLInt) },
 		Name: { type: GraphQLString },
 		Instructions: { type: GraphQLString },
 		ImageURL: { type: GraphQLString },

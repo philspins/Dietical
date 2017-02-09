@@ -3,18 +3,28 @@
 
 import {GraphQLObjectType,
 				GraphQLUnionType,
-				GraphQLNonNull,
+				GraphQLList,
 				GraphQLID,
 				GraphQLString,
 				GraphQLInt} from "graphql";
 import {resolver, attributeFields} from "graphql-sequelize";
 
-import {MealItem as MealItemModel} from "../models";
+import {Meal, MealItem as MealItemModel} from "../models";
+import FoodType from "./FoodType";
+import RecipeType from "./RecipeType";
 
 const MealItemType = new GraphQLObjectType({
 	name: "MealItem",
-	fields: attributeFields(MealItemModel),
-	resolve: resolver(MealItemModel)
+	fields: {
+		Recipes: {
+			type: new GraphQLList(RecipeType),
+			resolve: resolver(Meal.Recipes)
+		},
+		FoodItems: {
+			type: new GraphQLList(FoodType),
+			resolve: resolver(Meal.FoodItems)
+		}
+	}
 });
 
 export default MealItemType;

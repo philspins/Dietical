@@ -4,12 +4,12 @@
 import {GraphQLList} from "graphql";
 import {resolver} from "graphql-sequelize";
 
-import {Meal as mealModel} from "../models";
+import {Meal, FoodItem, Recipe} from "../models";
 import MealType from "../types/MealType";
 
-const Meal = {
+const Meals = {
 	type: new GraphQLList(MealType),
-	resolve: resolver(mealModel)
+	resolve: resolver(Meal)
 };
 
-export default Meal;
+export default Meals;

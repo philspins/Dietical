@@ -37,7 +37,7 @@ var logger = new (winston.Logger)({
 			}
 		})/*,
 		new (winston.transports.File)({
-			filename: "nourish.log",
+			filename: "./nourish.log",
 			timestamp: function() {
 				return moment(Date.now()).format();
 			},
@@ -95,7 +95,7 @@ app.get("*", (req, res) => {
 //
 // Sync the database schema
 // -----------------------------------------------------------------------------
-
+/*
 logger.info("\x1b[36mSequelize: synchronizing data models...\x1b[0m");
 models.query("SET FOREIGN_KEY_CHECKS = 0")
 .then(function(){
@@ -105,66 +105,87 @@ models.query("SET FOREIGN_KEY_CHECKS = 0")
 })
 .then(function(){
 	return models.query("SET FOREIGN_KEY_CHECKS = 1");
-})
-.then(function(){
+}).then(function(){
 	logger.info("\x1b[36mSequelize: data models synchronized\x1b[0m");
 
-	promise.map(foodData, function(item) {
-		return models.FoodItem.create(item);
-	}).then(function() {
-		for(var i=1; i<=10; i++){
-			models.Recipe.create({
-				id: i,
-				Name: "Test Recipe " + i,
-				Instructions: "Recipe instructions go here..."
-			});
-		}
-	}
-	).then(function() {
-		for(var i=1; i<=10; i++){
-			for(var x=25; x<=200; x+=25){
-				models.Ingredient.create({ RecipeId: i, FoodItemId: x });
+	return models.transaction(function(t) {
+		var foodPromises = [];
+		foodData.map(item => {
+			var newPromise = models.FoodItem.create(item, {transaction: t});
+			foodPromises.push(newPromise);
+		});
+		return promise.all(foodPromises)
+		.then(function(){
+			var recipePromises = [];
+			for(var i=1; i<=10; i++){
+				recipePromises.push(models.Recipe.create({
+					id: i,
+					Name: "Test Recipe " + i,
+					Instructions: "Recipe instructions go here..."
+				}, {transaction: t}));
 			}
-		}
-	}).then(function() {
-		models.User.create({ login: "phil", email: "phil@test.com" });
-	}).then(function() {
-		models.MealType.create({Name: "Breakfast"});
-		models.MealType.create({Name: "Lunch"});
-		models.MealType.create({Name: "Dinner"});
-		models.MealType.create({Name: "Snack"});
-	}).then(function() {
-		models.Meal.create({UserId: 1, Day: Date.now(), MealTypeId: 1});
-		models.Meal.create({UserId: 1, Day: Date.now(), MealTypeId: 2});
-		models.Meal.create({UserId: 1, Day: Date.now(), MealTypeId: 3});
-		models.Meal.create({UserId: 1, Day: Date.now(), MealTypeId: 4});
-	}).then(function() {
+			return promise.all(recipePromises)
+			.then(function() {
+				var ingredientPromises = [];
+				for(var i=1; i<=10; i++){
+					for(var x=25; x<=200; x+=25){
+						var newPromise = models.Ingredient.create({
+							RecipeId: i, FoodItemId: x }, {transaction: t});
+						ingredientPromises.push(newPromise);
 
-		models.MealItem.create({ItemType: "Recipe", ItemID: 1, Quantity: 1, MealId: 1});
-		models.MealItem.create({ItemType: "FoodItem", ItemID: 25, Quantity: 2, MealId: 1});
-		models.MealItem.create({ItemType: "Recipe", ItemID: 2, Quantity: 1, MealId: 2});
-		models.MealItem.create({ItemType: "Recipe", ItemID: 3, Quantity: 1, MealId: 2});
-		models.MealItem.create({ItemType: "FoodItem", ItemID: 100, Quantity: 1, MealId: 2});
-		models.MealItem.create({ItemType: "Recipe", ItemID: 4, Quantity: 1, MealId: 3});
-		models.MealItem.create({ItemType: "Recipe", ItemID: 5, Quantity: 1, MealId: 3});
-		models.MealItem.create({ItemType: "FoodItem", ItemID: 150, Quantity: 1, MealId: 3});
-		models.MealItem.create({ItemType: "FoodItem", ItemID: 75, Quantity: 1, MealId: 4});
-
-	}).then(function() {
+					}
+				}
+				return promise.all(ingredientPromises)
+				.then(function(){
+					return models.User.create({ login: "phil", email: "phil@test.com" }, {transaction: t})
+					.then(function(){
+						var mealTypePromises = [];
+						mealTypePromises.push(models.MealType.create({Name: "Breakfast"}, {transaction: t}));
+						mealTypePromises.push(models.MealType.create({Name: "Lunch"}, {transaction: t}));
+						mealTypePromises.push(models.MealType.create({Name: "Dinner"}, {transaction: t}));
+						mealTypePromises.push(models.MealType.create({Name: "Snack"}, {transaction: t}));
+						return promise.all(mealTypePromises)
+						.then(function(){
+							var mealPromises = [];
+							mealPromises.push(models.Meal.create({UserId: 1, Day: Date.now(), MealTypeId: 1}, {transaction: t}));
+							mealPromises.push(models.Meal.create({UserId: 1, Day: Date.now(), MealTypeId: 2}, {transaction: t}));
+							mealPromises.push(models.Meal.create({UserId: 1, Day: Date.now(), MealTypeId: 3}, {transaction: t}));
+							mealPromises.push(models.Meal.create({UserId: 1, Day: Date.now(), MealTypeId: 4}, {transaction: t}));
+							return promise.all(mealPromises)
+							.then(function(){
+								var mealItemPromises = [];
+								mealItemPromises.push(models.MealItem.create({ItemType: "Recipe", ItemID: 1, Quantity: 1, MealId: 1}, {transaction: t}));
+								mealItemPromises.push(models.MealItem.create({ItemType: "FoodItem", ItemID: 25, Quantity: 2, MealId: 1}, {transaction: t}));
+								mealItemPromises.push(models.MealItem.create({ItemType: "Recipe", ItemID: 2, Quantity: 1, MealId: 2}, {transaction: t}));
+								mealItemPromises.push(models.MealItem.create({ItemType: "Recipe", ItemID: 3, Quantity: 1, MealId: 2}, {transaction: t}));
+								mealItemPromises.push(models.MealItem.create({ItemType: "FoodItem", ItemID: 100, Quantity: 1, MealId: 2}, {transaction: t}));
+								mealItemPromises.push(models.MealItem.create({ItemType: "Recipe", ItemID: 4, Quantity: 1, MealId: 3}, {transaction: t}));
+								mealItemPromises.push(models.MealItem.create({ItemType: "Recipe", ItemID: 5, Quantity: 1, MealId: 3}, {transaction: t}));
+								mealItemPromises.push(models.MealItem.create({ItemType: "FoodItem", ItemID: 150, Quantity: 1, MealId: 3}, {transaction: t}));
+								mealItemPromises.push(models.MealItem.create({ItemType: "FoodItem", ItemID: 75, Quantity: 1, MealId: 4}, {transaction: t}));
+								return promise.all(mealItemPromises);
+							});
+						});
+					});
+				});
+			});
+		});
+	}).then(function(){
 		logger.info("\x1b[36mSequelize: mock data loaded\x1b[0m");
+		/*
+		models.Meal.findOne({include: [models.FoodItem, models.Recipe]}).then(item => {
+			logger.info(JSON.stringify(item), null, 2);
+		});
+		*/
 	}).catch(function(err) {
 		logger.error("\x1b[36mSequelize: an error occured while loading mock data!\x1b[0m\n" + err.message);
 	});
-})
-.then(function(err){
+}).then(function(err){
 	if (err) {
 		logger.error("\x1b[91m" & err & "\x1b[0m");
 	}
 });
-
-
-
-
+*/
 
 //
 // Launch the server

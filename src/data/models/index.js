@@ -29,33 +29,39 @@ FoodItem.Recipes = FoodItem.belongsToMany(Recipe, {
 //
 // Meals relationships with Recipe and FoodItem
 // -----------------------------------------------------------------------------
-Meal.belongsToMany(Recipe, {
-	through: MealItem,
-	foreignKey: "ItemID",
-	constraints: false,
-	scope: {
-		ItemType: "Recipe"
+Meal.Recipes = Meal.belongsToMany(Recipe, {
+	through: {
+		model: MealItem,
+		unique: false
 	}
 });
-Recipe.belongsToMany(Meal, {
-	through: MealItem,
+Recipe.Meals = Recipe.belongsToMany(Meal, {
+	through: {
+		model: MealItem,
+		unique: false,
+		scope: {
+			ItemType: "Recipe"
+		}
+	},
 	foreignKey: "ItemID",
-	constraints: false,
-	as: "Recipe"
+	constraints: false
 });
-Meal.belongsToMany(FoodItem, {
-	through: MealItem,
-	foreignKey: "ItemID",
-	constraints: false,
-	scope: {
-		ItemType: "FoodItem"
+Meal.FoodItems = Meal.belongsToMany(FoodItem, {
+	through: {
+		model: MealItem,
+		unique: false
 	}
 });
-FoodItem.belongsToMany(Meal, {
-	through: MealItem,
+FoodItem.Meals = FoodItem.belongsToMany(Meal, {
+	through: {
+		model: MealItem,
+		unique: false,
+		scope: {
+			ItemType: "FoodItem"
+		}
+	},
 	foreignKey: "ItemID",
-	constraints: false,
-	as: "FoodItem"
+	constraints: false
 });
 
 
@@ -63,8 +69,8 @@ FoodItem.belongsToMany(Meal, {
 // Other Meal relationships
 // -----------------------------------------------------------------------------
 Meal.MealItems = Meal.hasMany(MealItem, {foreignKey: {allowNull: false}, onDelete: "CASCADE"});
-Meal.User = User.hasMany(Meal, {foreignKey: {allowNull: false}, onDelete: "CASCADE"});
-Meal.MealType = MealType.hasMany(Meal, {foreignKey: {allowNull: false}, onDelete: "CASCADE"});
+Meal.User = Meal.belongsTo(User, {foreignKey: {allowNull: false}, onDelete: "CASCADE"});
+Meal.MealType = Meal.belongsTo(MealType, {foreignKey: {allowNull: false}, onDelete: "CASCADE"});
 
 
 //
