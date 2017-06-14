@@ -18,6 +18,14 @@ class MealPlannerStore {
 		this.protein = 140.3;
 	}
 
+	onGetMealsSuccess(data) {
+		this.meals = data;
+	}
+
+	onGetMealsFail(jqXhr) {
+		toastr.error(jqXhr.responseJSON.message);
+	}
+
 	onSetMealDay(data){
 		this.mealDay = data;
 	}

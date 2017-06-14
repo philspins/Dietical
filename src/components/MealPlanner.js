@@ -31,6 +31,7 @@ class MealPlanner extends React.PureComponent {
 	componentDidMount() {
 		MealPlannerStore.listen(this.onChange);
 		CalendarNavStore.listen(this.onChange);
+		MealPlannerActions.getMeals();
 	}
 
 	componentWillUnmount() {

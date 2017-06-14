@@ -1,4 +1,4 @@
-// src/data/queries/Meal.js
+// src/data/queries/Meals.js
 /* eslint */
 
 import {GraphQLList} from "graphql";

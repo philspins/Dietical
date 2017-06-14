@@ -172,11 +172,11 @@ models.query("SET FOREIGN_KEY_CHECKS = 0")
 		});
 	}).then(function(){
 		logger.info("\x1b[36mSequelize: mock data loaded\x1b[0m");
-		/*
+
 		models.Meal.findOne({include: [models.FoodItem, models.Recipe]}).then(item => {
 			logger.info(JSON.stringify(item), null, 2);
 		});
-		*/
+
 	}).catch(function(err) {
 		logger.error("\x1b[36mSequelize: an error occured while loading mock data!\x1b[0m\n" + err.message);
 	});

@@ -1,4 +1,4 @@
-// src/data/queries/FoodItem.js
+	// src/data/queries/FoodItem.js
 /* eslint */
 
 import {GraphQLID} from "graphql";

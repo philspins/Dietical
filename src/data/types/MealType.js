@@ -39,7 +39,8 @@ const MealType = new GraphQLObjectType({
 			type: new GraphQLList(FoodType),
 			resolve: resolver(Meal.FoodItems)
 		}
-	}
+	},
+	resolve: resolver(Meal)
 });
 
 export default MealType;

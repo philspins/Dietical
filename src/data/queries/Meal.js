@@ -3,12 +3,10 @@
 
 import {resolver} from "graphql-sequelize";
 
-import {Meal as mealModel} from "../models";
 import MealType from "../types/MealType";
 
 const Meal = {
-	type: MealType,
-	resolve: resolver(mealModel)
+	type: MealType
 };
 
 export default Meal;

@@ -2,23 +2,32 @@
 /* eslint */
 
 import toastr from "toastr";
-
 import alt from "../utils/Dispatcher";
+import MealPlannerSource from "../sources/MealPlannerSource";
 
 class MealPlannerActions {
 	constructor() {
 		this.generateActions(
-			"loadMealsSuccess",
-			"loadMealsFail"
+			"getMealsSuccess",
+			"getMealsFail"
     );
 	}
 
-	loadMeals() {
-		return true;
+	getMeals() {
+		return (dispatch) => {
+			dispatch();
+			MealPlannerSource.fetch()
+				.then((data) => {
+					toastr.info(JSON.stringify(data));
+					this.getMealsSuccess(data);
+				})
+				.catch((error) => {
+					this.getMealsFail(error);
+				});
+		};
 	}
 
 	setMealDay(data) {
-		//toastr.error(date);
 		return data;
 	}
 }
